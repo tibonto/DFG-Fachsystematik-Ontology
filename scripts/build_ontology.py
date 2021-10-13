@@ -47,17 +47,21 @@ def get_parent_index(current_index:str) -> str:
 
 def add_to_index(index:str, level:int)-> str:
     # print(f'index: {index} level: {level}')
+    # if index == '2.5.5.0':
+    #     import pdb; pdb.set_trace()
     index_list = index.split('.')
     index_list = [int(i) for i in index_list]
     # print(f'index_list before addition: {index_list}')
-    added_to_level = index_list[(level - 1)]  + 1
-    index_list[(level - 1)] = index_list[(level - 1)] + 1  
     # print(f'index_list after addition: {index_list}')
     # print(f'added: {added_to_level} to level:{level - 1} in list: {index_list}')
     # reset higher levels to 0
-    index_list_left = index_list[:(level)] 
-    index_list_right = index_list[(level):] 
-    index_list = index_list_left + (['0'] * len(index_list_right))
+    if level == 0:
+        index_list = [(index_list[0] + 1)] + ([0] * 3)
+    else:
+        index_list[(level - 1)] = index_list[(level - 1)] + 1  
+        index_list_left = index_list[:(level)] 
+        index_list_right = index_list[(level):] 
+        index_list = index_list_left + (['0'] * len(index_list_right))
     new_index_str = ".".join([str(i) for i in index_list])
     return new_index_str
 
@@ -65,23 +69,36 @@ def add_to_index(index:str, level:int)-> str:
 def csv2dict(csv_f:str) -> Dict:
     prev_index =  "0.0.0.0"
     dfg_subjects = {}
+    indeces = []
     with open(csv_f, newline='') as csvfile:
         csvfile = csv.DictReader(csvfile, delimiter=',')
         for i, row in enumerate(csvfile):
             if i:
                 index = add_to_index(index=prev_index, level=int(row['level']))
-                print(index)
+                indeces.append(index)
+                # print(index, row)
 
                 dfg_subjects[index] = row
                 prev_index = index
-    return dfg_subjects
+    return dfg_subjects, indeces
 
 
 # Step 1: create dfg_subjects_dict with hierarchy numbers ie. 2.1.2.0
 # Todo: Step 2: add parents to the dfg_subjects_dict 
 
-dfg_subjects_dict = csv2dict(csv_f=dfg_csv)
+dfg_subjects_dict,indeces = csv2dict(csv_f=dfg_csv)
 pprint(dfg_subjects_dict)
+
+# TESTS
+
+assert len(indeces) == len(set(indeces)) # test for repeated indeces(keys)
+
+prev_key = '0.0.0.0' 
+for key, val in dfg_subjects_dict.items(): # test for always increasing key values
+    prev_key_int = int("".join([i for i in prev_key.split('.')]))
+    key_int = int("".join([i for i in key.split('.')]))
+    assert key_int > prev_key_int
+# print(indeces, '\n')
 
 # Todo: Step 3: iterate over dfg_subjects_dict and create RDF triples
 
