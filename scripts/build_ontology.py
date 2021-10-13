@@ -40,17 +40,27 @@ def defcsv2nestedlists(csv_f):
                 dfg_subjects.append([row])
     return dfg_subjects
 
-def get_parent_index(current_index:str) -> str:
-    current_index_list_parent = (current_index.split('.'))[:-1]
-    current_index_list_parent = ".".join(current_index_list_parent)
-    return current_index_list_parent
+def index_str2list(index_str: str) -> list:
+    index_list = index_str.split('.')
+    index_list = [int(i) for i in index_list]    
+    return index_list
+
+def index_list2str(index_list: list) ->  str:
+    index_str = ('.').join(index_list)
+    return index_str
+
+def index_str2int(index_str: str) -> int:
+    index_list = index_str.split('.')
+    index_str = ('').join(index_list)
+    index_int = int(index_str)
+    return index_int
+
 
 def add_to_index(index:str, level:int)-> str:
     # print(f'index: {index} level: {level}')
     # if index == '2.5.5.0':
     #     import pdb; pdb.set_trace()
-    index_list = index.split('.')
-    index_list = [int(i) for i in index_list]
+    index_list = index_str2list(index_str=index)
     # print(f'index_list before addition: {index_list}')
     # print(f'index_list after addition: {index_list}')
     # print(f'added: {added_to_level} to level:{level - 1} in list: {index_list}')
@@ -66,6 +76,20 @@ def add_to_index(index:str, level:int)-> str:
     return new_index_str
 
 
+
+# def build_parent_index(current_index:str, level=int(row['level'])) -> str:
+#     if level == 1:
+#         parent_index = None
+#         return parent_index
+#     else: 
+#         current_index_list = index_str2list(index_str=current_index)
+
+
+#     current_index_list_parent = (current_index.split('.'))[:-1]
+#     current_index_list_parent = ".".join(current_index_list_parent)
+#     return current_index_list_parent
+
+
 def csv2dict(csv_f:str) -> Dict:
     prev_index =  "0.0.0.0"
     dfg_subjects = {}
@@ -76,15 +100,27 @@ def csv2dict(csv_f:str) -> Dict:
             if i:
                 index = add_to_index(index=prev_index, level=int(row['level']))
                 indeces.append(index)
-                # print(index, row)
-
                 dfg_subjects[index] = row
+
+
+                index_list = index_str2list(index_str=index)
+                index_set = set(index_list[1:])
+                index_int = index_str2int(index_str=index)
+                 
+                if len(index_set) == 1:  # cases: 1.0.0.0, 2.0.0.0
+                    print('PARENT NONE')
+                    parent_key = None
+                else:
+                    parent_key = 'TODO parent' # prev_index
+                dfg_subjects[index]['parent_key'] = parent_key
+                print(f'prev:{prev_index}, current:{index} - {index_int}, {row}')
+
                 prev_index = index
     return dfg_subjects, indeces
 
 
 # Step 1: create dfg_subjects_dict with hierarchy numbers ie. 2.1.2.0
-# Todo: Step 2: add parents to the dfg_subjects_dict 
+# Todo: Step 2: add parents to the dfg_subjects_dict v 
 
 dfg_subjects_dict,indeces = csv2dict(csv_f=dfg_csv)
 pprint(dfg_subjects_dict)
