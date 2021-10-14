@@ -1,4 +1,0 @@
-[submodule "jskos-data"]
-	path = jskos-data
-	url = git@github.com:gbv/jskos-data.git
-	branch = master
