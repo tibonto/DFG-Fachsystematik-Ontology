@@ -1,0 +1,1110 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/tibonto/dfgfo/101-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Prehistory and World Archaeology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/101> .
+
+<https://github.com/tibonto/dfgfo/101-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Classical Philology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/101> .
+
+<https://github.com/tibonto/dfgfo/101-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Ancient History@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/101> .
+
+<https://github.com/tibonto/dfgfo/101-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Classical Archaeology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/101> .
+
+<https://github.com/tibonto/dfgfo/101-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Egyptology and Ancient Near Eastern Studies@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/101> .
+
+<https://github.com/tibonto/dfgfo/102-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Medieval History@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> .
+
+<https://github.com/tibonto/dfgfo/102-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Early Modern History@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> .
+
+<https://github.com/tibonto/dfgfo/102-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Modern and Current History@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> .
+
+<https://github.com/tibonto/dfgfo/102-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "History of Science@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> .
+
+<https://github.com/tibonto/dfgfo/103-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Art History@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> .
+
+<https://github.com/tibonto/dfgfo/103-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Musicology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> .
+
+<https://github.com/tibonto/dfgfo/103-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Theatre and Media Studies@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> .
+
+<https://github.com/tibonto/dfgfo/104-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "General and Comparative Linguistics, Typology, Non-European Languages@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/104> .
+
+<https://github.com/tibonto/dfgfo/104-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Individual Linguistics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/104> .
+
+<https://github.com/tibonto/dfgfo/104-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Historical Linguistics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/104> .
+
+<https://github.com/tibonto/dfgfo/104-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Applied Linguistics, Experimental Linguistics, Computational Linguistics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/104> .
+
+<https://github.com/tibonto/dfgfo/105-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Medieval German Literature@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/105> .
+
+<https://github.com/tibonto/dfgfo/105-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Modern German Literature@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/105> .
+
+<https://github.com/tibonto/dfgfo/105-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "European and American Literature@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/105> .
+
+<https://github.com/tibonto/dfgfo/105-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "General and Comparative Literature and Cultural Studies@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/105> .
+
+<https://github.com/tibonto/dfgfo/106-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Social and Cultural Anthropology and Ethnology @en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/106> .
+
+<https://github.com/tibonto/dfgfo/106-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Asian Studies@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/106> .
+
+<https://github.com/tibonto/dfgfo/106-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "African, American and Oceania Studies @en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/106> .
+
+<https://github.com/tibonto/dfgfo/106-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Islamic Studies, Arabian Studies, Semitic Studies@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/106> .
+
+<https://github.com/tibonto/dfgfo/106-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Religious Studies and Jewish Studies@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/106> .
+
+<https://github.com/tibonto/dfgfo/107-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Protestant Theology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/107> .
+
+<https://github.com/tibonto/dfgfo/107-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Roman Catholic Theology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/107> .
+
+<https://github.com/tibonto/dfgfo/108-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "History of Philosophy@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/108> .
+
+<https://github.com/tibonto/dfgfo/108-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Theoretical Philosophy@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/108> .
+
+<https://github.com/tibonto/dfgfo/108-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Practical Philosophy@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/108> .
+
+<https://github.com/tibonto/dfgfo/109-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "General Education and History of Education@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/109> .
+
+<https://github.com/tibonto/dfgfo/109-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "General and Domain-Specific Teaching and Learning@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/109> .
+
+<https://github.com/tibonto/dfgfo/109-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Education Systems and Educational Institutions@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/109> .
+
+<https://github.com/tibonto/dfgfo/109-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Educational Research on Socialisation, Welfare and Professionalism Research@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/109> .
+
+<https://github.com/tibonto/dfgfo/110-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "General, Cognitive and Mathematical Psychology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/110> .
+
+<https://github.com/tibonto/dfgfo/110-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Biological Psychology and Cognitive Neuroscience@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/110> .
+
+<https://github.com/tibonto/dfgfo/110-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Developmental and Educational Psychology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/110> .
+
+<https://github.com/tibonto/dfgfo/110-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Social Psychology, Industrial and Organisational Psychology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/110> .
+
+<https://github.com/tibonto/dfgfo/110-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Differential, Clinical and Medical Psychology, Methodology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/110> .
+
+<https://github.com/tibonto/dfgfo/111-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Sociological Theory@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/111> .
+
+<https://github.com/tibonto/dfgfo/111-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Empirical Social Research@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/111> .
+
+<https://github.com/tibonto/dfgfo/111-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Communication Sciences@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/111> .
+
+<https://github.com/tibonto/dfgfo/111-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Political Science@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/111> .
+
+<https://github.com/tibonto/dfgfo/112-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Economic Theory@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/112> .
+
+<https://github.com/tibonto/dfgfo/112-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Economic Policy, Applied Economics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/112> .
+
+<https://github.com/tibonto/dfgfo/112-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Business Administration@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/112> .
+
+<https://github.com/tibonto/dfgfo/112-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Statistics and Econometrics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/112> .
+
+<https://github.com/tibonto/dfgfo/112-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Economic and Social History@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/112> .
+
+<https://github.com/tibonto/dfgfo/113-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Principles of Law and Jurisprudence@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/113> .
+
+<https://github.com/tibonto/dfgfo/113-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Private Law@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/113> .
+
+<https://github.com/tibonto/dfgfo/113-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Public Law@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/113> .
+
+<https://github.com/tibonto/dfgfo/113-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Criminal Law@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/113> .
+
+<https://github.com/tibonto/dfgfo/113-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Criminology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/113> .
+
+<https://github.com/tibonto/dfgfo/201-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Biochemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> .
+
+<https://github.com/tibonto/dfgfo/201-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Biophysics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> .
+
+<https://github.com/tibonto/dfgfo/201-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Cell Biology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> .
+
+<https://github.com/tibonto/dfgfo/201-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Structural Biology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> .
+
+<https://github.com/tibonto/dfgfo/201-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "General Genetics and Functional Genome Biology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> .
+
+<https://github.com/tibonto/dfgfo/201-06> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Developmental Biology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> .
+
+<https://github.com/tibonto/dfgfo/201-07> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Bioinformatics and Theoretical Biology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> .
+
+<https://github.com/tibonto/dfgfo/202-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Evolution and Systematics of Plants and Fungi@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> .
+
+<https://github.com/tibonto/dfgfo/202-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Ecology and Biodiversity of Plants and Ecosystems@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> .
+
+<https://github.com/tibonto/dfgfo/202-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Organismic Interactions, Chemical Ecology and Microbiomes of Plant Systems@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> .
+
+<https://github.com/tibonto/dfgfo/202-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Plant Physiology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> .
+
+<https://github.com/tibonto/dfgfo/202-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Plant Biochemistry and Biophysics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> .
+
+<https://github.com/tibonto/dfgfo/202-06> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Plant Cell and Developmental Biology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> .
+
+<https://github.com/tibonto/dfgfo/202-07> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Plant Genetics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> .
+
+<https://github.com/tibonto/dfgfo/203-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Systematics and Morphology (Zoology)@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/203> .
+
+<https://github.com/tibonto/dfgfo/203-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Evolution, Anthropology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/203> .
+
+<https://github.com/tibonto/dfgfo/203-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Ecology and Biodiversity of Animals and Ecosystems, Organismic Interactions@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/203> .
+
+<https://github.com/tibonto/dfgfo/203-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Sensory and Behavioural Biology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/203> .
+
+<https://github.com/tibonto/dfgfo/203-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Animal Physiology and Biochemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/203> .
+
+<https://github.com/tibonto/dfgfo/203-06> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Evolutionary Cell and Developmental Biology (Zoology)@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/203> .
+
+<https://github.com/tibonto/dfgfo/204-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Metabolism, Biochemistry and Genetics of Microorganisms@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/204> .
+
+<https://github.com/tibonto/dfgfo/204-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Microbial Ecology and Applied Microbiology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/204> .
+
+<https://github.com/tibonto/dfgfo/204-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Medical Microbiology and Mycology, Hygiene, Molecular Infection Biology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/204> .
+
+<https://github.com/tibonto/dfgfo/204-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Virology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/204> .
+
+<https://github.com/tibonto/dfgfo/204-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Immunology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/204> .
+
+<https://github.com/tibonto/dfgfo/204-06> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Parasitology and Biology of Tropical Infectious Disease Pathogens@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/204> .
+
+<https://github.com/tibonto/dfgfo/205-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Epidemiology and Medical Biometry/Statistics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Public Health, Health Services Research, Social Medicine@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Human Genetics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Physiology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Nutritional Sciences@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-06> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Pathology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-07> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Medical Informatics and Medical Bioinformatics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-08> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Pharmacy@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-09> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Pharmacology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-10> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Toxicology, Occupational Medicine, Clinical Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-11> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Anaesthesiology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-12> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Cardiology, Angiology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-13> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Pneumology, Thoracic Surgery@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-14> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Hematology, Oncology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-15> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Gastroenterology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-16> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Nephrology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-17> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Endocrinology, Diabetology, Metabolism@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-18> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Rheumatology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-19> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Dermatology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-20> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Pediatric and Adolescent Medicine@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-21> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Gynaecology and Obstetrics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-22> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Clinical Immunology and Allergology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-23> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Reproductive Medicine, Urology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-24> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Biogerontology and Geriatric Medicine@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-25> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "General and Visceral Surgery@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-26> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Cardiac and Vascular Sugery@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-27> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Orthopaedics, Traumatology, Reconstructive Surgery@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-28> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Dentistry, Oral Surgery@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-29> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Otolaryngology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-30> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Radiology, Nuclear Medicine, Radiotherapy, Radiobiology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-31> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Clinical Infectiology and Tropical Medicine@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-32> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Medical Physics, Biomedical Technology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/205-33> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Anatomy@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> .
+
+<https://github.com/tibonto/dfgfo/206-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Developmental Neurobiology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> .
+
+<https://github.com/tibonto/dfgfo/206-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Molecular Biology and Physiology of Neurons and Glial Cells@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> .
+
+<https://github.com/tibonto/dfgfo/206-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Experimental and Theoretical Network Neuroscience@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> .
+
+<https://github.com/tibonto/dfgfo/206-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Cognitive, Systems and Behavioural Neurobiology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> .
+
+<https://github.com/tibonto/dfgfo/206-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Experimental Models for the Understanding of Nervous System Diseases@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> .
+
+<https://github.com/tibonto/dfgfo/206-06> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Molecular and Cellular Neurology and Neuropathology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> .
+
+<https://github.com/tibonto/dfgfo/206-07> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Clinical Neurosciences; Neurosurgery und Neuroradiology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> .
+
+<https://github.com/tibonto/dfgfo/206-08> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Human Cognitive and Systems Neuroscience@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> .
+
+<https://github.com/tibonto/dfgfo/206-09> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Biological Psychiatry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> .
+
+<https://github.com/tibonto/dfgfo/206-10> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Clinical Psychiatry, Psychotherapy, Child and Adolescent Psychiatry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> .
+
+<https://github.com/tibonto/dfgfo/206-11> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Ophthalmology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> .
+
+<https://github.com/tibonto/dfgfo/207-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Soil Sciences@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> .
+
+<https://github.com/tibonto/dfgfo/207-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Plant Breeding and Plant Pathology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> .
+
+<https://github.com/tibonto/dfgfo/207-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Plant Cultivation, Plant Nutrition, Agricultural Technology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> .
+
+<https://github.com/tibonto/dfgfo/207-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Ecology of Land Use@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> .
+
+<https://github.com/tibonto/dfgfo/207-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Agricultural Economics, Agricultural Policy, Agricultural Sociology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> .
+
+<https://github.com/tibonto/dfgfo/207-06> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Forestry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> .
+
+<https://github.com/tibonto/dfgfo/207-07> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Animal Breeding, Animal Nutrition, Animal Husbandry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> .
+
+<https://github.com/tibonto/dfgfo/207-08> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Veterinary Medical Science@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> .
+
+<https://github.com/tibonto/dfgfo/307-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Experimental Condensed Matter Physics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/307> .
+
+<https://github.com/tibonto/dfgfo/307-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Theoretical Condensed Matter Physics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/307> .
+
+<https://github.com/tibonto/dfgfo/308-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Optics, Quantum Optics, Atoms, Molecules, Plasmas@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/308> .
+
+<https://github.com/tibonto/dfgfo/309-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Nuclear and Elementary Particle Physics, Quantum Mechanics, Relativity, Fields@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/309> .
+
+<https://github.com/tibonto/dfgfo/310-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Statistical Physics, Soft Matter, Biological Physics, Nonlinear Dynamics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/310> .
+
+<https://github.com/tibonto/dfgfo/311-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Astrophysics and Astronomy@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/311> .
+
+<https://github.com/tibonto/dfgfo/312-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Mathematics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/312> .
+
+<https://github.com/tibonto/dfgfo/313-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Atmospheric Science@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/313> .
+
+<https://github.com/tibonto/dfgfo/313-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Oceanography@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/313> .
+
+<https://github.com/tibonto/dfgfo/314-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Geology and Palaeontology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/314> .
+
+<https://github.com/tibonto/dfgfo/315-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Geophysics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/315> .
+
+<https://github.com/tibonto/dfgfo/315-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Geodesy, Photogrammetry, Remote Sensing, Geoinformatics, Cartography@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/315> .
+
+<https://github.com/tibonto/dfgfo/316-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Mineralogy, Petrology and Geochemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/316> .
+
+<https://github.com/tibonto/dfgfo/317-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Physical Geography@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/317> .
+
+<https://github.com/tibonto/dfgfo/317-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Human Geography@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/317> .
+
+<https://github.com/tibonto/dfgfo/318-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management @en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/318> .
+
+<https://github.com/tibonto/dfgfo/321-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Inorganic Molecular Chemistry - Synthesis and Characterisation@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/321> .
+
+<https://github.com/tibonto/dfgfo/321-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Organic Molecular Chemistry - Synthesis and Characterisation@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/321> .
+
+<https://github.com/tibonto/dfgfo/322-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Solid State and Surface Chemistry, Material Synthesis@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/322> .
+
+<https://github.com/tibonto/dfgfo/322-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Physical Chemistry of Solids and Surfaces, Material Characterisation@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/322> .
+
+<https://github.com/tibonto/dfgfo/323-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Physical Chemistry of Molecules, Liquids and Interfaces, Biophysical Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/323> .
+
+<https://github.com/tibonto/dfgfo/324-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Analytical Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/324> .
+
+<https://github.com/tibonto/dfgfo/325-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Biological and Biomimetic Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/325> .
+
+<https://github.com/tibonto/dfgfo/325-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Food Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/325> .
+
+<https://github.com/tibonto/dfgfo/326-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Preparatory and Physical Chemistry of Polymers@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/326> .
+
+<https://github.com/tibonto/dfgfo/326-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Experimental and Theoretical Physics of Polymers@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/326> .
+
+<https://github.com/tibonto/dfgfo/326-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Polymer Materials@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/326> .
+
+<https://github.com/tibonto/dfgfo/327-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Electron Structure, Dynamics, Simulation@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/327> .
+
+<https://github.com/tibonto/dfgfo/327-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Molecules, Materials, Surfaces@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/327> .
+
+<https://github.com/tibonto/dfgfo/401-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Metal-Cutting and Abrasive Manufacturing Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/401> .
+
+<https://github.com/tibonto/dfgfo/401-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Primary Shaping and Reshaping Technology, Additive Manufacturing@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/401> .
+
+<https://github.com/tibonto/dfgfo/401-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Joining and Separation Technology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/401> .
+
+<https://github.com/tibonto/dfgfo/401-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Plastics Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/401> .
+
+<https://github.com/tibonto/dfgfo/401-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Production Systems, Operations Management, Quality Management and Factory Planning@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/401> .
+
+<https://github.com/tibonto/dfgfo/401-06> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Production Automation@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/401> .
+
+<https://github.com/tibonto/dfgfo/402-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Engineering Design, Machine Elements, Product Development@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/402> .
+
+<https://github.com/tibonto/dfgfo/402-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Mechanics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/402> .
+
+<https://github.com/tibonto/dfgfo/402-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Lightweight Construction, Textile Technology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/402> .
+
+<https://github.com/tibonto/dfgfo/402-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Acoustics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/402> .
+
+<https://github.com/tibonto/dfgfo/403-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Chemical and Thermal Process Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/403> .
+
+<https://github.com/tibonto/dfgfo/403-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Technical Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/403> .
+
+<https://github.com/tibonto/dfgfo/403-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Mechanical Process Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/403> .
+
+<https://github.com/tibonto/dfgfo/403-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Biological Process Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/403> .
+
+<https://github.com/tibonto/dfgfo/404-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Energy Process Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/404> .
+
+<https://github.com/tibonto/dfgfo/404-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Technical Thermodynamics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/404> .
+
+<https://github.com/tibonto/dfgfo/404-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Fluid Mechanics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/404> .
+
+<https://github.com/tibonto/dfgfo/404-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Hydraulic and Turbo Engines and Piston Engines@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/404> .
+
+<https://github.com/tibonto/dfgfo/405-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Metallurgical, Thermal and Thermomechanical Treatment of Materials@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/405> .
+
+<https://github.com/tibonto/dfgfo/405-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Materials in Sintering Processes and Generative Manufacturing Processes@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/405> .
+
+<https://github.com/tibonto/dfgfo/405-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Coating and Surface Technology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/405> .
+
+<https://github.com/tibonto/dfgfo/405-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Mechanical Properties of Metallic Materials and their Microstructural Origins@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/405> .
+
+<https://github.com/tibonto/dfgfo/405-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Glass, Ceramics and Derived Composites@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/405> .
+
+<https://github.com/tibonto/dfgfo/405-06> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Polymeric and Biogenic Materials and Derived Composites@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/405> .
+
+<https://github.com/tibonto/dfgfo/406-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Synthesis and Properties of Functional Materials@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/406> .
+
+<https://github.com/tibonto/dfgfo/406-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Biomaterials@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/406> .
+
+<https://github.com/tibonto/dfgfo/406-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Thermodynamics and Kinetics as well as Properties of Phases and Microstructure of Materials@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/406> .
+
+<https://github.com/tibonto/dfgfo/406-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Computer-Aided Design of Materials and Simulation of Materials Behaviour from Atomic to Microscopic Scale@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/406> .
+
+<https://github.com/tibonto/dfgfo/407-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Automation, Control Systems, Robotics, Mechatronics, Cyber Physical Systems@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/407> .
+
+<https://github.com/tibonto/dfgfo/407-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Measurement Systems@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/407> .
+
+<https://github.com/tibonto/dfgfo/407-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Microsystems@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/407> .
+
+<https://github.com/tibonto/dfgfo/407-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Traffic and Transport Systems, Logistics, Intelligent and Automated Traffic@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/407> .
+
+<https://github.com/tibonto/dfgfo/407-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Human Factors, Ergonomics, Human-Machine Systems@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/407> .
+
+<https://github.com/tibonto/dfgfo/407-06> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Biomedical Systems Technology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/407> .
+
+<https://github.com/tibonto/dfgfo/408-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Electronic Semiconductors, Components, Circuits, Systems@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/408> .
+
+<https://github.com/tibonto/dfgfo/408-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Communications, High-Frequency and Network Technology, Theoretical Electrical Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/408> .
+
+<https://github.com/tibonto/dfgfo/408-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Electrical Energy Generation, Distribution, Application@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/408> .
+
+<https://github.com/tibonto/dfgfo/409-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Theoretical Computer Science@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> .
+
+<https://github.com/tibonto/dfgfo/409-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Software Engineering and Programming Languages@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> .
+
+<https://github.com/tibonto/dfgfo/409-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Security and Dependability@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> .
+
+<https://github.com/tibonto/dfgfo/409-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Operating, Communication, Database and Distributed Systems@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> .
+
+<https://github.com/tibonto/dfgfo/409-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Interactive and Intelligent Systems, Image and Language Processing, Computer Graphics and Visualisation@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> .
+
+<https://github.com/tibonto/dfgfo/409-06> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Information Systems, Process and Knowledge Management@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> .
+
+<https://github.com/tibonto/dfgfo/409-07> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Computer Architecture and Embedded Systems@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> .
+
+<https://github.com/tibonto/dfgfo/409-08> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Massively Parallel and Data-Intensive Systems@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> .
+
+<https://github.com/tibonto/dfgfo/410-01> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Architecture, Building and Construction History, Construction Research, Sustainable Building Technology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/410> .
+
+<https://github.com/tibonto/dfgfo/410-02> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Urbanism, Spatial Planning, Transportation and Infrastructure Planning, Landscape Planning@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/410> .
+
+<https://github.com/tibonto/dfgfo/410-03> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Construction Material Sciences, Chemistry, Building Physics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/410> .
+
+<https://github.com/tibonto/dfgfo/410-04> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Structural Engineering, Building Informatics and Construction Operation@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/410> .
+
+<https://github.com/tibonto/dfgfo/410-05> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Applied Mechanics, Statics and Dynamics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/410> .
+
+<https://github.com/tibonto/dfgfo/410-06> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Geotechnics, Hydraulic Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/410> .
+
+<https://github.com/tibonto/dfgfo/23> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Agriculture, Forestry and Veterinary Medicine@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/2> .
+
+<https://github.com/tibonto/dfgfo/308> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/32> .
+
+<https://github.com/tibonto/dfgfo/309> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Particles, Nuclei and Fields@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/32> .
+
+<https://github.com/tibonto/dfgfo/310> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Statistical Physics, Soft Matter, Biological Physics, Nonlinear Dynamics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/32> .
+
+<https://github.com/tibonto/dfgfo/311> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Astrophysics and Astronomy@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/32> .
+
+<https://github.com/tibonto/dfgfo/312> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Mathematics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/33> .
+
+<https://github.com/tibonto/dfgfo/314> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Geology and Palaeontology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/34> .
+
+<https://github.com/tibonto/dfgfo/316> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Mineralogy, Petrology and Geochemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/34> .
+
+<https://github.com/tibonto/dfgfo/318> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Water Research@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/34> .
+
+<https://github.com/tibonto/dfgfo/323> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Physical Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> .
+
+<https://github.com/tibonto/dfgfo/324> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Analytical Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> .
+
+<https://github.com/tibonto/dfgfo/33> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Mathematics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/3> .
+
+<https://github.com/tibonto/dfgfo/45> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Construction Engineering and Architecture@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/4> .
+
+<https://github.com/tibonto/dfgfo/1> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Humanities and Social Sciences@en" ;
+    rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://github.com/tibonto/dfgfo/107> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Theology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> .
+
+<https://github.com/tibonto/dfgfo/307> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Condensed Matter Physics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/32> .
+
+<https://github.com/tibonto/dfgfo/313> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Atmospheric Science, Oceanography and Climate Research@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/34> .
+
+<https://github.com/tibonto/dfgfo/315> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Geophysics and Geodesy@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/34> .
+
+<https://github.com/tibonto/dfgfo/317> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Geography@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/34> .
+
+<https://github.com/tibonto/dfgfo/321> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Molecular Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> .
+
+<https://github.com/tibonto/dfgfo/322> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Chemical Solid State and Surface Research@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> .
+
+<https://github.com/tibonto/dfgfo/325> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Biological Chemistry and Food Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> .
+
+<https://github.com/tibonto/dfgfo/327> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Theoretical Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> .
+
+<https://github.com/tibonto/dfgfo/41> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Mechanical and Industrial Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/4> .
+
+<https://github.com/tibonto/dfgfo/42> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Thermal Engineering/ Process Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/4> .
+
+<https://github.com/tibonto/dfgfo/43> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Materials Science and Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/4> .
+
+<https://github.com/tibonto/dfgfo/108> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Philosophy@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> .
+
+<https://github.com/tibonto/dfgfo/2> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Life Sciences@en" ;
+    rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://github.com/tibonto/dfgfo/21> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Biology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/2> .
+
+<https://github.com/tibonto/dfgfo/22> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Medicine@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/2> .
+
+<https://github.com/tibonto/dfgfo/326> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Polymer Research@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> .
+
+<https://github.com/tibonto/dfgfo/408> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Electrical Engineering and Information Technology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/44> .
+
+<https://github.com/tibonto/dfgfo/44> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Computer Science, Systems and  Electrical Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/4> .
+
+<https://github.com/tibonto/dfgfo/104> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Linguistics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> .
+
+<https://github.com/tibonto/dfgfo/105> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Literary Studies@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> .
+
+<https://github.com/tibonto/dfgfo/109> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Educational Research@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/12> .
+
+<https://github.com/tibonto/dfgfo/111> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Social Sciences@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/12> .
+
+<https://github.com/tibonto/dfgfo/3> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Natural Sciences@en" ;
+    rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://github.com/tibonto/dfgfo/402> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Mechanics and Constructive Mechanical Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/41> .
+
+<https://github.com/tibonto/dfgfo/403> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Process Engineering, Technical Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/42> .
+
+<https://github.com/tibonto/dfgfo/404> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/42> .
+
+<https://github.com/tibonto/dfgfo/406> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Materials Science@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/43> .
+
+<https://github.com/tibonto/dfgfo/101> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Ancient Cultures@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> .
+
+<https://github.com/tibonto/dfgfo/106> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Social and Cultural Anthropology, Non-European Cultures, Jewish Studies and Religious Studies@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> .
+
+<https://github.com/tibonto/dfgfo/110> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Psychology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/12> .
+
+<https://github.com/tibonto/dfgfo/112> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Economics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/12> .
+
+<https://github.com/tibonto/dfgfo/113> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Jurisprudence@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/12> .
+
+<https://github.com/tibonto/dfgfo/12> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Social and Behavioural Sciences@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/1> .
+
+<https://github.com/tibonto/dfgfo/32> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Physics@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/3> .
+
+<https://github.com/tibonto/dfgfo/4> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Engineering Sciences@en" ;
+    rdfs:subClassOf <http://www.w3.org/2002/07/owl#Thing> .
+
+<https://github.com/tibonto/dfgfo/203> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Zoology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/21> .
+
+<https://github.com/tibonto/dfgfo/204> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Microbiology, Virology and Immunology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/22> .
+
+<https://github.com/tibonto/dfgfo/34> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Geosciences @en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/3> .
+
+<https://github.com/tibonto/dfgfo/401> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Production Technology@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/41> .
+
+<https://github.com/tibonto/dfgfo/405> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Materials Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/43> .
+
+<https://github.com/tibonto/dfgfo/407> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Systems Engineering@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/44> .
+
+<https://github.com/tibonto/dfgfo/410> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Construction Engineering and Architecture@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/45> .
+
+<https://github.com/tibonto/dfgfo/102> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "History@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> .
+
+<https://github.com/tibonto/dfgfo/11> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label " Humanities@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/1> .
+
+<https://github.com/tibonto/dfgfo/201> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Basic Research in Biology and Medicine@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/21> .
+
+<https://github.com/tibonto/dfgfo/202> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Plant Sciences@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/21> .
+
+<https://github.com/tibonto/dfgfo/31> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Chemistry@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/3> .
+
+<https://github.com/tibonto/dfgfo/207> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Agriculture, Forestry and Veterinary Medicine@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/23> .
+
+<https://github.com/tibonto/dfgfo/409> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Computer Science@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/44> .
+
+<https://github.com/tibonto/dfgfo/206> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Neurosciences@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/22> .
+
+<https://github.com/tibonto/dfgfo/205> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Medicine@en" ;
+    rdfs:subClassOf <https://github.com/tibonto/dfgfo/22> .
+

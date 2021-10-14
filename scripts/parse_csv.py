@@ -1,9 +1,15 @@
 import csv
 from pathlib import Path
 from typing import Tuple
+from rdflib import Graph, URIRef, Literal, Namespace
+from rdflib.namespace import RDF, OWL, RDFS
 
 
+g = Graph()
+ns_str = 'https://github.com/tibonto/dfgfo/'
+namespace = Namespace(ns_str)
 
+dfg_onto_fn = Path(__file__).parent.parent / 'dfg.ttl' 
 dfg_csv_en = Path(__file__).parent.parent / 'csv' / 'Fachsystematik_2020-2024_EN_20210621.csv'
 print(dfg_csv_en)
 
@@ -14,27 +20,26 @@ def split_id_label(id_n_label:str) -> Tuple[str, str]:
     return id, label
 
 
-# def create_triple(row, level, tree_hierarchy):
-#     level_key = tree_hierarchy[level]
-#     # parent cell
-#     if level == 0:
-#         parent = 'OWL:THING'
-#     else:
-#         # parent is the level above
-#         parent = row[tree_hierarchy[level-1]]
+def create_class(graph, ns, node_name, labels, parent):
+    print(labels)
+    uri_str = f'{ns_str}{node_name}'
+    node = URIRef(uri_str)
+    # type
+    graph.add((node, RDF.type, OWL.Class))
+    # class 
+    if parent is None:
+        graph.add((node, RDFS.subClassOf, OWL.Thing))
+    else:
+        parent_uri_str = f'{ns_str}{parent}'
+        parent_node = URIRef(parent_uri_str)
+        graph.add((node, RDFS.subClassOf, parent_node))
 
-#     if level != 3: 
-#         id, label_en = split_id_label(id_n_label=row[level_key])
-#     else:
-#         id = row['Subject Number']
-#         label_en = row['Subject']
+    # label
+    graph.add((node, RDFS.label, Literal(f'{labels[0]}@en')))
+    # graph.add((node, RDFS.label, Literal(f'{labels[1]}@de')))
+    ns.node_name
+    print(f'GRAPH NODE: {node} ------')
 
-    
-
-#     print(row[level_key], level)
-#     print(f'level:{level} label_en:{label_en}, ID:{id}, PARENT:{parent}')
-
-# def row2triple():
 
 tree_hierarchy = ['Scientific Discipline', 'Subject Area', 'Review Board', 'Subject']  # top to bottom 
 # DFG Tree hierarchy:
@@ -43,12 +48,10 @@ tree_hierarchy = ['Scientific Discipline', 'Subject Area', 'Review Board', 'Subj
 #     * Review Board
 #       * Subject
 #       * Subject Number
+
 with open(dfg_csv_en, newline='') as csvfile:
     csvfile = csv.DictReader(csvfile, delimiter=',')
     for row in csvfile:
-
-        # print(row)
-
         for index, collumn in enumerate(tree_hierarchy):
             cell=row[(tree_hierarchy)[index]]
             print(f'\nSECTION: {index} {collumn}')
@@ -56,24 +59,31 @@ with open(dfg_csv_en, newline='') as csvfile:
 
             # current 
             if index == 3: 
-                cell_id = row[(tree_hierarchy)[index - 1]]
+                cell_id = row['Subject Number']
                 cell_label = cell 
             else:
                 cell_id, cell_label = split_id_label(id_n_label=row[tree_hierarchy[index]]) 
             current = f'{cell_id} - {cell_label}'
-
+            print(f'CEL ID: <<<<{cell_id}>>>')
              # parent
             if index == 0:
-                parent = 'OWL:THING'
+                parent_id = None
             else:
                 parent_id, parent_label = split_id_label(id_n_label=row[(tree_hierarchy)[index - 1]]) 
-                parent= f'{parent_id} - {parent_label}'
             print(f'CURRENT: {current}')
-            print(f'PARENT: {parent}')
+            print(f'PARENT: <<<{parent_id}>>>')
 
-            
+            create_class(graph=g, 
+                         ns=namespace, 
+                         node_name=cell_id, 
+                         labels=[cell_label],
+                         parent=parent_id)
+
+print(g.serialize())
+with open(dfg_onto_fn, 'w') as dfg_onto:
+    dfg_onto.write(g.serialize())
+    
 
 
-            # TODO: check if triple already exists before create_triple
-            # create_triple(row=row, level=index, tree_hierarchy=tree_hierarchy)
+            # TODO: DE label
 
