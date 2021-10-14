@@ -104,11 +104,12 @@ def csv2dict(csv_f:str) -> Dict:
 
 
                 index_list = index_str2list(index_str=index)
-                index_set = set(index_list[1:])
                 index_int = index_str2int(index_str=index)
-                 
-                if len(index_set) == 1:  # cases: 1.0.0.0, 2.0.0.0
-                    print('PARENT NONE')
+                # index_set = set(index_list[1:])
+
+                if int(row['level']) == 1:
+                # if index_int % 1000 == 0:  # cases: 1.0.0.0, 2.0.0.0 #len(index_set) == 1
+                    print('ROOT NODE')
                     parent_key = None
                 else:
                     parent_key = 'TODO parent' # prev_index
