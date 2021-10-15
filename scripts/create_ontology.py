@@ -16,7 +16,10 @@ Each Subject is a owl:Class with:
 
 g = Graph()
 ns_str = 'https://github.com/tibonto/dfgfo/'
+ns_prefix = 'dfgfo'
 namespace = Namespace(ns_str)
+g.namespace_manager.bind('owl', 'http://www.w3.org/2002/07/owl#', override=False)
+g.namespace_manager.bind(ns_prefix, ns_str, override=False)
 
 dfg_onto_fn = Path(__file__).parent.parent / 'dfgfo.ttl' 
 dfg_csv_en = Path(__file__).parent.parent / 'csv' / 'Fachsystematik_2020-2024.csv'
@@ -30,9 +33,10 @@ def split_id_label(id_n_label:str) -> Tuple[str, str]:
 
 
 def create_class(graph, ns, node_name, labels, parent):
-    print(labels)
     uri_str = f'{ns_str}{node_name}'
     node = URIRef(uri_str)
+    print(f'Class: {uri_str} labels: {labels}')
+
     # type
     graph.add((node, RDF.type, OWL.Class))
     # class 
@@ -42,13 +46,11 @@ def create_class(graph, ns, node_name, labels, parent):
         parent_uri_str = f'{ns_str}{parent}'
         parent_node = URIRef(parent_uri_str)
         graph.add((node, RDFS.subClassOf, parent_node))
-
-    # label
+    # labels
     graph.add((node, RDFS.label, Literal(f'{labels[0]}@en')))
     graph.add((node, RDFS.label, Literal(f'{labels[1]}@de')))
-
     ns.node_name
-    print(f'GRAPH NODE: {node} ------')
+    # print(f'GRAPH NODE: {node} ------')
 
 
 tree_hierarchy = ['Scientific Discipline', 'Subject Area', 'Review Board', 'Subject']
@@ -75,8 +77,7 @@ with open(dfg_csv_en, newline='') as csvfile:
             de_key = header_en_de_mapping[en_key]
             cell=row[en_key]
             cell_de=row[de_key]
-            print(f'EN: {cell}\nDE:{cell_de}')
-
+            # print(f'EN: {cell}\nDE:{cell_de}')
             print(f'\nSECTION: {index} {collumn}')
             print(f'INDEX: {index} COL:{collumn} CELL: {cell}')
 
@@ -109,8 +110,3 @@ print('\n\nSERIALIZE\n\n')
 print(g.serialize())
 with open(dfg_onto_fn, 'w') as dfg_onto:
     dfg_onto.write(g.serialize())
-    
-
-
-            # TODO: DE label
-
