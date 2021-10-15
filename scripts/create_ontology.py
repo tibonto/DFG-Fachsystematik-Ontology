@@ -4,12 +4,21 @@ from typing import Tuple
 from rdflib import Graph, URIRef, Literal, Namespace
 from rdflib.namespace import RDF, OWL, RDFS
 
+'''
+Creates the dfgfo.ttl ontology by parsing 
+the DFG classification system in  csv/Fachsystematik_2020-2024_EN_20210621.csv
+
+Each Subject is a owl:Class with:
+* DFG Subject number as URI 
+* labels in EN and DE.
+* class subpeclass accordinng to DFG Classification hierarchy 
+'''
 
 g = Graph()
 ns_str = 'https://github.com/tibonto/dfgfo/'
 namespace = Namespace(ns_str)
 
-dfg_onto_fn = Path(__file__).parent.parent / 'dfg.ttl' 
+dfg_onto_fn = Path(__file__).parent.parent / 'dfgfo.ttl' 
 dfg_csv_en = Path(__file__).parent.parent / 'csv' / 'Fachsystematik_2020-2024_EN_20210621.csv'
 print(dfg_csv_en)
 
