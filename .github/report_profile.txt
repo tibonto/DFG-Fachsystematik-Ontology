@@ -2,8 +2,8 @@ WARN	annotation_whitespace
 ERROR	deprecated_class_reference
 ERROR	duplicate_definition
 WARN	duplicate_exact_synonym
-ERROR	duplicate_label_synonym
-ERROR	duplicate_label
+INFO	duplicate_label_synonym
+INFO	duplicate_label
 WARN	duplicate_scoped_synonym
 ERROR	equivalent_pair
 WARN	invalid_xref

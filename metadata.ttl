@@ -2,6 +2,8 @@
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
 
 <https://github.com/tibonto/dfgfo> rdf:type owl:Ontology ;
                                    dc:creator "Deutsche Forschungsgemeinschaft (DFG)",
@@ -9,6 +11,6 @@
                                               "Susanne Arndt";
                                    dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English.";
                                    dc:title "DFG Classification of Subject Areas Ontology"@en ;
-                                   rdfs:comment: "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"
+                                   rdfs:comment: "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service" ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> . 
 # TODO: provide appropriate license - same license should go to github repo

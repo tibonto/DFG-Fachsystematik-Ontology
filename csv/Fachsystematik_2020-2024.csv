@@ -135,8 +135,8 @@ Geistes- und Sozialwissenschaften"
 105-04,General and Comparative Literature and Cultural Studies,"105 
 Literary Studies","11
  Humanities","1 
-Humanities and Social Sciences",105-04,Allgemeine und vergleichende Literaturwissenschaft; Kulturwissenschaft,"105 
-Literaturwissenschaft","11
+Humanities and Social Sciences",105-04,Allgemeine und vergleichende Literaturwissenschaft,"105 
+Literaturwissenschaft; Kulturwissenschaft","11
  Geisteswissenschaften","1 
 Geistes- und Sozialwissenschaften"
 106-01,Social and Cultural Anthropology and Ethnology ,"106 
@@ -204,7 +204,7 @@ Philosophie","11
 Geistes- und Sozialwissenschaften"
 108-03,Practical Philosophy,"108 
 Philosophy","11
- Humanities","1 
+Humanities","1 
 Humanities and Social Sciences",108-03,Praktische Philosophie,"108 
 Philosophie","11
  Geisteswissenschaften","1 
@@ -825,7 +825,7 @@ Life Sciences",206-06,Molekulare und zelluläre Neurologie und Neuropathologie,"
 Neurowissenschaften","22 
 Medizin","2 
 Lebenswissenschaften"
-206-07,Clinical Neurosciences; Neurosurgery und Neuroradiology,"206
+206-07,Clinical Neurosciences; Neurosurgery and Neuroradiology,"206
 Neurosciences","22 
 Medicine","2 
 Life Sciences",206-07,Klinische Neurologie; Neurochirurgie und Neuroradiologie,"206

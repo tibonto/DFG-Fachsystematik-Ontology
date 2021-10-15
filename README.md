@@ -1,3 +1,6 @@
+
+[![Ontology testing](https://github.com/tibonto/DFG-Fachsystematik-Ontology/actions/workflows/main.yml/badge.svg)](https://github.com/tibonto/DFG-Fachsystematik-Ontology/actions/workflows/main.yml)
+
 # DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology
 
 [DFG](https://www.dfg.de/en) (The Deutsche Forschungsgemeinschaft - German Research Foundation) *Classification of Scientific Disciplines, Research Areas, Review Boards and Subject Areas* is published as a PDF or HTML (see links below). 
@@ -37,6 +40,12 @@ Run script to create ontologu `python scripts/create_ontology.py`
 
 * [scripts/parse_csv.py](./scripts/parse_csv.py) parses the CSV and ensures that the collumns ` `Subject Number` and `Fachnummer` have the same values
 
+## Ontology contributions:
+Contributions are welcome.
+
+At every push or pull_request [ROBOT](http://robot.obolibrary.org/) ontology tests will be run from [.github/actions/main.yml](.github/actions/main.yml)
+
+
 
 ## DFG Classification of Scientific Disciplines 
 
@@ -46,4 +55,3 @@ Run script to create ontologu `python scripts/create_ontology.py`
 * [Edited CSV - combining both German and English labels](./csv/Fachsystematik_2020-2024.csv) (this repo)
 
 
-## TODO: robots test in github actions

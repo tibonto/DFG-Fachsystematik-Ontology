@@ -10,7 +10,8 @@
         "Susanne Arndt" ;
     dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English." ;
     dc:title "DFG Classification of Subject Areas Ontology"@en ;
-    terms:license <https://creativecommons.org/licenses/by/4.0/> .
+    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    <http://www.w3.org/2000/01/rdf-schema#comment:> "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service" .
 
 dfgfo:101-01 a owl:Class ;
     rdfs:label "Prehistory and World Archaeology@en",
@@ -108,7 +109,7 @@ dfgfo:105-03 a owl:Class ;
     rdfs:subClassOf dfgfo:105 .
 
 dfgfo:105-04 a owl:Class ;
-    rdfs:label "Allgemeine und vergleichende Literaturwissenschaft; Kulturwissenschaft@de",
+    rdfs:label "Allgemeine und vergleichende Literaturwissenschaft@de",
         "General and Comparative Literature and Cultural Studies@en" ;
     rdfs:subClassOf dfgfo:105 .
 
@@ -603,7 +604,7 @@ dfgfo:206-06 a owl:Class ;
     rdfs:subClassOf dfgfo:206 .
 
 dfgfo:206-07 a owl:Class ;
-    rdfs:label "Clinical Neurosciences; Neurosurgery und Neuroradiology@en",
+    rdfs:label "Clinical Neurosciences; Neurosurgery and Neuroradiology@en",
         "Klinische Neurologie; Neurochirurgie und Neuroradiologie@de" ;
     rdfs:subClassOf dfgfo:206 .
 
@@ -1239,6 +1240,7 @@ dfgfo:104 a owl:Class ;
 
 dfgfo:105 a owl:Class ;
     rdfs:label "Literary Studies@en",
+        "Literaturwissenschaft; Kulturwissenschaft@de",
         "Literaturwissenschaft@de" ;
     rdfs:subClassOf dfgfo:11 .
 
@@ -1360,7 +1362,8 @@ dfgfo:102 a owl:Class ;
 
 dfgfo:11 a owl:Class ;
     rdfs:label " Geisteswissenschaften@de",
-        " Humanities@en" ;
+        " Humanities@en",
+        "Humanities@en" ;
     rdfs:subClassOf dfgfo:1 .
 
 dfgfo:201 a owl:Class ;
