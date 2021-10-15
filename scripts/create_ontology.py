@@ -52,6 +52,9 @@ def create_class(graph, ns, node_name, labels, parent):
     # labels
     graph.add((node, RDFS.label, Literal(f'{labels[0]}@en')))
     graph.add((node, RDFS.label, Literal(f'{labels[1]}@de')))
+    # obo:IAO_0000111 # editor preferred term
+    graph.add((node, URIRef("http://purl.obolibrary.org/obo/IAO_0000111"), Literal(f'{labels[0]}@en')))
+
     ns.node_name
     # print(f'GRAPH NODE: {node} ------')
 
