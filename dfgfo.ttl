@@ -1305,8 +1305,8 @@ dfgfo:113 a owl:Class ;
     rdfs:subClassOf dfgfo:12 .
 
 dfgfo:12 a owl:Class ;
-    rdfs:label " Sozial- und Verhaltens- wissenschaften@de",
-        "Social and Behavioural Sciences@en" ;
+    rdfs:label "Social and Behavioural Sciences@en",
+        "Sozial- und Verhaltens- wissenschaften@de" ;
     rdfs:subClassOf dfgfo:1 .
 
 dfgfo:32 a owl:Class ;
@@ -1361,8 +1361,7 @@ dfgfo:102 a owl:Class ;
     rdfs:subClassOf dfgfo:11 .
 
 dfgfo:11 a owl:Class ;
-    rdfs:label " Geisteswissenschaften@de",
-        " Humanities@en",
+    rdfs:label "Geisteswissenschaften@de",
         "Humanities@en" ;
     rdfs:subClassOf dfgfo:1 .
 
