@@ -1,6 +1,16 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dfgfo: <https://github.com/tibonto/dfgfo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+
+<https://github.com/tibonto/dfgfo> a owl:Ontology ;
+    dc:creator "André Castro",
+        "Deutsche Forschungsgemeinschaft (DFG)",
+        "Susanne Arndt" ;
+    dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English." ;
+    dc:title "DFG Classification of Subject Areas Ontology"@en ;
+    terms:license <https://creativecommons.org/licenses/by/4.0/> .
 
 dfgfo:101-01 a owl:Class ;
     rdfs:label "Prehistory and World Archaeology@en",

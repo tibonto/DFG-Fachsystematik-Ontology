@@ -13,17 +13,20 @@ Each Subject is a owl:Class with:
 * labels in EN and DE.
 * class subpeclass accordinng to DFG Classification hierarchy 
 '''
-
-g = Graph()
-ns_str = 'https://github.com/tibonto/dfgfo/'
-ns_prefix = 'dfgfo'
-namespace = Namespace(ns_str)
-g.namespace_manager.bind('owl', 'http://www.w3.org/2002/07/owl#', override=False)
-g.namespace_manager.bind(ns_prefix, ns_str, override=False)
-
+dfg_onto_metadata_fn = Path(__file__).parent.parent / 'metadata.ttl'
 dfg_onto_fn = Path(__file__).parent.parent / 'dfgfo.ttl' 
 dfg_csv_en = Path(__file__).parent.parent / 'csv' / 'Fachsystematik_2020-2024.csv'
 print(dfg_csv_en)
+
+g_metadata = Graph()
+g_metadata.parse(str(dfg_onto_metadata_fn.absolute()))
+
+g_classes = Graph()
+ns_str = 'https://github.com/tibonto/dfgfo/'
+namespace = Namespace(ns_str)
+
+g_classes.namespace_manager.bind('owl', 'http://www.w3.org/2002/07/owl#', override=False)
+g_classes.namespace_manager.bind('dfgfo', ns_str, override=False)
 
 
 def split_id_label(id_n_label:str) -> Tuple[str, str]:
@@ -100,13 +103,18 @@ with open(dfg_csv_en, newline='') as csvfile:
             print(f'CURRENT: {current}')
             print(f'PARENT: <<<{parent_id}>>>')
 
-            create_class(graph=g, 
+            create_class(graph=g_classes, 
                          ns=namespace, 
                          node_name=cell_id, 
                          labels=[cell_label, cell_label_de],
                          parent=parent_id)
 
+
+# join g_metadata + g_classes graphs into g_joint
+g_joint = Graph() # after the g_classes
+g_joint = g_metadata + g_classes
+
 print('\n\nSERIALIZE\n\n')
-print(g.serialize())
+print(g_joint.serialize())
 with open(dfg_onto_fn, 'w') as dfg_onto:
-    dfg_onto.write(g.serialize())
+    dfg_onto.write(g_joint.serialize())

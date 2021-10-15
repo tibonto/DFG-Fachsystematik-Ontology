@@ -6,11 +6,16 @@ We decided to build upon this work and build and RDF based ontology, for the *DF
 
 
 
-## Ontology (in progress)
-* [dfgfo.ttl](./dfgfo.ttl)
+## Ontology 
+* **Ontology TTL**: [dfgfo.ttl](./dfgfo.ttl)
+* **Ontology IRI**: https://github.com/tibonto/dfgfo/
+* **Ontology PURL**: <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/main/dfgfo.ttl>
+* **ontology prefix/id**: dfgfo
 
 
-## Create ontology
+## Create/update ontology 
+
+* Ontology metadata is stored in [metadata.ttl](.metadata.ttl)
 
 [scripts/create_ontology.py](./scripts/create_ontology.py) Creates the dfgfo.ttl ontology by parsing 
 the DFG classification system in [csv/Fachsystematik_2020-2024.csv](./csv/Fachsystematik_2020-2024.csv)
@@ -40,3 +45,5 @@ Run script to create ontologu `python scripts/create_ontology.py`
 * [HTML page](https://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp)
 * [Edited CSV - combining both German and English labels](./csv/Fachsystematik_2020-2024.csv) (this repo)
 
+
+## TODO: robots test in github actions
