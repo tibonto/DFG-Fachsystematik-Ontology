@@ -13,7 +13,7 @@ We decided to build upon this work and build and RDF based ontology, for the *DF
 ## Create ontology
 
 [scripts/create_ontology.py](./scripts/create_ontology.py) Creates the dfgfo.ttl ontology by parsing 
-the DFG classification system in [csv/Fachsystematik_2020-2024_EN_20210621.csv](./csv/Fachsystematik_2020-2024_EN_20210621.csv)
+the DFG classification system in [csv/Fachsystematik_2020-2024.csv](./csv/Fachsystematik_2020-2024.csv)
 
 Each DFG Subject is a owl:Class with:
 * DFG Subject number as URI 
@@ -28,11 +28,15 @@ Install requirements `pip install -r scripts/requirements.txt`
 
 Run script to create ontologu `python scripts/create_ontology.py`
 
+## Other scripts
+
+* [scripts/parse_csv.py](./scripts/parse_csv.py) parses the CSV and ensures that the collumns ` `Subject Number` and `Fachnummer` have the same values
+
 
 ## DFG Classification of Scientific Disciplines 
 
 * [PDF(en)](https://www.dfg.de/download/pdf/dfg_im_profil/gremien/fachkollegien/amtsperiode_2020_2024/fachsystematik_2020-2024_en_grafik.pdf)
 * [PDF(de)](https://www.dfg.de/download/pdf/dfg_im_profil/gremien/fachkollegien/amtsperiode_2020_2024/fachsystematik_2020-2024_de_grafik.pdf)
 * [HTML page](https://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp)
-* [Edited CSV](./csv/Fachsystematik_2020-2024_EN_20210621.csv) (this repo)
+* [Edited CSV - combining both German and English labels](./csv/Fachsystematik_2020-2024.csv) (this repo)
 

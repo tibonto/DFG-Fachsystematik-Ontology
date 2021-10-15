@@ -19,7 +19,7 @@ ns_str = 'https://github.com/tibonto/dfgfo/'
 namespace = Namespace(ns_str)
 
 dfg_onto_fn = Path(__file__).parent.parent / 'dfgfo.ttl' 
-dfg_csv_en = Path(__file__).parent.parent / 'csv' / 'Fachsystematik_2020-2024_EN_20210621.csv'
+dfg_csv_en = Path(__file__).parent.parent / 'csv' / 'Fachsystematik_2020-2024.csv'
 print(dfg_csv_en)
 
 
@@ -45,12 +45,21 @@ def create_class(graph, ns, node_name, labels, parent):
 
     # label
     graph.add((node, RDFS.label, Literal(f'{labels[0]}@en')))
-    # graph.add((node, RDFS.label, Literal(f'{labels[1]}@de')))
+    graph.add((node, RDFS.label, Literal(f'{labels[1]}@de')))
+
     ns.node_name
     print(f'GRAPH NODE: {node} ------')
 
 
-tree_hierarchy = ['Scientific Discipline', 'Subject Area', 'Review Board', 'Subject']  # top to bottom 
+tree_hierarchy = ['Scientific Discipline', 'Subject Area', 'Review Board', 'Subject']
+header_en_de_mapping = {
+    'Scientific Discipline': 'Wissenschaftsbereich',
+    'Subject Area': 'Fachgebiet', 
+    'Review Board': 'Fachkollegium',
+    'Subject':'Fach'}
+
+# de_tree_hierarchy = [
+  # top to bottom 
 # DFG Tree hierarchy:
 # * Scientific Discipline
 #   * Subject Area
@@ -62,7 +71,12 @@ with open(dfg_csv_en, newline='') as csvfile:
     csvfile = csv.DictReader(csvfile, delimiter=',')
     for row in csvfile:
         for index, collumn in enumerate(tree_hierarchy):
-            cell=row[(tree_hierarchy)[index]]
+            en_key = (tree_hierarchy)[index]
+            de_key = header_en_de_mapping[en_key]
+            cell=row[en_key]
+            cell_de=row[de_key]
+            print(f'EN: {cell}\nDE:{cell_de}')
+
             print(f'\nSECTION: {index} {collumn}')
             print(f'INDEX: {index} COL:{collumn} CELL: {cell}')
 
@@ -70,8 +84,11 @@ with open(dfg_csv_en, newline='') as csvfile:
             if index == 3: 
                 cell_id = row['Subject Number']
                 cell_label = cell 
+                cell_label_de = cell_de
             else:
-                cell_id, cell_label = split_id_label(id_n_label=row[tree_hierarchy[index]]) 
+                cell_id, cell_label = split_id_label(id_n_label=row[tree_hierarchy[index]])
+                cell_label_de = 'DE'
+                cell_id_de, cell_label_de = split_id_label(id_n_label=cell_de)
             current = f'{cell_id} - {cell_label}'
             print(f'CEL ID: <<<<{cell_id}>>>')
              # parent
@@ -85,9 +102,10 @@ with open(dfg_csv_en, newline='') as csvfile:
             create_class(graph=g, 
                          ns=namespace, 
                          node_name=cell_id, 
-                         labels=[cell_label],
+                         labels=[cell_label, cell_label_de],
                          parent=parent_id)
 
+print('\n\nSERIALIZE\n\n')
 print(g.serialize())
 with open(dfg_onto_fn, 'w') as dfg_onto:
     dfg_onto.write(g.serialize())
