@@ -7,6 +7,8 @@
 
 We decided to build upon this work and build and RDF based ontology, for the *DFG Classification of Subject Areas*, so that browsing, searching and mapping (of subject number and its label) could be easy achieved by ontology/RDF processing software, such as ontology-lookup systems and tripe-stores.
 
+![](./docs/dfgfo-hierarchies.png)
+
 
 
 ## Ontology 
