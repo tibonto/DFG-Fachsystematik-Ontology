@@ -115,7 +115,7 @@ dfgfo:105-04 a owl:Class ;
 
 dfgfo:106-01 a owl:Class ;
     rdfs:label "Ethnologie und Europäische Ethnologie"@en,
-        "Social and Cultural Anthropology and Ethnology "@en ;
+        "Social and Cultural Anthropology and Ethnology"@en ;
     rdfs:subClassOf dfgfo:106 .
 
 dfgfo:106-02 a owl:Class ;
@@ -124,7 +124,7 @@ dfgfo:106-02 a owl:Class ;
     rdfs:subClassOf dfgfo:106 .
 
 dfgfo:106-03 a owl:Class ;
-    rdfs:label "African, American and Oceania Studies "@en,
+    rdfs:label "African, American and Oceania Studies"@en,
         "Afrika-, Amerika- und Ozeanienbezogene Wissenschaften"@en ;
     rdfs:subClassOf dfgfo:106 .
 
@@ -745,7 +745,7 @@ dfgfo:317-02 a owl:Class ;
 
 dfgfo:318-01 a owl:Class ;
     rdfs:label "Hydrogeologie, Hydrologie, Limnologie, Siedlungswasserwirtschaft, Wasserchemie, Integrierte Wasserressourcen-Bewirtschaftung"@en,
-        "Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management "@en ;
+        "Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management"@en ;
     rdfs:subClassOf dfgfo:318 .
 
 dfgfo:321-01 a owl:Class ;
@@ -1330,7 +1330,7 @@ dfgfo:204 a owl:Class ;
     rdfs:subClassOf dfgfo:22 .
 
 dfgfo:34 a owl:Class ;
-    rdfs:label "Geosciences "@en,
+    rdfs:label "Geosciences"@en,
         "Geowissen-schaften"@en ;
     rdfs:subClassOf dfgfo:3 .
 
