@@ -51,7 +51,7 @@ def create_class(graph, ns, node_name, labels, parent):
         graph.add((node, RDFS.subClassOf, parent_node))
     # labels
     graph.add((node, RDFS.label, Literal(f'{labels[0]}', lang='en')))
-    graph.add((node, RDFS.label, Literal(f'{labels[1]}', lang='en')))
+    graph.add((node, RDFS.label, Literal(f'{labels[1]}', lang='de')))
     # obo:IAO_0000111 # editor preferred term
 
     ns.node_name
