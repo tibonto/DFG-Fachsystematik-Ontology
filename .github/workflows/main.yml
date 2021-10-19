@@ -20,6 +20,9 @@ jobs:
       - name: test for ERRORs with ROBOT report
         run: |
           robot report --profile .github/report_profile.txt --input dfgfo.ttl
+      - name: validate ontology against OWL DL profile
+        run: |
+          robot validate-profile --profile DL --input dfgfo.ttl
       - name: produce report
         run: |
           robot report --profile .github/report_profile.txt --input dfgfo.ttl --output report.txt

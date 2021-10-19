@@ -46,7 +46,7 @@ Run script to create ontologu `python scripts/create_ontology.py`
 ## Ontology contributions:
 Contributions are welcome.
 
-At every push or pull_request a [ROBOT report](http://robot.obolibrary.org/report) test will be run from [.github/workflows/main.yml](.github/workflows/main.yml).
+At every push or pull_request a [ROBOT report](http://robot.obolibrary.org/report) and  [ROBOT validate OWL DL profile](http://robot.obolibrary.org/validate-profile)test will be run from [.github/workflows/main.yml](.github/workflows/main.yml).
 
 
 

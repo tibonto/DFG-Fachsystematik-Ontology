@@ -4,6 +4,14 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix terms: <http://purl.org/dc/terms/> .
 
+dc:creator a owl:AnnotationProperty .
+
+dc:description a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+terms:license a owl:AnnotationProperty .
+
 <https://github.com/tibonto/dfgfo> a owl:Ontology ;
     dc:creator "André Castro",
         "Deutsche Forschungsgemeinschaft (DFG)",
@@ -11,7 +19,7 @@
     dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English." ;
     dc:title "DFG Classification of Subject Areas Ontology"@en ;
     terms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    <http://www.w3.org/2000/01/rdf-schema#comment:> "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service" .
+    rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service" .
 
 dfgfo:101-01 a owl:Class ;
     rdfs:label "Ur- und Frühgeschichte (weltweit)"@de,
