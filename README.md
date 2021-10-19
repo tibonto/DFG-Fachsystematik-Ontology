@@ -41,12 +41,12 @@ Run script to create ontologu `python scripts/create_ontology.py`
 
 ## Other scripts
 
-* [scripts/parse_csv.py](./scripts/parse_csv.py) parses the CSV and ensures that the collumns ` `Subject Number` and `Fachnummer` have the same values
+* [scripts/parse_csv.py](./scripts/parse_csv.py) parses the CSV and ensures that the collumns `Subject Number` and `Fachnummer` have the same values
 
 ## Ontology contributions:
 Contributions are welcome.
 
-At every push or pull_request [ROBOT](http://robot.obolibrary.org/) ontology tests will be run from [.github/actions/main.yml](.github/actions/main.yml)
+At every push or pull_request a [ROBOT report](http://robot.obolibrary.org/report) test will be run from [.github/actions/main.yml](./.github/actions/main.yml).
 
 
 
