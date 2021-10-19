@@ -20,23 +20,24 @@ We decided to build upon this work and build and RDF based ontology, for the *DF
 
 ## Create/update ontology 
 
-* Ontology metadata is stored in [metadata.ttl](.metadata.ttl)
+**[dfgfo.ttl](./dfgfo.ttl) ontology file is created, by [scripts/create_ontology.py](./scripts/create_ontology.py) python script**, which
+* parses the DFG classification system encoded [csv/Fachsystematik_2020-2024.csv](./csv/Fachsystematik_2020-2024.csv) (in EN/DE)
+* encodes each of the DFG's classification subjects (in .csv cells) into RDF graph triples
+    * of type `owl:Class`
+    * with `rdfs:label` in EN and DE
+    * subsumed to parent subject with `rdfs:subClassOf` accordinng to DFG Classification hierarchy 
+* parses the metadata triples from [metadata.ttl](./metadata.ttl) into a graph
+* joins metadata and DFG classification graphs into [dfgfo.ttl](./dfgfo.ttl)
 
-[scripts/create_ontology.py](./scripts/create_ontology.py) Creates the dfgfo.ttl ontology by parsing 
-the DFG classification system in [csv/Fachsystematik_2020-2024.csv](./csv/Fachsystematik_2020-2024.csv)
-
-Each DFG Subject is a owl:Class with:
-* DFG Subject number as URI 
-* labels in EN and DE.
-* class subpeclass accordinng to DFG Classification hierarchy 
 
 **Run**
 
-Create a python Virtual Environment
+Create a python3 Virtual Environment
 
 Install requirements `pip install -r scripts/requirements.txt`
 
 Run script to create ontologu `python scripts/create_ontology.py`
+
 
 ## Other scripts
 
