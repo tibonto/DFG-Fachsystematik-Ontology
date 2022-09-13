@@ -10,7 +10,7 @@
 @base <https://github.com/tibonto/dfgfo/distribution1> .
 
 <https://github.com/tibonto/dfgfo/distribution1> rdf:type owl:Ontology ;
-                                                  owl:imports <file:/C:/Users/Suse/Documents/gits/GitHubDotCom/DFG-Fachsystematik-Ontology/distributions/GermanLabel.ttl> ;
+                                                  owl:imports <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/6-create-a-dcatdistribution-of-the-ontology-for-better-indexing-at-tib-ts/distributions/GermanLabel.ttl> ;
                                                   dc:creator "André Castro" ,
                                                              "Deutsche Forschungsgemeinschaft (DFG)" ,
                                                              "Susanne Arndt" ;
@@ -20,9 +20,9 @@
                                                   rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service" ,
                                                                """To create this distribution proceed as follows:
 
-1. Load ontology from 
+1. Load ontology from https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/main/dfgfo.ttl
 
-2. Import dfgfo:GermanLabel from
+2. Import dfgfo:GermanLabel from https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/6-create-a-dcatdistribution-of-the-ontology-for-better-indexing-at-tib-ts/distributions/GermanLabel.ttl
 
 3. Apply SPARQL CONSTRUCT query:
 
