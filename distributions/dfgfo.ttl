@@ -1,0 +1,2286 @@
+@prefix : <https://github.com/tibonto/dfgfo#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dfgfo: <https://github.com/tibonto/dfgfo/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@base <https://github.com/tibonto/dfgfo/distribution1> .
+
+<https://github.com/tibonto/dfgfo/distribution1> rdf:type owl:Ontology ;
+                                                  owl:imports <file:/C:/Users/Suse/Documents/gits/GitHubDotCom/DFG-Fachsystematik-Ontology/distributions/GermanLabel.ttl> ;
+                                                  dc:creator "André Castro" ,
+                                                             "Deutsche Forschungsgemeinschaft (DFG)" ,
+                                                             "Susanne Arndt" ;
+                                                  dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English." ;
+                                                  dc:title "DFG Classification of Subject Areas Ontology"@en ;
+                                                  terms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                  rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service" ,
+                                                               """To create this distribution proceed as follows:
+
+1. Load ontology from 
+
+2. Import dfgfo:GermanLabel from
+
+3. Apply SPARQL CONSTRUCT query:
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+construct {?s <https://github.com/tibonto/dfgfo/GermanLabel> ?label }
+#select *
+where {?s rdfs:label ?label .
+filter (LANGMATCHES(lang(?label), \"de\"  ))
+}
+order by ?s
+
+4. Change ontologyIRI to https://github.com/tibonto/dfgfo/distribution1"""@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+terms:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://github.com/tibonto/dfgfo/1
+<https://github.com/tibonto/dfgfo/1> rdf:type owl:Class ;
+                                     rdfs:subClassOf owl:Thing ;
+                                     rdfs:label "Geistes- und Sozialwissenschaften"@de ,
+                                                "Humanities and Social Sciences"@en ;
+                                     dfgfo:GermanLabel "Geistes- und Sozialwissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/101
+<https://github.com/tibonto/dfgfo/101> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> ;
+                                       rdfs:label "Alte Kulturen"@de ,
+                                                  "Ancient Cultures"@en ;
+                                       dfgfo:GermanLabel "Alte Kulturen" .
+
+
+###  https://github.com/tibonto/dfgfo/101-01
+<https://github.com/tibonto/dfgfo/101-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/101> ;
+                                          rdfs:label "Prehistory and World Archaeology"@en ,
+                                                     "Ur- und Frühgeschichte (weltweit)"@de ;
+                                          dfgfo:GermanLabel "Ur- und Frühgeschichte (weltweit)" .
+
+
+###  https://github.com/tibonto/dfgfo/101-02
+<https://github.com/tibonto/dfgfo/101-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/101> ;
+                                          rdfs:label "Classical Philology"@en ,
+                                                     "Klassische Philologie"@de ;
+                                          dfgfo:GermanLabel "Klassische Philologie" .
+
+
+###  https://github.com/tibonto/dfgfo/101-03
+<https://github.com/tibonto/dfgfo/101-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/101> ;
+                                          rdfs:label "Alte Geschichte"@de ,
+                                                     "Ancient History"@en ;
+                                          dfgfo:GermanLabel "Alte Geschichte" .
+
+
+###  https://github.com/tibonto/dfgfo/101-04
+<https://github.com/tibonto/dfgfo/101-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/101> ;
+                                          rdfs:label "Classical Archaeology"@en ,
+                                                     "Klassische Archäologie"@de ;
+                                          dfgfo:GermanLabel "Klassische Archäologie" .
+
+
+###  https://github.com/tibonto/dfgfo/101-05
+<https://github.com/tibonto/dfgfo/101-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/101> ;
+                                          rdfs:label "Egyptology and Ancient Near Eastern Studies"@en ,
+                                                     "Ägyptische und Vorderasiatische Altertumswissenschaften"@de ;
+                                          dfgfo:GermanLabel "Ägyptische und Vorderasiatische Altertumswissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/102
+<https://github.com/tibonto/dfgfo/102> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> ;
+                                       rdfs:label "Geschichtswissenschaften"@de ,
+                                                  "History"@en ,
+                                                  "Kunst-, Musik-, Theater- und Medienwissenschaften"@de ;
+                                       dfgfo:GermanLabel "Geschichtswissenschaften" ,
+                                                         "Kunst-, Musik-, Theater- und Medienwissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/102-01
+<https://github.com/tibonto/dfgfo/102-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> ;
+                                          rdfs:label "Medieval History"@en ,
+                                                     "Mittelalterliche Geschichte"@de ;
+                                          dfgfo:GermanLabel "Mittelalterliche Geschichte" .
+
+
+###  https://github.com/tibonto/dfgfo/102-02
+<https://github.com/tibonto/dfgfo/102-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> ;
+                                          rdfs:label "Early Modern History"@en ,
+                                                     "Frühneuzeitliche Geschichte"@de ;
+                                          dfgfo:GermanLabel "Frühneuzeitliche Geschichte" .
+
+
+###  https://github.com/tibonto/dfgfo/102-03
+<https://github.com/tibonto/dfgfo/102-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> ;
+                                          rdfs:label "Modern and Current History"@en ,
+                                                     "Neuere und Neueste Geschichte (einschl. Europäische Geschichte der Neuzeit und Außereuropäische Geschichte)"@de ;
+                                          dfgfo:GermanLabel "Neuere und Neueste Geschichte (einschl. Europäische Geschichte der Neuzeit und Außereuropäische Geschichte)" .
+
+
+###  https://github.com/tibonto/dfgfo/102-04
+<https://github.com/tibonto/dfgfo/102-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> ;
+                                          rdfs:label "History of Science"@en ,
+                                                     "Wissenschaftsgeschichte"@de ;
+                                          dfgfo:GermanLabel "Wissenschaftsgeschichte" .
+
+
+###  https://github.com/tibonto/dfgfo/103-01
+<https://github.com/tibonto/dfgfo/103-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> ;
+                                          rdfs:label "Art History"@en ,
+                                                     "Kunstgeschichte"@de ;
+                                          dfgfo:GermanLabel "Kunstgeschichte" .
+
+
+###  https://github.com/tibonto/dfgfo/103-02
+<https://github.com/tibonto/dfgfo/103-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> ;
+                                          rdfs:label "Musicology"@en ,
+                                                     "Musikwissenschaften"@de ;
+                                          dfgfo:GermanLabel "Musikwissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/103-03
+<https://github.com/tibonto/dfgfo/103-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/102> ;
+                                          rdfs:label "Theater- und Medienwissenschaften"@de ,
+                                                     "Theatre and Media Studies"@en ;
+                                          dfgfo:GermanLabel "Theater- und Medienwissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/104
+<https://github.com/tibonto/dfgfo/104> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> ;
+                                       rdfs:label "Linguistics"@en ,
+                                                  "Sprachwissenschaften"@de ;
+                                       dfgfo:GermanLabel "Sprachwissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/104-01
+<https://github.com/tibonto/dfgfo/104-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/104> ;
+                                          rdfs:label "Allgemeine und Vergleichende Sprachwissenschaft, Typologie, Außereuropäische Sprachen"@de ,
+                                                     "General and Comparative Linguistics, Typology, Non-European Languages"@en ;
+                                          dfgfo:GermanLabel "Allgemeine und Vergleichende Sprachwissenschaft, Typologie, Außereuropäische Sprachen" .
+
+
+###  https://github.com/tibonto/dfgfo/104-02
+<https://github.com/tibonto/dfgfo/104-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/104> ;
+                                          rdfs:label "Einzelsprachwissenschaften"@de ,
+                                                     "Individual Linguistics"@en ;
+                                          dfgfo:GermanLabel "Einzelsprachwissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/104-03
+<https://github.com/tibonto/dfgfo/104-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/104> ;
+                                          rdfs:label "Historical Linguistics"@en ,
+                                                     "Historische Linguistik"@de ;
+                                          dfgfo:GermanLabel "Historische Linguistik" .
+
+
+###  https://github.com/tibonto/dfgfo/104-04
+<https://github.com/tibonto/dfgfo/104-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/104> ;
+                                          rdfs:label "Angewandte Sprachwissenschaften, Experimentelle Linguistik, Computerlinguistik"@de ,
+                                                     "Applied Linguistics, Experimental Linguistics, Computational Linguistics"@en ;
+                                          dfgfo:GermanLabel "Angewandte Sprachwissenschaften, Experimentelle Linguistik, Computerlinguistik" .
+
+
+###  https://github.com/tibonto/dfgfo/105
+<https://github.com/tibonto/dfgfo/105> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> ;
+                                       rdfs:label "Literary Studies"@en ,
+                                                  "Literaturwissenschaft"@de ,
+                                                  "Literaturwissenschaft; Kulturwissenschaft"@de ;
+                                       dfgfo:GermanLabel "Literaturwissenschaft" ,
+                                                         "Literaturwissenschaft; Kulturwissenschaft" .
+
+
+###  https://github.com/tibonto/dfgfo/105-01
+<https://github.com/tibonto/dfgfo/105-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/105> ;
+                                          rdfs:label "Medieval German Literature"@en ,
+                                                     "Ältere deutsche Literatur"@de ;
+                                          dfgfo:GermanLabel "Ältere deutsche Literatur" .
+
+
+###  https://github.com/tibonto/dfgfo/105-02
+<https://github.com/tibonto/dfgfo/105-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/105> ;
+                                          rdfs:label "Modern German Literature"@en ,
+                                                     "Neuere deutsche Literatur"@de ;
+                                          dfgfo:GermanLabel "Neuere deutsche Literatur" .
+
+
+###  https://github.com/tibonto/dfgfo/105-03
+<https://github.com/tibonto/dfgfo/105-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/105> ;
+                                          rdfs:label "European and American Literature"@en ,
+                                                     "Europäische und Amerikanische Literaturen"@de ;
+                                          dfgfo:GermanLabel "Europäische und Amerikanische Literaturen" .
+
+
+###  https://github.com/tibonto/dfgfo/105-04
+<https://github.com/tibonto/dfgfo/105-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/105> ;
+                                          rdfs:label "Allgemeine und vergleichende Literaturwissenschaft"@de ,
+                                                     "General and Comparative Literature and Cultural Studies"@en ;
+                                          dfgfo:GermanLabel "Allgemeine und vergleichende Literaturwissenschaft" .
+
+
+###  https://github.com/tibonto/dfgfo/106
+<https://github.com/tibonto/dfgfo/106> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> ;
+                                       rdfs:label "Social and Cultural Anthropology, Non-European Cultures, Jewish Studies and Religious Studies"@en ,
+                                                  "Sozial- und Kulturanthropologie, Außereuropäische Kulturen, Judaistik und Religionswissenschaft"@de ;
+                                       dfgfo:GermanLabel "Sozial- und Kulturanthropologie, Außereuropäische Kulturen, Judaistik und Religionswissenschaft" .
+
+
+###  https://github.com/tibonto/dfgfo/106-01
+<https://github.com/tibonto/dfgfo/106-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/106> ;
+                                          rdfs:label "Ethnologie und Europäische Ethnologie"@de ,
+                                                     "Social and Cultural Anthropology and Ethnology"@en ;
+                                          dfgfo:GermanLabel "Ethnologie und Europäische Ethnologie" .
+
+
+###  https://github.com/tibonto/dfgfo/106-02
+<https://github.com/tibonto/dfgfo/106-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/106> ;
+                                          rdfs:label "Asian Studies"@en ,
+                                                     "Asienbezogene Wissenschaften"@de ;
+                                          dfgfo:GermanLabel "Asienbezogene Wissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/106-03
+<https://github.com/tibonto/dfgfo/106-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/106> ;
+                                          rdfs:label "African, American and Oceania Studies"@en ,
+                                                     "Afrika-, Amerika- und Ozeanienbezogene Wissenschaften"@de ;
+                                          dfgfo:GermanLabel "Afrika-, Amerika- und Ozeanienbezogene Wissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/106-04
+<https://github.com/tibonto/dfgfo/106-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/106> ;
+                                          rdfs:label "Islamic Studies, Arabian Studies, Semitic Studies"@en ,
+                                                     "Islamwissenschaften, Arabistik, Semitistik"@de ;
+                                          dfgfo:GermanLabel "Islamwissenschaften, Arabistik, Semitistik" .
+
+
+###  https://github.com/tibonto/dfgfo/106-05
+<https://github.com/tibonto/dfgfo/106-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/106> ;
+                                          rdfs:label "Religionswissenschaft und Judaistik"@de ,
+                                                     "Religious Studies and Jewish Studies"@en ;
+                                          dfgfo:GermanLabel "Religionswissenschaft und Judaistik" .
+
+
+###  https://github.com/tibonto/dfgfo/107
+<https://github.com/tibonto/dfgfo/107> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> ;
+                                       rdfs:label "Theologie"@de ,
+                                                  "Theology"@en ;
+                                       dfgfo:GermanLabel "Theologie" .
+
+
+###  https://github.com/tibonto/dfgfo/107-01
+<https://github.com/tibonto/dfgfo/107-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/107> ;
+                                          rdfs:label "Evangelische Theologie"@de ,
+                                                     "Protestant Theology"@en ;
+                                          dfgfo:GermanLabel "Evangelische Theologie" .
+
+
+###  https://github.com/tibonto/dfgfo/107-02
+<https://github.com/tibonto/dfgfo/107-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/107> ;
+                                          rdfs:label "Katholische Theologie"@de ,
+                                                     "Roman Catholic Theology"@en ;
+                                          dfgfo:GermanLabel "Katholische Theologie" .
+
+
+###  https://github.com/tibonto/dfgfo/108
+<https://github.com/tibonto/dfgfo/108> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/11> ;
+                                       rdfs:label "Philosophie"@de ,
+                                                  "Philosophy"@en ;
+                                       dfgfo:GermanLabel "Philosophie" .
+
+
+###  https://github.com/tibonto/dfgfo/108-01
+<https://github.com/tibonto/dfgfo/108-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/108> ;
+                                          rdfs:label "Geschichte der Philosophie"@de ,
+                                                     "History of Philosophy"@en ;
+                                          dfgfo:GermanLabel "Geschichte der Philosophie" .
+
+
+###  https://github.com/tibonto/dfgfo/108-02
+<https://github.com/tibonto/dfgfo/108-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/108> ;
+                                          rdfs:label "Theoretical Philosophy"@en ,
+                                                     "Theoretische Philosophie"@de ;
+                                          dfgfo:GermanLabel "Theoretische Philosophie" .
+
+
+###  https://github.com/tibonto/dfgfo/108-03
+<https://github.com/tibonto/dfgfo/108-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/108> ;
+                                          rdfs:label "Practical Philosophy"@en ,
+                                                     "Praktische Philosophie"@de ;
+                                          dfgfo:GermanLabel "Praktische Philosophie" .
+
+
+###  https://github.com/tibonto/dfgfo/109
+<https://github.com/tibonto/dfgfo/109> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/12> ;
+                                       rdfs:label "Educational Research"@en ,
+                                                  "Erziehungswissenschaft und Bildungsforschung"@de ;
+                                       dfgfo:GermanLabel "Erziehungswissenschaft und Bildungsforschung" .
+
+
+###  https://github.com/tibonto/dfgfo/109-01
+<https://github.com/tibonto/dfgfo/109-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/109> ;
+                                          rdfs:label "Allgemeine und Historische Erziehungswissenschaft"@de ,
+                                                     "General Education and History of Education"@en ;
+                                          dfgfo:GermanLabel "Allgemeine und Historische Erziehungswissenschaft" .
+
+
+###  https://github.com/tibonto/dfgfo/109-02
+<https://github.com/tibonto/dfgfo/109-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/109> ;
+                                          rdfs:label "Allgemeines und fachbezogenes Lehren und Lernen"@de ,
+                                                     "General and Domain-Specific Teaching and Learning"@en ;
+                                          dfgfo:GermanLabel "Allgemeines und fachbezogenes Lehren und Lernen" .
+
+
+###  https://github.com/tibonto/dfgfo/109-03
+<https://github.com/tibonto/dfgfo/109-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/109> ;
+                                          rdfs:label "Bildungssysteme und Bildungsinstitutionen"@de ,
+                                                     "Education Systems and Educational Institutions"@en ;
+                                          dfgfo:GermanLabel "Bildungssysteme und Bildungsinstitutionen" .
+
+
+###  https://github.com/tibonto/dfgfo/109-04
+<https://github.com/tibonto/dfgfo/109-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/109> ;
+                                          rdfs:label "Educational Research on Socialisation, Welfare and Professionalism Research"@en ,
+                                                     "Erziehungswissenschaftliche Sozialisations- und Professionalitätsforschung"@de ;
+                                          dfgfo:GermanLabel "Erziehungswissenschaftliche Sozialisations- und Professionalitätsforschung" .
+
+
+###  https://github.com/tibonto/dfgfo/11
+<https://github.com/tibonto/dfgfo/11> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/1> ;
+                                      rdfs:label "Geisteswissenschaften"@de ,
+                                                 "Humanities"@en ;
+                                      dfgfo:GermanLabel "Geisteswissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/110
+<https://github.com/tibonto/dfgfo/110> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/12> ;
+                                       rdfs:label "Psychologie"@de ,
+                                                  "Psychology"@en ;
+                                       dfgfo:GermanLabel "Psychologie" .
+
+
+###  https://github.com/tibonto/dfgfo/110-01
+<https://github.com/tibonto/dfgfo/110-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/110> ;
+                                          rdfs:label "Allgemeine, Kognitive und Mathematische Psychologie"@de ,
+                                                     "General, Cognitive and Mathematical Psychology"@en ;
+                                          dfgfo:GermanLabel "Allgemeine, Kognitive und Mathematische Psychologie" .
+
+
+###  https://github.com/tibonto/dfgfo/110-02
+<https://github.com/tibonto/dfgfo/110-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/110> ;
+                                          rdfs:label "Biological Psychology and Cognitive Neuroscience"@en ,
+                                                     "Biologische Psychologie und Kognitive Neurowissenschaften"@de ;
+                                          dfgfo:GermanLabel "Biologische Psychologie und Kognitive Neurowissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/110-03
+<https://github.com/tibonto/dfgfo/110-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/110> ;
+                                          rdfs:label "Developmental and Educational Psychology"@en ,
+                                                     "Entwicklungspsychologie und Pädagogische Psychologie"@de ;
+                                          dfgfo:GermanLabel "Entwicklungspsychologie und Pädagogische Psychologie" .
+
+
+###  https://github.com/tibonto/dfgfo/110-04
+<https://github.com/tibonto/dfgfo/110-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/110> ;
+                                          rdfs:label "Social Psychology, Industrial and Organisational Psychology"@en ,
+                                                     "Sozialpsychologie und Arbeits- und Organisationspsychologie"@de ;
+                                          dfgfo:GermanLabel "Sozialpsychologie und Arbeits- und Organisationspsychologie" .
+
+
+###  https://github.com/tibonto/dfgfo/110-05
+<https://github.com/tibonto/dfgfo/110-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/110> ;
+                                          rdfs:label "Differential, Clinical and Medical Psychology, Methodology"@en ,
+                                                     "Differentielle, Klinische und Medizinische Psychologie, Methoden"@de ;
+                                          dfgfo:GermanLabel "Differentielle, Klinische und Medizinische Psychologie, Methoden" .
+
+
+###  https://github.com/tibonto/dfgfo/111
+<https://github.com/tibonto/dfgfo/111> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/12> ;
+                                       rdfs:label "Social Sciences"@en ,
+                                                  "Sozialwissenschaften"@de ;
+                                       dfgfo:GermanLabel "Sozialwissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/111-01
+<https://github.com/tibonto/dfgfo/111-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/111> ;
+                                          rdfs:label "Sociological Theory"@en ,
+                                                     "Soziologische Theorie"@de ;
+                                          dfgfo:GermanLabel "Soziologische Theorie" .
+
+
+###  https://github.com/tibonto/dfgfo/111-02
+<https://github.com/tibonto/dfgfo/111-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/111> ;
+                                          rdfs:label "Empirical Social Research"@en ,
+                                                     "Empirische Sozialforschung"@de ;
+                                          dfgfo:GermanLabel "Empirische Sozialforschung" .
+
+
+###  https://github.com/tibonto/dfgfo/111-03
+<https://github.com/tibonto/dfgfo/111-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/111> ;
+                                          rdfs:label "Communication Sciences"@en ,
+                                                     "Publizistik und Kommunikationswissenschaft"@de ;
+                                          dfgfo:GermanLabel "Publizistik und Kommunikationswissenschaft" .
+
+
+###  https://github.com/tibonto/dfgfo/111-04
+<https://github.com/tibonto/dfgfo/111-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/111> ;
+                                          rdfs:label "Political Science"@en ,
+                                                     "Politikwissenschaft"@de ;
+                                          dfgfo:GermanLabel "Politikwissenschaft" .
+
+
+###  https://github.com/tibonto/dfgfo/112
+<https://github.com/tibonto/dfgfo/112> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/12> ;
+                                       rdfs:label "Economics"@en ,
+                                                  "Wirtschaftswissenschaften"@de ;
+                                       dfgfo:GermanLabel "Wirtschaftswissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/112-01
+<https://github.com/tibonto/dfgfo/112-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/112> ;
+                                          rdfs:label "Economic Theory"@en ,
+                                                     "Wirtschaftstheorie"@de ;
+                                          dfgfo:GermanLabel "Wirtschaftstheorie" .
+
+
+###  https://github.com/tibonto/dfgfo/112-02
+<https://github.com/tibonto/dfgfo/112-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/112> ;
+                                          rdfs:label "Economic Policy, Applied Economics"@en ,
+                                                     "Wirtschaftspolitik, Angewandte Volkswirtschaftslehre"@de ;
+                                          dfgfo:GermanLabel "Wirtschaftspolitik, Angewandte Volkswirtschaftslehre" .
+
+
+###  https://github.com/tibonto/dfgfo/112-03
+<https://github.com/tibonto/dfgfo/112-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/112> ;
+                                          rdfs:label "Betriebswirtschaftslehre"@de ,
+                                                     "Business Administration"@en ;
+                                          dfgfo:GermanLabel "Betriebswirtschaftslehre" .
+
+
+###  https://github.com/tibonto/dfgfo/112-04
+<https://github.com/tibonto/dfgfo/112-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/112> ;
+                                          rdfs:label "Statistics and Econometrics"@en ,
+                                                     "Statistik und Ökonometrie"@de ;
+                                          dfgfo:GermanLabel "Statistik und Ökonometrie" .
+
+
+###  https://github.com/tibonto/dfgfo/112-05
+<https://github.com/tibonto/dfgfo/112-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/112> ;
+                                          rdfs:label "Economic and Social History"@en ,
+                                                     "Wirtschafts- und Sozialgeschichte"@de ;
+                                          dfgfo:GermanLabel "Wirtschafts- und Sozialgeschichte" .
+
+
+###  https://github.com/tibonto/dfgfo/113
+<https://github.com/tibonto/dfgfo/113> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/12> ;
+                                       rdfs:label "Jurisprudence"@en ,
+                                                  "Rechtswissenschaften"@de ;
+                                       dfgfo:GermanLabel "Rechtswissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/113-01
+<https://github.com/tibonto/dfgfo/113-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/113> ;
+                                          rdfs:label "Grundlagen des Rechts und der Rechtswissenschaft"@de ,
+                                                     "Principles of Law and Jurisprudence"@en ;
+                                          dfgfo:GermanLabel "Grundlagen des Rechts und der Rechtswissenschaft" .
+
+
+###  https://github.com/tibonto/dfgfo/113-02
+<https://github.com/tibonto/dfgfo/113-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/113> ;
+                                          rdfs:label "Private Law"@en ,
+                                                     "Privatrecht"@de ;
+                                          dfgfo:GermanLabel "Privatrecht" .
+
+
+###  https://github.com/tibonto/dfgfo/113-03
+<https://github.com/tibonto/dfgfo/113-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/113> ;
+                                          rdfs:label "Public Law"@en ,
+                                                     "Öffentliches Recht"@de ;
+                                          dfgfo:GermanLabel "Öffentliches Recht" .
+
+
+###  https://github.com/tibonto/dfgfo/113-04
+<https://github.com/tibonto/dfgfo/113-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/113> ;
+                                          rdfs:label "Criminal Law"@en ,
+                                                     "Strafrecht"@de ;
+                                          dfgfo:GermanLabel "Strafrecht" .
+
+
+###  https://github.com/tibonto/dfgfo/113-05
+<https://github.com/tibonto/dfgfo/113-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/113> ;
+                                          rdfs:label "Criminology"@en ,
+                                                     "Kriminologie"@de ;
+                                          dfgfo:GermanLabel "Kriminologie" .
+
+
+###  https://github.com/tibonto/dfgfo/12
+<https://github.com/tibonto/dfgfo/12> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/1> ;
+                                      rdfs:label "Social and Behavioural Sciences"@en ,
+                                                 "Sozial- und Verhaltens- wissenschaften"@de ;
+                                      dfgfo:GermanLabel "Sozial- und Verhaltens- wissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/2
+<https://github.com/tibonto/dfgfo/2> rdf:type owl:Class ;
+                                     rdfs:subClassOf owl:Thing ;
+                                     rdfs:label "Lebenswissenschaften"@de ,
+                                                "Life Sciences"@en ;
+                                     dfgfo:GermanLabel "Lebenswissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/201
+<https://github.com/tibonto/dfgfo/201> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/21> ;
+                                       rdfs:label "Basic Research in Biology and Medicine"@en ,
+                                                  "Grundlagen der Biologie und Medizin"@de ;
+                                       dfgfo:GermanLabel "Grundlagen der Biologie und Medizin" .
+
+
+###  https://github.com/tibonto/dfgfo/201-01
+<https://github.com/tibonto/dfgfo/201-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> ;
+                                          rdfs:label "Biochemie"@de ,
+                                                     "Biochemistry"@en ;
+                                          dfgfo:GermanLabel "Biochemie" .
+
+
+###  https://github.com/tibonto/dfgfo/201-02
+<https://github.com/tibonto/dfgfo/201-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> ;
+                                          rdfs:label "Biophysics"@en ,
+                                                     "Biophysik"@de ;
+                                          dfgfo:GermanLabel "Biophysik" .
+
+
+###  https://github.com/tibonto/dfgfo/201-03
+<https://github.com/tibonto/dfgfo/201-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> ;
+                                          rdfs:label "Cell Biology"@en ,
+                                                     "Zellbiologie"@de ;
+                                          dfgfo:GermanLabel "Zellbiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/201-04
+<https://github.com/tibonto/dfgfo/201-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> ;
+                                          rdfs:label "Structural Biology"@en ,
+                                                     "Strukturbiologie"@de ;
+                                          dfgfo:GermanLabel "Strukturbiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/201-05
+<https://github.com/tibonto/dfgfo/201-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> ;
+                                          rdfs:label "Allgemeine Genetik und funktionelle Genomforschung"@de ,
+                                                     "General Genetics and Functional Genome Biology"@en ;
+                                          dfgfo:GermanLabel "Allgemeine Genetik und funktionelle Genomforschung" .
+
+
+###  https://github.com/tibonto/dfgfo/201-06
+<https://github.com/tibonto/dfgfo/201-06> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> ;
+                                          rdfs:label "Developmental Biology"@en ,
+                                                     "Entwicklungsbiologie"@de ;
+                                          dfgfo:GermanLabel "Entwicklungsbiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/201-07
+<https://github.com/tibonto/dfgfo/201-07> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/201> ;
+                                          rdfs:label "Bioinformatics and Theoretical Biology"@en ,
+                                                     "Bioinformatik und Theoretische Biologie"@de ;
+                                          dfgfo:GermanLabel "Bioinformatik und Theoretische Biologie" .
+
+
+###  https://github.com/tibonto/dfgfo/202
+<https://github.com/tibonto/dfgfo/202> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/21> ;
+                                       rdfs:label "Pflanzenwissenschaften"@de ,
+                                                  "Plant Sciences"@en ;
+                                       dfgfo:GermanLabel "Pflanzenwissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/202-01
+<https://github.com/tibonto/dfgfo/202-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> ;
+                                          rdfs:label "Evolution and Systematics of Plants and Fungi"@en ,
+                                                     "Evolution und Systematik der Pflanzen und Pilze"@de ;
+                                          dfgfo:GermanLabel "Evolution und Systematik der Pflanzen und Pilze" .
+
+
+###  https://github.com/tibonto/dfgfo/202-02
+<https://github.com/tibonto/dfgfo/202-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> ;
+                                          rdfs:label "Ecology and Biodiversity of Plants and Ecosystems"@en ,
+                                                     "Ökologie und Biodiversität der Pflanzen und Ökosysteme"@de ;
+                                          dfgfo:GermanLabel "Ökologie und Biodiversität der Pflanzen und Ökosysteme" .
+
+
+###  https://github.com/tibonto/dfgfo/202-03
+<https://github.com/tibonto/dfgfo/202-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> ;
+                                          rdfs:label "Organismic Interactions, Chemical Ecology and Microbiomes of Plant Systems"@en ,
+                                                     "Organismische Interaktionen, chemische Ökologie und Mikrobiome pflanzlicher Systeme"@de ;
+                                          dfgfo:GermanLabel "Organismische Interaktionen, chemische Ökologie und Mikrobiome pflanzlicher Systeme" .
+
+
+###  https://github.com/tibonto/dfgfo/202-04
+<https://github.com/tibonto/dfgfo/202-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> ;
+                                          rdfs:label "Pflanzenphysiologie"@de ,
+                                                     "Plant Physiology"@en ;
+                                          dfgfo:GermanLabel "Pflanzenphysiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/202-05
+<https://github.com/tibonto/dfgfo/202-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> ;
+                                          rdfs:label "Biochemie und Biophysik der Pflanzen"@de ,
+                                                     "Plant Biochemistry and Biophysics"@en ;
+                                          dfgfo:GermanLabel "Biochemie und Biophysik der Pflanzen" .
+
+
+###  https://github.com/tibonto/dfgfo/202-06
+<https://github.com/tibonto/dfgfo/202-06> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> ;
+                                          rdfs:label "Plant Cell and Developmental Biology"@en ,
+                                                     "Zell- und Entwicklungsbiologie der Pflanzen"@de ;
+                                          dfgfo:GermanLabel "Zell- und Entwicklungsbiologie der Pflanzen" .
+
+
+###  https://github.com/tibonto/dfgfo/202-07
+<https://github.com/tibonto/dfgfo/202-07> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/202> ;
+                                          rdfs:label "Genetik der Pflanzen"@de ,
+                                                     "Plant Genetics"@en ;
+                                          dfgfo:GermanLabel "Genetik der Pflanzen" .
+
+
+###  https://github.com/tibonto/dfgfo/203
+<https://github.com/tibonto/dfgfo/203> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/21> ;
+                                       rdfs:label "Zoologie"@de ,
+                                                  "Zoology"@en ;
+                                       dfgfo:GermanLabel "Zoologie" .
+
+
+###  https://github.com/tibonto/dfgfo/203-01
+<https://github.com/tibonto/dfgfo/203-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/203> ;
+                                          rdfs:label "Systematics and Morphology (Zoology)"@en ,
+                                                     "Systematik und Morphologie der Tiere"@de ;
+                                          dfgfo:GermanLabel "Systematik und Morphologie der Tiere" .
+
+
+###  https://github.com/tibonto/dfgfo/203-02
+<https://github.com/tibonto/dfgfo/203-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/203> ;
+                                          rdfs:label "Evolution, Anthropologie"@de ,
+                                                     "Evolution, Anthropology"@en ;
+                                          dfgfo:GermanLabel "Evolution, Anthropologie" .
+
+
+###  https://github.com/tibonto/dfgfo/203-03
+<https://github.com/tibonto/dfgfo/203-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/203> ;
+                                          rdfs:label "Ecology and Biodiversity of Animals and Ecosystems, Organismic Interactions"@en ,
+                                                     "Ökologie und Biodiversität der Tiere und Ökosysteme, Organismische Interaktionen"@de ;
+                                          dfgfo:GermanLabel "Ökologie und Biodiversität der Tiere und Ökosysteme, Organismische Interaktionen" .
+
+
+###  https://github.com/tibonto/dfgfo/203-04
+<https://github.com/tibonto/dfgfo/203-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/203> ;
+                                          rdfs:label "Biologie des Verhaltens und der Sinne"@de ,
+                                                     "Sensory and Behavioural Biology"@en ;
+                                          dfgfo:GermanLabel "Biologie des Verhaltens und der Sinne" .
+
+
+###  https://github.com/tibonto/dfgfo/203-05
+<https://github.com/tibonto/dfgfo/203-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/203> ;
+                                          rdfs:label "Animal Physiology and Biochemistry"@en ,
+                                                     "Biochemie und Physiologie der Tiere"@de ;
+                                          dfgfo:GermanLabel "Biochemie und Physiologie der Tiere" .
+
+
+###  https://github.com/tibonto/dfgfo/203-06
+<https://github.com/tibonto/dfgfo/203-06> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/203> ;
+                                          rdfs:label "Evolutionary Cell and Developmental Biology (Zoology)"@en ,
+                                                     "Evolutionäre Zell- und Entwicklungsbiologie der Tiere"@de ;
+                                          dfgfo:GermanLabel "Evolutionäre Zell- und Entwicklungsbiologie der Tiere" .
+
+
+###  https://github.com/tibonto/dfgfo/204
+<https://github.com/tibonto/dfgfo/204> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/22> ;
+                                       rdfs:label "Microbiology, Virology and Immunology"@en ,
+                                                  "Mikrobiologie, Virologie und Immunologie"@de ;
+                                       dfgfo:GermanLabel "Mikrobiologie, Virologie und Immunologie" .
+
+
+###  https://github.com/tibonto/dfgfo/204-01
+<https://github.com/tibonto/dfgfo/204-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/204> ;
+                                          rdfs:label "Metabolism, Biochemistry and Genetics of Microorganisms"@en ,
+                                                     "Stoffwechselphysiologie, Biochemie und Genetik der Mikroorganismen"@de ;
+                                          dfgfo:GermanLabel "Stoffwechselphysiologie, Biochemie und Genetik der Mikroorganismen" .
+
+
+###  https://github.com/tibonto/dfgfo/204-02
+<https://github.com/tibonto/dfgfo/204-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/204> ;
+                                          rdfs:label "Microbial Ecology and Applied Microbiology"@en ,
+                                                     "Mikrobielle Ökologie und Angewandte Mikrobiologie"@de ;
+                                          dfgfo:GermanLabel "Mikrobielle Ökologie und Angewandte Mikrobiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/204-03
+<https://github.com/tibonto/dfgfo/204-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/204> ;
+                                          rdfs:label "Medical Microbiology and Mycology, Hygiene, Molecular Infection Biology"@en ,
+                                                     "Medizinische Mikrobiologie und Mykologie,Hygiene, Molekulare Infektionsbiologie"@de ;
+                                          dfgfo:GermanLabel "Medizinische Mikrobiologie und Mykologie,Hygiene, Molekulare Infektionsbiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/204-04
+<https://github.com/tibonto/dfgfo/204-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/204> ;
+                                          rdfs:label "Virologie"@de ,
+                                                     "Virology"@en ;
+                                          dfgfo:GermanLabel "Virologie" .
+
+
+###  https://github.com/tibonto/dfgfo/204-05
+<https://github.com/tibonto/dfgfo/204-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/204> ;
+                                          rdfs:label "Immunologie"@de ,
+                                                     "Immunology"@en ;
+                                          dfgfo:GermanLabel "Immunologie" .
+
+
+###  https://github.com/tibonto/dfgfo/204-06
+<https://github.com/tibonto/dfgfo/204-06> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/204> ;
+                                          rdfs:label "Parasitologie und Biologie der Erreger tropischer Infektionskrankheiten"@de ,
+                                                     "Parasitology and Biology of Tropical Infectious Disease Pathogens"@en ;
+                                          dfgfo:GermanLabel "Parasitologie und Biologie der Erreger tropischer Infektionskrankheiten" .
+
+
+###  https://github.com/tibonto/dfgfo/205
+<https://github.com/tibonto/dfgfo/205> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/22> ;
+                                       rdfs:label "Medicine"@en ,
+                                                  "Medizin"@de ;
+                                       dfgfo:GermanLabel "Medizin" .
+
+
+###  https://github.com/tibonto/dfgfo/205-01
+<https://github.com/tibonto/dfgfo/205-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Epidemiologie und Medizinische Biometrie/Statistik"@de ,
+                                                     "Epidemiology and Medical Biometry/Statistics"@en ;
+                                          dfgfo:GermanLabel "Epidemiologie und Medizinische Biometrie/Statistik" .
+
+
+###  https://github.com/tibonto/dfgfo/205-02
+<https://github.com/tibonto/dfgfo/205-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Public Health, Health Services Research, Social Medicine"@en ,
+                                                     "Public Health, medizinische Versorgungsforschung, Sozialmedizin"@de ;
+                                          dfgfo:GermanLabel "Public Health, medizinische Versorgungsforschung, Sozialmedizin" .
+
+
+###  https://github.com/tibonto/dfgfo/205-03
+<https://github.com/tibonto/dfgfo/205-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Human Genetics"@en ,
+                                                     "Humangenetik"@de ;
+                                          dfgfo:GermanLabel "Humangenetik" .
+
+
+###  https://github.com/tibonto/dfgfo/205-04
+<https://github.com/tibonto/dfgfo/205-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Physiologie"@de ,
+                                                     "Physiology"@en ;
+                                          dfgfo:GermanLabel "Physiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-05
+<https://github.com/tibonto/dfgfo/205-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Ernährungswissenschaften"@de ,
+                                                     "Nutritional Sciences"@en ;
+                                          dfgfo:GermanLabel "Ernährungswissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/205-06
+<https://github.com/tibonto/dfgfo/205-06> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Pathologie"@de ,
+                                                     "Pathology"@en ;
+                                          dfgfo:GermanLabel "Pathologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-07
+<https://github.com/tibonto/dfgfo/205-07> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Medical Informatics and Medical Bioinformatics"@en ,
+                                                     "Medizininformatik und medizinische Bioinformatik"@de ;
+                                          dfgfo:GermanLabel "Medizininformatik und medizinische Bioinformatik" .
+
+
+###  https://github.com/tibonto/dfgfo/205-08
+<https://github.com/tibonto/dfgfo/205-08> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Pharmacy"@en ,
+                                                     "Pharmazie"@de ;
+                                          dfgfo:GermanLabel "Pharmazie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-09
+<https://github.com/tibonto/dfgfo/205-09> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Pharmacology"@en ,
+                                                     "Pharmakologie"@de ;
+                                          dfgfo:GermanLabel "Pharmakologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-10
+<https://github.com/tibonto/dfgfo/205-10> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Toxicology, Occupational Medicine, Clinical Chemistry"@en ,
+                                                     "Toxikologie, Arbeitsmedizin, Klinische Chemie"@de ;
+                                          dfgfo:GermanLabel "Toxikologie, Arbeitsmedizin, Klinische Chemie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-11
+<https://github.com/tibonto/dfgfo/205-11> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Anaesthesiology"@en ,
+                                                     "Anästhesiologie"@de ;
+                                          dfgfo:GermanLabel "Anästhesiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-12
+<https://github.com/tibonto/dfgfo/205-12> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Cardiology, Angiology"@en ,
+                                                     "Kardiologie, Angiologie"@de ;
+                                          dfgfo:GermanLabel "Kardiologie, Angiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-13
+<https://github.com/tibonto/dfgfo/205-13> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Pneumologie, Thoraxchirurgie"@de ,
+                                                     "Pneumology, Thoracic Surgery"@en ;
+                                          dfgfo:GermanLabel "Pneumologie, Thoraxchirurgie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-14
+<https://github.com/tibonto/dfgfo/205-14> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Hematology, Oncology"@en ,
+                                                     "Hämatologie, Onkologie"@de ;
+                                          dfgfo:GermanLabel "Hämatologie, Onkologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-15
+<https://github.com/tibonto/dfgfo/205-15> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Gastroenterologie"@de ,
+                                                     "Gastroenterology"@en ;
+                                          dfgfo:GermanLabel "Gastroenterologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-16
+<https://github.com/tibonto/dfgfo/205-16> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Nephrologie"@de ,
+                                                     "Nephrology"@en ;
+                                          dfgfo:GermanLabel "Nephrologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-17
+<https://github.com/tibonto/dfgfo/205-17> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Endocrinology, Diabetology, Metabolism"@en ,
+                                                     "Endokrinologie, Diabetologie, Metabolismus"@de ;
+                                          dfgfo:GermanLabel "Endokrinologie, Diabetologie, Metabolismus" .
+
+
+###  https://github.com/tibonto/dfgfo/205-18
+<https://github.com/tibonto/dfgfo/205-18> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Rheumatologie"@de ,
+                                                     "Rheumatology"@en ;
+                                          dfgfo:GermanLabel "Rheumatologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-19
+<https://github.com/tibonto/dfgfo/205-19> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Dermatologie"@de ,
+                                                     "Dermatology"@en ;
+                                          dfgfo:GermanLabel "Dermatologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-20
+<https://github.com/tibonto/dfgfo/205-20> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Kinder- und Jugendmedizin"@de ,
+                                                     "Pediatric and Adolescent Medicine"@en ;
+                                          dfgfo:GermanLabel "Kinder- und Jugendmedizin" .
+
+
+###  https://github.com/tibonto/dfgfo/205-21
+<https://github.com/tibonto/dfgfo/205-21> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Gynaecology and Obstetrics"@en ,
+                                                     "Gynäkologie und Geburtshilfe"@de ;
+                                          dfgfo:GermanLabel "Gynäkologie und Geburtshilfe" .
+
+
+###  https://github.com/tibonto/dfgfo/205-22
+<https://github.com/tibonto/dfgfo/205-22> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Clinical Immunology and Allergology"@en ,
+                                                     "Klinische Immunologie und Allergologie"@de ;
+                                          dfgfo:GermanLabel "Klinische Immunologie und Allergologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-23
+<https://github.com/tibonto/dfgfo/205-23> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Reproductive Medicine, Urology"@en ,
+                                                     "Reproduktionsmedizin, Urologie"@de ;
+                                          dfgfo:GermanLabel "Reproduktionsmedizin, Urologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-24
+<https://github.com/tibonto/dfgfo/205-24> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Biogerontology and Geriatric Medicine"@en ,
+                                                     "Gerontobiologie und Geriatrie"@de ;
+                                          dfgfo:GermanLabel "Gerontobiologie und Geriatrie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-25
+<https://github.com/tibonto/dfgfo/205-25> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Allgemein- und Viszeralchirurgie"@de ,
+                                                     "General and Visceral Surgery"@en ;
+                                          dfgfo:GermanLabel "Allgemein- und Viszeralchirurgie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-26
+<https://github.com/tibonto/dfgfo/205-26> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Cardiac and Vascular Sugery"@en ,
+                                                     "Herz- und Gefäßchirurgie"@de ;
+                                          dfgfo:GermanLabel "Herz- und Gefäßchirurgie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-27
+<https://github.com/tibonto/dfgfo/205-27> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Orthopaedics, Traumatology, Reconstructive Surgery"@en ,
+                                                     "Orthopädie, Unfallchirurgie, rekonstruktive Chirurgie"@de ;
+                                          dfgfo:GermanLabel "Orthopädie, Unfallchirurgie, rekonstruktive Chirurgie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-28
+<https://github.com/tibonto/dfgfo/205-28> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Dentistry, Oral Surgery"@en ,
+                                                     "Zahnheilkunde; Mund-, Kiefer- und Gesichtschirurgie"@de ;
+                                          dfgfo:GermanLabel "Zahnheilkunde; Mund-, Kiefer- und Gesichtschirurgie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-29
+<https://github.com/tibonto/dfgfo/205-29> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Hals-Nasen-Ohrenheilkunde"@de ,
+                                                     "Otolaryngology"@en ;
+                                          dfgfo:GermanLabel "Hals-Nasen-Ohrenheilkunde" .
+
+
+###  https://github.com/tibonto/dfgfo/205-30
+<https://github.com/tibonto/dfgfo/205-30> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Radiologie, Nuklearmedizin, Strahlentherapie, Strahlenbiologie"@de ,
+                                                     "Radiology, Nuclear Medicine, Radiotherapy, Radiobiology"@en ;
+                                          dfgfo:GermanLabel "Radiologie, Nuklearmedizin, Strahlentherapie, Strahlenbiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/205-31
+<https://github.com/tibonto/dfgfo/205-31> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Clinical Infectiology and Tropical Medicine"@en ,
+                                                     "Klinische Infektiologie und Tropenmedizin"@de ;
+                                          dfgfo:GermanLabel "Klinische Infektiologie und Tropenmedizin" .
+
+
+###  https://github.com/tibonto/dfgfo/205-32
+<https://github.com/tibonto/dfgfo/205-32> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Medical Physics, Biomedical Technology"@en ,
+                                                     "Medizinische Physik, Biomedizinische Technik"@de ;
+                                          dfgfo:GermanLabel "Medizinische Physik, Biomedizinische Technik" .
+
+
+###  https://github.com/tibonto/dfgfo/205-33
+<https://github.com/tibonto/dfgfo/205-33> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/205> ;
+                                          rdfs:label "Anatomie"@de ,
+                                                     "Anatomy"@en ;
+                                          dfgfo:GermanLabel "Anatomie" .
+
+
+###  https://github.com/tibonto/dfgfo/206
+<https://github.com/tibonto/dfgfo/206> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/22> ;
+                                       rdfs:label "Neurosciences"@en ,
+                                                  "Neurowissenschaften"@de ;
+                                       dfgfo:GermanLabel "Neurowissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/206-01
+<https://github.com/tibonto/dfgfo/206-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> ;
+                                          rdfs:label "Developmental Neurobiology"@en ,
+                                                     "Entwicklungsneurobiologie"@de ;
+                                          dfgfo:GermanLabel "Entwicklungsneurobiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/206-02
+<https://github.com/tibonto/dfgfo/206-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> ;
+                                          rdfs:label "Molecular Biology and Physiology of Neurons and Glial Cells"@en ,
+                                                     "Molekulare Biologie und Physiologie von Nerven- und Gliazellen"@de ;
+                                          dfgfo:GermanLabel "Molekulare Biologie und Physiologie von Nerven- und Gliazellen" .
+
+
+###  https://github.com/tibonto/dfgfo/206-03
+<https://github.com/tibonto/dfgfo/206-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> ;
+                                          rdfs:label "Experimental and Theoretical Network Neuroscience"@en ,
+                                                     "Experimentelle und theoretische Netzwerk-Neurowissenschaften"@de ;
+                                          dfgfo:GermanLabel "Experimentelle und theoretische Netzwerk-Neurowissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/206-04
+<https://github.com/tibonto/dfgfo/206-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> ;
+                                          rdfs:label "Cognitive, Systems and Behavioural Neurobiology"@en ,
+                                                     "Kognitive, systemische und Verhaltensneurobiologie"@de ;
+                                          dfgfo:GermanLabel "Kognitive, systemische und Verhaltensneurobiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/206-05
+<https://github.com/tibonto/dfgfo/206-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> ;
+                                          rdfs:label "Experimental Models for the Understanding of Nervous System Diseases"@en ,
+                                                     "Experimentelle Modelle zum Verständnis von Erkrankungen des Nervensystems"@de ;
+                                          dfgfo:GermanLabel "Experimentelle Modelle zum Verständnis von Erkrankungen des Nervensystems" .
+
+
+###  https://github.com/tibonto/dfgfo/206-06
+<https://github.com/tibonto/dfgfo/206-06> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> ;
+                                          rdfs:label "Molecular and Cellular Neurology and Neuropathology"@en ,
+                                                     "Molekulare und zelluläre Neurologie und Neuropathologie"@de ;
+                                          dfgfo:GermanLabel "Molekulare und zelluläre Neurologie und Neuropathologie" .
+
+
+###  https://github.com/tibonto/dfgfo/206-07
+<https://github.com/tibonto/dfgfo/206-07> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> ;
+                                          rdfs:label "Clinical Neurosciences; Neurosurgery and Neuroradiology"@en ,
+                                                     "Klinische Neurologie; Neurochirurgie und Neuroradiologie"@de ;
+                                          dfgfo:GermanLabel "Klinische Neurologie; Neurochirurgie und Neuroradiologie" .
+
+
+###  https://github.com/tibonto/dfgfo/206-08
+<https://github.com/tibonto/dfgfo/206-08> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> ;
+                                          rdfs:label "Human Cognitive and Systems Neuroscience"@en ,
+                                                     "Kognitive und systemische Humanneurowissenschaften"@de ;
+                                          dfgfo:GermanLabel "Kognitive und systemische Humanneurowissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/206-09
+<https://github.com/tibonto/dfgfo/206-09> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> ;
+                                          rdfs:label "Biological Psychiatry"@en ,
+                                                     "Biologische Psychiatrie"@de ;
+                                          dfgfo:GermanLabel "Biologische Psychiatrie" .
+
+
+###  https://github.com/tibonto/dfgfo/206-10
+<https://github.com/tibonto/dfgfo/206-10> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> ;
+                                          rdfs:label "Clinical Psychiatry, Psychotherapy, Child and Adolescent Psychiatry"@en ,
+                                                     "Klinische Psychiatrie, Psychotherapie und Kinder- und Jugendpsychiatrie"@de ;
+                                          dfgfo:GermanLabel "Klinische Psychiatrie, Psychotherapie und Kinder- und Jugendpsychiatrie" .
+
+
+###  https://github.com/tibonto/dfgfo/206-11
+<https://github.com/tibonto/dfgfo/206-11> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/206> ;
+                                          rdfs:label "Augenheilkunde"@de ,
+                                                     "Ophthalmology"@en ;
+                                          dfgfo:GermanLabel "Augenheilkunde" .
+
+
+###  https://github.com/tibonto/dfgfo/207
+<https://github.com/tibonto/dfgfo/207> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/23> ;
+                                       rdfs:label "Agrar-, Forstwissenschaften und Tiermedizin"@de ,
+                                                  "Agriculture, Forestry and Veterinary Medicine"@en ;
+                                       dfgfo:GermanLabel "Agrar-, Forstwissenschaften und Tiermedizin" .
+
+
+###  https://github.com/tibonto/dfgfo/207-01
+<https://github.com/tibonto/dfgfo/207-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> ;
+                                          rdfs:label "Bodenwissenschaften"@de ,
+                                                     "Soil Sciences"@en ;
+                                          dfgfo:GermanLabel "Bodenwissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/207-02
+<https://github.com/tibonto/dfgfo/207-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> ;
+                                          rdfs:label "Pflanzenzüchtung, Pflanzenpathologie"@de ,
+                                                     "Plant Breeding and Plant Pathology"@en ;
+                                          dfgfo:GermanLabel "Pflanzenzüchtung, Pflanzenpathologie" .
+
+
+###  https://github.com/tibonto/dfgfo/207-03
+<https://github.com/tibonto/dfgfo/207-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> ;
+                                          rdfs:label "Pflanzenbau, Pflanzenernährung, Agrartechnik"@de ,
+                                                     "Plant Cultivation, Plant Nutrition, Agricultural Technology"@en ;
+                                          dfgfo:GermanLabel "Pflanzenbau, Pflanzenernährung, Agrartechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/207-04
+<https://github.com/tibonto/dfgfo/207-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> ;
+                                          rdfs:label "Ecology of Land Use"@en ,
+                                                     "Ökologie der Landnutzung"@de ;
+                                          dfgfo:GermanLabel "Ökologie der Landnutzung" .
+
+
+###  https://github.com/tibonto/dfgfo/207-05
+<https://github.com/tibonto/dfgfo/207-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> ;
+                                          rdfs:label "Agrarökonomie, Agrarpolitik, Agrarsoziologie"@de ,
+                                                     "Agricultural Economics, Agricultural Policy, Agricultural Sociology"@en ;
+                                          dfgfo:GermanLabel "Agrarökonomie, Agrarpolitik, Agrarsoziologie" .
+
+
+###  https://github.com/tibonto/dfgfo/207-06
+<https://github.com/tibonto/dfgfo/207-06> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> ;
+                                          rdfs:label "Forestry"@en ,
+                                                     "Forstwissenschaften"@de ;
+                                          dfgfo:GermanLabel "Forstwissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/207-07
+<https://github.com/tibonto/dfgfo/207-07> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> ;
+                                          rdfs:label "Animal Breeding, Animal Nutrition, Animal Husbandry"@en ,
+                                                     "Tierzucht, Tierernährung, Tierhaltung"@de ;
+                                          dfgfo:GermanLabel "Tierzucht, Tierernährung, Tierhaltung" .
+
+
+###  https://github.com/tibonto/dfgfo/207-08
+<https://github.com/tibonto/dfgfo/207-08> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/207> ;
+                                          rdfs:label "Tiermedizin"@de ,
+                                                     "Veterinary Medical Science"@en ;
+                                          dfgfo:GermanLabel "Tiermedizin" .
+
+
+###  https://github.com/tibonto/dfgfo/21
+<https://github.com/tibonto/dfgfo/21> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/2> ;
+                                      rdfs:label "Biologie"@de ,
+                                                 "Biology"@en ;
+                                      dfgfo:GermanLabel "Biologie" .
+
+
+###  https://github.com/tibonto/dfgfo/22
+<https://github.com/tibonto/dfgfo/22> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/2> ;
+                                      rdfs:label "Medicine"@en ,
+                                                 "Medizin"@de ;
+                                      dfgfo:GermanLabel "Medizin" .
+
+
+###  https://github.com/tibonto/dfgfo/23
+<https://github.com/tibonto/dfgfo/23> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/2> ;
+                                      rdfs:label "Agrar-, Forstwissen- schaften und Tiermedizin"@de ,
+                                                 "Agriculture, Forestry and Veterinary Medicine"@en ;
+                                      dfgfo:GermanLabel "Agrar-, Forstwissen- schaften und Tiermedizin" .
+
+
+###  https://github.com/tibonto/dfgfo/3
+<https://github.com/tibonto/dfgfo/3> rdf:type owl:Class ;
+                                     rdfs:subClassOf owl:Thing ;
+                                     rdfs:label "Natural Sciences"@en ,
+                                                "Naturwissenschaften"@de ;
+                                     dfgfo:GermanLabel "Naturwissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/307
+<https://github.com/tibonto/dfgfo/307> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/32> ;
+                                       rdfs:label "Condensed Matter Physics"@en ,
+                                                  "Physik der kondensierten Materie"@de ;
+                                       dfgfo:GermanLabel "Physik der kondensierten Materie" .
+
+
+###  https://github.com/tibonto/dfgfo/307-01
+<https://github.com/tibonto/dfgfo/307-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/307> ;
+                                          rdfs:label "Experimental Condensed Matter Physics"@en ,
+                                                     "Experimentelle Physik der kondensierten Materie"@de ;
+                                          dfgfo:GermanLabel "Experimentelle Physik der kondensierten Materie" .
+
+
+###  https://github.com/tibonto/dfgfo/307-02
+<https://github.com/tibonto/dfgfo/307-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/307> ;
+                                          rdfs:label "Theoretical Condensed Matter Physics"@en ,
+                                                     "Theoretische Physik der kondensierten Materie"@de ;
+                                          dfgfo:GermanLabel "Theoretische Physik der kondensierten Materie" .
+
+
+###  https://github.com/tibonto/dfgfo/308
+<https://github.com/tibonto/dfgfo/308> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/32> ;
+                                       rdfs:label "Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas"@en ,
+                                                  "Optik, Quantenoptik und Physik der Atome, Moleküle und Plasmen"@de ;
+                                       dfgfo:GermanLabel "Optik, Quantenoptik und Physik der Atome, Moleküle und Plasmen" .
+
+
+###  https://github.com/tibonto/dfgfo/308-01
+<https://github.com/tibonto/dfgfo/308-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/308> ;
+                                          rdfs:label "Optics, Quantum Optics, Atoms, Molecules, Plasmas"@en ,
+                                                     "Optik, Quantenoptik, Physik der Atome, Moleküle und Plasmen"@de ;
+                                          dfgfo:GermanLabel "Optik, Quantenoptik, Physik der Atome, Moleküle und Plasmen" .
+
+
+###  https://github.com/tibonto/dfgfo/309
+<https://github.com/tibonto/dfgfo/309> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/32> ;
+                                       rdfs:label "Particles, Nuclei and Fields"@en ,
+                                                  "Teilchen, Kerne und Felder"@de ;
+                                       dfgfo:GermanLabel "Teilchen, Kerne und Felder" .
+
+
+###  https://github.com/tibonto/dfgfo/309-01
+<https://github.com/tibonto/dfgfo/309-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/309> ;
+                                          rdfs:label "Kern- und Elementarteilchenphysik, Quantenmechanik, Relativitätstheorie, Felder"@de ,
+                                                     "Nuclear and Elementary Particle Physics, Quantum Mechanics, Relativity, Fields"@en ;
+                                          dfgfo:GermanLabel "Kern- und Elementarteilchenphysik, Quantenmechanik, Relativitätstheorie, Felder" .
+
+
+###  https://github.com/tibonto/dfgfo/31
+<https://github.com/tibonto/dfgfo/31> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/3> ;
+                                      rdfs:label "Chemie"@de ,
+                                                 "Chemistry"@en ;
+                                      dfgfo:GermanLabel "Chemie" .
+
+
+###  https://github.com/tibonto/dfgfo/310
+<https://github.com/tibonto/dfgfo/310> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/32> ;
+                                       rdfs:label "Statistical Physics, Soft Matter, Biological Physics, Nonlinear Dynamics"@en ,
+                                                  "Statistische Physik, Weiche Materie, Biologische Physik, Nichtlineare Dynamik"@de ;
+                                       dfgfo:GermanLabel "Statistische Physik, Weiche Materie, Biologische Physik, Nichtlineare Dynamik" .
+
+
+###  https://github.com/tibonto/dfgfo/310-01
+<https://github.com/tibonto/dfgfo/310-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/310> ;
+                                          rdfs:label "Statistical Physics, Soft Matter, Biological Physics, Nonlinear Dynamics"@en ,
+                                                     "Statistische Physik, Weiche Materie, Biologische Physik, Nichtlineare Dynamik"@de ;
+                                          dfgfo:GermanLabel "Statistische Physik, Weiche Materie, Biologische Physik, Nichtlineare Dynamik" .
+
+
+###  https://github.com/tibonto/dfgfo/311
+<https://github.com/tibonto/dfgfo/311> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/32> ;
+                                       rdfs:label "Astrophysics and Astronomy"@en ,
+                                                  "Astrophysik und Astronomie"@de ;
+                                       dfgfo:GermanLabel "Astrophysik und Astronomie" .
+
+
+###  https://github.com/tibonto/dfgfo/311-01
+<https://github.com/tibonto/dfgfo/311-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/311> ;
+                                          rdfs:label "Astrophysics and Astronomy"@en ,
+                                                     "Astrophysik und Astronomie"@de ;
+                                          dfgfo:GermanLabel "Astrophysik und Astronomie" .
+
+
+###  https://github.com/tibonto/dfgfo/312
+<https://github.com/tibonto/dfgfo/312> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/33> ;
+                                       rdfs:label "Mathematics"@en ,
+                                                  "Mathematik"@de ;
+                                       dfgfo:GermanLabel "Mathematik" .
+
+
+###  https://github.com/tibonto/dfgfo/312-01
+<https://github.com/tibonto/dfgfo/312-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/312> ;
+                                          rdfs:label "Mathematics"@en ,
+                                                     "Mathematik"@de ;
+                                          dfgfo:GermanLabel "Mathematik" .
+
+
+###  https://github.com/tibonto/dfgfo/313
+<https://github.com/tibonto/dfgfo/313> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/34> ;
+                                       rdfs:label "Atmospheric Science, Oceanography and Climate Research"@en ,
+                                                  "Atmosphären-, Meeres- und Klimaforschung"@de ;
+                                       dfgfo:GermanLabel "Atmosphären-, Meeres- und Klimaforschung" .
+
+
+###  https://github.com/tibonto/dfgfo/313-01
+<https://github.com/tibonto/dfgfo/313-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/313> ;
+                                          rdfs:label "Atmospheric Science"@en ,
+                                                     "Physik und Chemie der Atmosphäre"@de ;
+                                          dfgfo:GermanLabel "Physik und Chemie der Atmosphäre" .
+
+
+###  https://github.com/tibonto/dfgfo/313-02
+<https://github.com/tibonto/dfgfo/313-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/313> ;
+                                          rdfs:label "Oceanography"@en ,
+                                                     "Physik, Chemie und Biologie des Meeres"@de ;
+                                          dfgfo:GermanLabel "Physik, Chemie und Biologie des Meeres" .
+
+
+###  https://github.com/tibonto/dfgfo/314
+<https://github.com/tibonto/dfgfo/314> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/34> ;
+                                       rdfs:label "Geologie und Paläontologie"@de ,
+                                                  "Geology and Palaeontology"@en ;
+                                       dfgfo:GermanLabel "Geologie und Paläontologie" .
+
+
+###  https://github.com/tibonto/dfgfo/314-01
+<https://github.com/tibonto/dfgfo/314-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/314> ;
+                                          rdfs:label "Geologie, Ingenieurgeologie, Paläontologie"@de ,
+                                                     "Geology and Palaeontology"@en ;
+                                          dfgfo:GermanLabel "Geologie, Ingenieurgeologie, Paläontologie" .
+
+
+###  https://github.com/tibonto/dfgfo/315
+<https://github.com/tibonto/dfgfo/315> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/34> ;
+                                       rdfs:label "Geophysics and Geodesy"@en ,
+                                                  "Geophysik und Geodäsie"@de ;
+                                       dfgfo:GermanLabel "Geophysik und Geodäsie" .
+
+
+###  https://github.com/tibonto/dfgfo/315-01
+<https://github.com/tibonto/dfgfo/315-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/315> ;
+                                          rdfs:label "Geophysics"@en ,
+                                                     "Physik des Erdkörpers"@de ;
+                                          dfgfo:GermanLabel "Physik des Erdkörpers" .
+
+
+###  https://github.com/tibonto/dfgfo/315-02
+<https://github.com/tibonto/dfgfo/315-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/315> ;
+                                          rdfs:label "Geodesy, Photogrammetry, Remote Sensing, Geoinformatics, Cartography"@en ,
+                                                     "Geodäsie, Photogrammetrie, Fernerkundung, Geoinformatik, Kartographie"@de ;
+                                          dfgfo:GermanLabel "Geodäsie, Photogrammetrie, Fernerkundung, Geoinformatik, Kartographie" .
+
+
+###  https://github.com/tibonto/dfgfo/316
+<https://github.com/tibonto/dfgfo/316> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/34> ;
+                                       rdfs:label "Mineralogie, Petrologie und Geochemie"@de ,
+                                                  "Mineralogy, Petrology and Geochemistry"@en ;
+                                       dfgfo:GermanLabel "Mineralogie, Petrologie und Geochemie" .
+
+
+###  https://github.com/tibonto/dfgfo/316-01
+<https://github.com/tibonto/dfgfo/316-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/316> ;
+                                          rdfs:label "Mineralogie, Petrologie und Geochemie"@de ,
+                                                     "Mineralogy, Petrology and Geochemistry"@en ;
+                                          dfgfo:GermanLabel "Mineralogie, Petrologie und Geochemie" .
+
+
+###  https://github.com/tibonto/dfgfo/317
+<https://github.com/tibonto/dfgfo/317> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/34> ;
+                                       rdfs:label "Geographie"@de ,
+                                                  "Geography"@en ;
+                                       dfgfo:GermanLabel "Geographie" .
+
+
+###  https://github.com/tibonto/dfgfo/317-01
+<https://github.com/tibonto/dfgfo/317-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/317> ;
+                                          rdfs:label "Physical Geography"@en ,
+                                                     "Physische Geographie"@de ;
+                                          dfgfo:GermanLabel "Physische Geographie" .
+
+
+###  https://github.com/tibonto/dfgfo/317-02
+<https://github.com/tibonto/dfgfo/317-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/317> ;
+                                          rdfs:label "Human Geography"@en ,
+                                                     "Humangeographie"@de ;
+                                          dfgfo:GermanLabel "Humangeographie" .
+
+
+###  https://github.com/tibonto/dfgfo/318
+<https://github.com/tibonto/dfgfo/318> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/34> ;
+                                       rdfs:label "Wasserforschung"@de ,
+                                                  "Water Research"@en ;
+                                       dfgfo:GermanLabel "Wasserforschung" .
+
+
+###  https://github.com/tibonto/dfgfo/318-01
+<https://github.com/tibonto/dfgfo/318-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/318> ;
+                                          rdfs:label "Hydrogeologie, Hydrologie, Limnologie, Siedlungswasserwirtschaft, Wasserchemie, Integrierte Wasserressourcen-Bewirtschaftung"@de ,
+                                                     "Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management"@en ;
+                                          dfgfo:GermanLabel "Hydrogeologie, Hydrologie, Limnologie, Siedlungswasserwirtschaft, Wasserchemie, Integrierte Wasserressourcen-Bewirtschaftung" .
+
+
+###  https://github.com/tibonto/dfgfo/32
+<https://github.com/tibonto/dfgfo/32> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/3> ;
+                                      rdfs:label "Physics"@en ,
+                                                 "Physik"@de ;
+                                      dfgfo:GermanLabel "Physik" .
+
+
+###  https://github.com/tibonto/dfgfo/321
+<https://github.com/tibonto/dfgfo/321> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> ;
+                                       rdfs:label "Molecular Chemistry"@en ,
+                                                  "Molekülchemie"@de ;
+                                       dfgfo:GermanLabel "Molekülchemie" .
+
+
+###  https://github.com/tibonto/dfgfo/321-01
+<https://github.com/tibonto/dfgfo/321-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/321> ;
+                                          rdfs:label "Anorganische Molekülchemie - Synthese, Charakterisierung"@de ,
+                                                     "Inorganic Molecular Chemistry - Synthesis and Characterisation"@en ;
+                                          dfgfo:GermanLabel "Anorganische Molekülchemie - Synthese, Charakterisierung" .
+
+
+###  https://github.com/tibonto/dfgfo/321-02
+<https://github.com/tibonto/dfgfo/321-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/321> ;
+                                          rdfs:label "Organic Molecular Chemistry - Synthesis and Characterisation"@en ,
+                                                     "Organische Molekülchemie - Synthese, Charakterisierung"@de ;
+                                          dfgfo:GermanLabel "Organische Molekülchemie - Synthese, Charakterisierung" .
+
+
+###  https://github.com/tibonto/dfgfo/322
+<https://github.com/tibonto/dfgfo/322> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> ;
+                                       rdfs:label "Chemical Solid State and Surface Research"@en ,
+                                                  "Chemische Festkörper- und Oberflächenforschung"@de ;
+                                       dfgfo:GermanLabel "Chemische Festkörper- und Oberflächenforschung" .
+
+
+###  https://github.com/tibonto/dfgfo/322-01
+<https://github.com/tibonto/dfgfo/322-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/322> ;
+                                          rdfs:label "Festkörper- und Oberflächenchemie, Materialsynthese"@de ,
+                                                     "Solid State and Surface Chemistry, Material Synthesis"@en ;
+                                          dfgfo:GermanLabel "Festkörper- und Oberflächenchemie, Materialsynthese" .
+
+
+###  https://github.com/tibonto/dfgfo/322-02
+<https://github.com/tibonto/dfgfo/322-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/322> ;
+                                          rdfs:label "Physical Chemistry of Solids and Surfaces, Material Characterisation"@en ,
+                                                     "Physikalische Chemie von Festkörpern und Oberflächen, Materialcharakterisierung"@de ;
+                                          dfgfo:GermanLabel "Physikalische Chemie von Festkörpern und Oberflächen, Materialcharakterisierung" .
+
+
+###  https://github.com/tibonto/dfgfo/323
+<https://github.com/tibonto/dfgfo/323> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> ;
+                                       rdfs:label "Physical Chemistry"@en ,
+                                                  "Physikalische Chemie"@de ;
+                                       dfgfo:GermanLabel "Physikalische Chemie" .
+
+
+###  https://github.com/tibonto/dfgfo/323-01
+<https://github.com/tibonto/dfgfo/323-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/323> ;
+                                          rdfs:label "Physical Chemistry of Molecules, Liquids and Interfaces, Biophysical Chemistry"@en ,
+                                                     "Physikalische Chemie von Molekülen, Flüssigkeiten und Grenzflächen; Biophysikalische Chemie"@de ;
+                                          dfgfo:GermanLabel "Physikalische Chemie von Molekülen, Flüssigkeiten und Grenzflächen; Biophysikalische Chemie" .
+
+
+###  https://github.com/tibonto/dfgfo/324
+<https://github.com/tibonto/dfgfo/324> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> ;
+                                       rdfs:label "Analytical Chemistry"@en ,
+                                                  "Analytische Chemie"@de ;
+                                       dfgfo:GermanLabel "Analytische Chemie" .
+
+
+###  https://github.com/tibonto/dfgfo/324-01
+<https://github.com/tibonto/dfgfo/324-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/324> ;
+                                          rdfs:label "Analytical Chemistry"@en ,
+                                                     "Analytische Chemie"@de ;
+                                          dfgfo:GermanLabel "Analytische Chemie" .
+
+
+###  https://github.com/tibonto/dfgfo/325
+<https://github.com/tibonto/dfgfo/325> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> ;
+                                       rdfs:label "Biological Chemistry and Food Chemistry"@en ,
+                                                  "Biologische Chemie und Lebensmittelchemie"@de ;
+                                       dfgfo:GermanLabel "Biologische Chemie und Lebensmittelchemie" .
+
+
+###  https://github.com/tibonto/dfgfo/325-01
+<https://github.com/tibonto/dfgfo/325-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/325> ;
+                                          rdfs:label "Biological and Biomimetic Chemistry"@en ,
+                                                     "Biologische und Biomimetische Chemie"@de ;
+                                          dfgfo:GermanLabel "Biologische und Biomimetische Chemie" .
+
+
+###  https://github.com/tibonto/dfgfo/325-02
+<https://github.com/tibonto/dfgfo/325-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/325> ;
+                                          rdfs:label "Food Chemistry"@en ,
+                                                     "Lebensmittelchemie"@de ;
+                                          dfgfo:GermanLabel "Lebensmittelchemie" .
+
+
+###  https://github.com/tibonto/dfgfo/326
+<https://github.com/tibonto/dfgfo/326> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> ;
+                                       rdfs:label "Polymer Research"@en ,
+                                                  "Polymerforschung"@de ;
+                                       dfgfo:GermanLabel "Polymerforschung" .
+
+
+###  https://github.com/tibonto/dfgfo/326-01
+<https://github.com/tibonto/dfgfo/326-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/326> ;
+                                          rdfs:label "Preparatory and Physical Chemistry of Polymers"@en ,
+                                                     "Präparative und Physikalische Chemie von Polymeren"@de ;
+                                          dfgfo:GermanLabel "Präparative und Physikalische Chemie von Polymeren" .
+
+
+###  https://github.com/tibonto/dfgfo/326-02
+<https://github.com/tibonto/dfgfo/326-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/326> ;
+                                          rdfs:label "Experimental and Theoretical Physics of Polymers"@en ,
+                                                     "Experimentelle und Theoretische Polymerphysik"@de ;
+                                          dfgfo:GermanLabel "Experimentelle und Theoretische Polymerphysik" .
+
+
+###  https://github.com/tibonto/dfgfo/326-03
+<https://github.com/tibonto/dfgfo/326-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/326> ;
+                                          rdfs:label "Polymer Materials"@en ,
+                                                     "Polymermaterialien"@de ;
+                                          dfgfo:GermanLabel "Polymermaterialien" .
+
+
+###  https://github.com/tibonto/dfgfo/327
+<https://github.com/tibonto/dfgfo/327> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/31> ;
+                                       rdfs:label "Theoretical Chemistry"@en ,
+                                                  "Theoretische Chemie"@de ;
+                                       dfgfo:GermanLabel "Theoretische Chemie" .
+
+
+###  https://github.com/tibonto/dfgfo/327-01
+<https://github.com/tibonto/dfgfo/327-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/327> ;
+                                          rdfs:label "Electron Structure, Dynamics, Simulation"@en ,
+                                                     "Elektronenstruktur, Dynamik, Simulation"@de ;
+                                          dfgfo:GermanLabel "Elektronenstruktur, Dynamik, Simulation" .
+
+
+###  https://github.com/tibonto/dfgfo/327-02
+<https://github.com/tibonto/dfgfo/327-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/327> ;
+                                          rdfs:label "Molecules, Materials, Surfaces"@en ,
+                                                     "Moleküle, Materialien, Oberflächen"@de ;
+                                          dfgfo:GermanLabel "Moleküle, Materialien, Oberflächen" .
+
+
+###  https://github.com/tibonto/dfgfo/33
+<https://github.com/tibonto/dfgfo/33> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/3> ;
+                                      rdfs:label "Mathematics"@en ,
+                                                 "Mathematik"@de ;
+                                      dfgfo:GermanLabel "Mathematik" .
+
+
+###  https://github.com/tibonto/dfgfo/34
+<https://github.com/tibonto/dfgfo/34> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/3> ;
+                                      rdfs:label "Geosciences"@en ,
+                                                 "Geowissen-schaften"@de ;
+                                      dfgfo:GermanLabel "Geowissen-schaften" .
+
+
+###  https://github.com/tibonto/dfgfo/4
+<https://github.com/tibonto/dfgfo/4> rdf:type owl:Class ;
+                                     rdfs:subClassOf owl:Thing ;
+                                     rdfs:label "Engineering Sciences"@en ,
+                                                "Ingenieurwissenschaften"@de ;
+                                     dfgfo:GermanLabel "Ingenieurwissenschaften" .
+
+
+###  https://github.com/tibonto/dfgfo/401
+<https://github.com/tibonto/dfgfo/401> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/41> ;
+                                       rdfs:label "Production Technology"@en ,
+                                                  "Produktionstechnik"@de ;
+                                       dfgfo:GermanLabel "Produktionstechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/401-01
+<https://github.com/tibonto/dfgfo/401-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/401> ;
+                                          rdfs:label "Metal-Cutting and Abrasive Manufacturing Engineering"@en ,
+                                                     "Spanende und abtragende Fertigungstechnik"@de ;
+                                          dfgfo:GermanLabel "Spanende und abtragende Fertigungstechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/401-02
+<https://github.com/tibonto/dfgfo/401-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/401> ;
+                                          rdfs:label "Primary Shaping and Reshaping Technology, Additive Manufacturing"@en ,
+                                                     "Ur- und Umformtechnik, Additive Fertigungsverfahren"@de ;
+                                          dfgfo:GermanLabel "Ur- und Umformtechnik, Additive Fertigungsverfahren" .
+
+
+###  https://github.com/tibonto/dfgfo/401-03
+<https://github.com/tibonto/dfgfo/401-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/401> ;
+                                          rdfs:label "Fügetechnik und Trenntechnik"@de ,
+                                                     "Joining and Separation Technology"@en ;
+                                          dfgfo:GermanLabel "Fügetechnik und Trenntechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/401-04
+<https://github.com/tibonto/dfgfo/401-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/401> ;
+                                          rdfs:label "Kunststofftechnik"@de ,
+                                                     "Plastics Engineering"@en ;
+                                          dfgfo:GermanLabel "Kunststofftechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/401-05
+<https://github.com/tibonto/dfgfo/401-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/401> ;
+                                          rdfs:label "Production Systems, Operations Management, Quality Management and Factory Planning"@en ,
+                                                     "Produktionssystematik, Betriebswissenschaften, Qualitätsmanagement und Fabrikplanung"@de ;
+                                          dfgfo:GermanLabel "Produktionssystematik, Betriebswissenschaften, Qualitätsmanagement und Fabrikplanung" .
+
+
+###  https://github.com/tibonto/dfgfo/401-06
+<https://github.com/tibonto/dfgfo/401-06> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/401> ;
+                                          rdfs:label "Production Automation"@en ,
+                                                     "Produktionsautomatisierung"@de ;
+                                          dfgfo:GermanLabel "Produktionsautomatisierung" .
+
+
+###  https://github.com/tibonto/dfgfo/402
+<https://github.com/tibonto/dfgfo/402> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/41> ;
+                                       rdfs:label "Mechanics and Constructive Mechanical Engineering"@en ,
+                                                  "Mechanik und Konstruktiver Maschinenbau"@de ;
+                                       dfgfo:GermanLabel "Mechanik und Konstruktiver Maschinenbau" .
+
+
+###  https://github.com/tibonto/dfgfo/402-01
+<https://github.com/tibonto/dfgfo/402-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/402> ;
+                                          rdfs:label "Engineering Design, Machine Elements, Product Development"@en ,
+                                                     "Konstruktion, Maschinenelemente, Produktentwicklung"@de ;
+                                          dfgfo:GermanLabel "Konstruktion, Maschinenelemente, Produktentwicklung" .
+
+
+###  https://github.com/tibonto/dfgfo/402-02
+<https://github.com/tibonto/dfgfo/402-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/402> ;
+                                          rdfs:label "Mechanics"@en ,
+                                                     "Mechanik"@de ;
+                                          dfgfo:GermanLabel "Mechanik" .
+
+
+###  https://github.com/tibonto/dfgfo/402-03
+<https://github.com/tibonto/dfgfo/402-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/402> ;
+                                          rdfs:label "Leichtbau, Textiltechnik"@de ,
+                                                     "Lightweight Construction, Textile Technology"@en ;
+                                          dfgfo:GermanLabel "Leichtbau, Textiltechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/402-04
+<https://github.com/tibonto/dfgfo/402-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/402> ;
+                                          rdfs:label "Acoustics"@en ,
+                                                     "Akustik"@de ;
+                                          dfgfo:GermanLabel "Akustik" .
+
+
+###  https://github.com/tibonto/dfgfo/403
+<https://github.com/tibonto/dfgfo/403> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/42> ;
+                                       rdfs:label "Process Engineering, Technical Chemistry"@en ,
+                                                  "Verfahrenstechnik, Technische Chemie"@de ;
+                                       dfgfo:GermanLabel "Verfahrenstechnik, Technische Chemie" .
+
+
+###  https://github.com/tibonto/dfgfo/403-01
+<https://github.com/tibonto/dfgfo/403-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/403> ;
+                                          rdfs:label "Chemical and Thermal Process Engineering"@en ,
+                                                     "Chemische und Thermische Verfahrenstechnik"@de ;
+                                          dfgfo:GermanLabel "Chemische und Thermische Verfahrenstechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/403-02
+<https://github.com/tibonto/dfgfo/403-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/403> ;
+                                          rdfs:label "Technical Chemistry"@en ,
+                                                     "Technische Chemie"@de ;
+                                          dfgfo:GermanLabel "Technische Chemie" .
+
+
+###  https://github.com/tibonto/dfgfo/403-03
+<https://github.com/tibonto/dfgfo/403-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/403> ;
+                                          rdfs:label "Mechanical Process Engineering"@en ,
+                                                     "Mechanische Verfahrenstechnik"@de ;
+                                          dfgfo:GermanLabel "Mechanische Verfahrenstechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/403-04
+<https://github.com/tibonto/dfgfo/403-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/403> ;
+                                          rdfs:label "Biological Process Engineering"@en ,
+                                                     "Bioverfahrenstechnik"@de ;
+                                          dfgfo:GermanLabel "Bioverfahrenstechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/404
+<https://github.com/tibonto/dfgfo/404> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/42> ;
+                                       rdfs:label "Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering"@en ,
+                                                  "Strömungsmechanik, Technische Thermodynamik und Thermische Energietechnik"@de ;
+                                       dfgfo:GermanLabel "Strömungsmechanik, Technische Thermodynamik und Thermische Energietechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/404-01
+<https://github.com/tibonto/dfgfo/404-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/404> ;
+                                          rdfs:label "Energieverfahrenstechnik"@de ,
+                                                     "Energy Process Engineering"@en ;
+                                          dfgfo:GermanLabel "Energieverfahrenstechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/404-02
+<https://github.com/tibonto/dfgfo/404-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/404> ;
+                                          rdfs:label "Technical Thermodynamics"@en ,
+                                                     "Technische Thermodynamik"@de ;
+                                          dfgfo:GermanLabel "Technische Thermodynamik" .
+
+
+###  https://github.com/tibonto/dfgfo/404-03
+<https://github.com/tibonto/dfgfo/404-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/404> ;
+                                          rdfs:label "Fluid Mechanics"@en ,
+                                                     "Strömungsmechanik"@de ;
+                                          dfgfo:GermanLabel "Strömungsmechanik" .
+
+
+###  https://github.com/tibonto/dfgfo/404-04
+<https://github.com/tibonto/dfgfo/404-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/404> ;
+                                          rdfs:label "Hydraulic and Turbo Engines and Piston Engines"@en ,
+                                                     "Strömungs- und Kolbenmaschinen"@de ;
+                                          dfgfo:GermanLabel "Strömungs- und Kolbenmaschinen" .
+
+
+###  https://github.com/tibonto/dfgfo/405
+<https://github.com/tibonto/dfgfo/405> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/43> ;
+                                       rdfs:label "Materials Engineering"@en ,
+                                                  "Werkstofftechnik"@de ;
+                                       dfgfo:GermanLabel "Werkstofftechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/405-01
+<https://github.com/tibonto/dfgfo/405-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/405> ;
+                                          rdfs:label "Metallurgical, Thermal and Thermomechanical Treatment of Materials"@en ,
+                                                     "Metallurgische, thermische und thermomechanische Behandlung von Werkstoffen"@de ;
+                                          dfgfo:GermanLabel "Metallurgische, thermische und thermomechanische Behandlung von Werkstoffen" .
+
+
+###  https://github.com/tibonto/dfgfo/405-02
+<https://github.com/tibonto/dfgfo/405-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/405> ;
+                                          rdfs:label "Materialien und Werkstoffe der Sinterprozesse und der generativen Fertigungsverfahren"@de ,
+                                                     "Materials in Sintering Processes and Generative Manufacturing Processes"@en ;
+                                          dfgfo:GermanLabel "Materialien und Werkstoffe der Sinterprozesse und der generativen Fertigungsverfahren" .
+
+
+###  https://github.com/tibonto/dfgfo/405-03
+<https://github.com/tibonto/dfgfo/405-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/405> ;
+                                          rdfs:label "Beschichtungs- und Oberflächentechnik"@de ,
+                                                     "Coating and Surface Technology"@en ;
+                                          dfgfo:GermanLabel "Beschichtungs- und Oberflächentechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/405-04
+<https://github.com/tibonto/dfgfo/405-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/405> ;
+                                          rdfs:label "Mechanical Properties of Metallic Materials and their Microstructural Origins"@en ,
+                                                     "Mechanische Eigenschaften von metallischen Werkstoffen und ihre mikrostrukturellen Ursachen"@de ;
+                                          dfgfo:GermanLabel "Mechanische Eigenschaften von metallischen Werkstoffen und ihre mikrostrukturellen Ursachen" .
+
+
+###  https://github.com/tibonto/dfgfo/405-05
+<https://github.com/tibonto/dfgfo/405-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/405> ;
+                                          rdfs:label "Glas und Keramik und darauf basierende Verbundwerkstoffe"@de ,
+                                                     "Glass, Ceramics and Derived Composites"@en ;
+                                          dfgfo:GermanLabel "Glas und Keramik und darauf basierende Verbundwerkstoffe" .
+
+
+###  https://github.com/tibonto/dfgfo/405-06
+<https://github.com/tibonto/dfgfo/405-06> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/405> ;
+                                          rdfs:label "Polymere und biogene Werkstoffe und darauf basierende Verbundwerkstoffe"@de ,
+                                                     "Polymeric and Biogenic Materials and Derived Composites"@en ;
+                                          dfgfo:GermanLabel "Polymere und biogene Werkstoffe und darauf basierende Verbundwerkstoffe" .
+
+
+###  https://github.com/tibonto/dfgfo/406
+<https://github.com/tibonto/dfgfo/406> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/43> ;
+                                       rdfs:label "Materials Science"@en ,
+                                                  "Materialwissenschaft"@de ;
+                                       dfgfo:GermanLabel "Materialwissenschaft" .
+
+
+###  https://github.com/tibonto/dfgfo/406-01
+<https://github.com/tibonto/dfgfo/406-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/406> ;
+                                          rdfs:label "Herstellung und Eigenschaften von Funktionsmaterialien"@de ,
+                                                     "Synthesis and Properties of Functional Materials"@en ;
+                                          dfgfo:GermanLabel "Herstellung und Eigenschaften von Funktionsmaterialien" .
+
+
+###  https://github.com/tibonto/dfgfo/406-02
+<https://github.com/tibonto/dfgfo/406-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/406> ;
+                                          rdfs:label "Biomaterialien"@de ,
+                                                     "Biomaterials"@en ;
+                                          dfgfo:GermanLabel "Biomaterialien" .
+
+
+###  https://github.com/tibonto/dfgfo/406-03
+<https://github.com/tibonto/dfgfo/406-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/406> ;
+                                          rdfs:label "Thermodynamics and Kinetics as well as Properties of Phases and Microstructure of Materials"@en ,
+                                                     "Thermodynamik und Kinetik sowie Eigenschaften der Phasen und Gefüge von Werkstoffen"@de ;
+                                          dfgfo:GermanLabel "Thermodynamik und Kinetik sowie Eigenschaften der Phasen und Gefüge von Werkstoffen" .
+
+
+###  https://github.com/tibonto/dfgfo/406-04
+<https://github.com/tibonto/dfgfo/406-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/406> ;
+                                          rdfs:label "Computer-Aided Design of Materials and Simulation of Materials Behaviour from Atomic to Microscopic Scale"@en ,
+                                                     "Computergestütztes Werkstoffdesign und Simulation von Werkstoffverhalten von atomistischer bis mikroskopischer Skala"@de ;
+                                          dfgfo:GermanLabel "Computergestütztes Werkstoffdesign und Simulation von Werkstoffverhalten von atomistischer bis mikroskopischer Skala" .
+
+
+###  https://github.com/tibonto/dfgfo/407
+<https://github.com/tibonto/dfgfo/407> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/44> ;
+                                       rdfs:label "Systems Engineering"@en ,
+                                                  "Systemtechnik"@de ;
+                                       dfgfo:GermanLabel "Systemtechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/407-01
+<https://github.com/tibonto/dfgfo/407-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/407> ;
+                                          rdfs:label "Automation, Control Systems, Robotics, Mechatronics, Cyber Physical Systems"@en ,
+                                                     "Automatisierungstechnik, Regelungssysteme, Robotik, Mechatronik, Cyber Physical Systems"@de ;
+                                          dfgfo:GermanLabel "Automatisierungstechnik, Regelungssysteme, Robotik, Mechatronik, Cyber Physical Systems" .
+
+
+###  https://github.com/tibonto/dfgfo/407-02
+<https://github.com/tibonto/dfgfo/407-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/407> ;
+                                          rdfs:label "Measurement Systems"@en ,
+                                                     "Messsysteme"@de ;
+                                          dfgfo:GermanLabel "Messsysteme" .
+
+
+###  https://github.com/tibonto/dfgfo/407-03
+<https://github.com/tibonto/dfgfo/407-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/407> ;
+                                          rdfs:label "Microsystems"@en ,
+                                                     "Mikrosysteme"@de ;
+                                          dfgfo:GermanLabel "Mikrosysteme" .
+
+
+###  https://github.com/tibonto/dfgfo/407-04
+<https://github.com/tibonto/dfgfo/407-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/407> ;
+                                          rdfs:label "Traffic and Transport Systems, Logistics, Intelligent and Automated Traffic"@en ,
+                                                     "Verkehrs- und Transportsysteme, Intelligenter und automatisierter Verkehr"@de ;
+                                          dfgfo:GermanLabel "Verkehrs- und Transportsysteme, Intelligenter und automatisierter Verkehr" .
+
+
+###  https://github.com/tibonto/dfgfo/407-05
+<https://github.com/tibonto/dfgfo/407-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/407> ;
+                                          rdfs:label "Arbeitswissenschaft, Ergonomie, Mensch-Maschine-Systeme"@de ,
+                                                     "Human Factors, Ergonomics, Human-Machine Systems"@en ;
+                                          dfgfo:GermanLabel "Arbeitswissenschaft, Ergonomie, Mensch-Maschine-Systeme" .
+
+
+###  https://github.com/tibonto/dfgfo/407-06
+<https://github.com/tibonto/dfgfo/407-06> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/407> ;
+                                          rdfs:label "Biomedical Systems Technology"@en ,
+                                                     "Biomedizinische Systemtechnik"@de ;
+                                          dfgfo:GermanLabel "Biomedizinische Systemtechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/408
+<https://github.com/tibonto/dfgfo/408> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/44> ;
+                                       rdfs:label "Electrical Engineering and Information Technology"@en ,
+                                                  "Elektrotechnik und Informationstechnik"@de ;
+                                       dfgfo:GermanLabel "Elektrotechnik und Informationstechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/408-01
+<https://github.com/tibonto/dfgfo/408-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/408> ;
+                                          rdfs:label "Electronic Semiconductors, Components, Circuits, Systems"@en ,
+                                                     "Elektronische Halbleiter, Bauelemente und Schaltungen, Integrierte Systeme"@de ;
+                                          dfgfo:GermanLabel "Elektronische Halbleiter, Bauelemente und Schaltungen, Integrierte Systeme" .
+
+
+###  https://github.com/tibonto/dfgfo/408-02
+<https://github.com/tibonto/dfgfo/408-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/408> ;
+                                          rdfs:label "Communications, High-Frequency and Network Technology, Theoretical Electrical Engineering"@en ,
+                                                     "Nachrichten- und Hochfrequenztechnik, Kommunikationstechnik und -netze, Theoretische Elektrotechnik"@de ;
+                                          dfgfo:GermanLabel "Nachrichten- und Hochfrequenztechnik, Kommunikationstechnik und -netze, Theoretische Elektrotechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/408-03
+<https://github.com/tibonto/dfgfo/408-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/408> ;
+                                          rdfs:label "Electrical Energy Generation, Distribution, Application"@en ,
+                                                     "Elektrische Energieerzeugung, -übertragung, -verteilung und -anwendung"@de ;
+                                          dfgfo:GermanLabel "Elektrische Energieerzeugung, -übertragung, -verteilung und -anwendung" .
+
+
+###  https://github.com/tibonto/dfgfo/409
+<https://github.com/tibonto/dfgfo/409> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/44> ;
+                                       rdfs:label "Computer Science"@en ,
+                                                  "Informatik"@de ;
+                                       dfgfo:GermanLabel "Informatik" .
+
+
+###  https://github.com/tibonto/dfgfo/409-01
+<https://github.com/tibonto/dfgfo/409-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> ;
+                                          rdfs:label "Theoretical Computer Science"@en ,
+                                                     "Theoretische Informatik"@de ;
+                                          dfgfo:GermanLabel "Theoretische Informatik" .
+
+
+###  https://github.com/tibonto/dfgfo/409-02
+<https://github.com/tibonto/dfgfo/409-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> ;
+                                          rdfs:label "Software Engineering and Programming Languages"@en ,
+                                                     "Softwaretechnik und Programmiersprachen"@de ;
+                                          dfgfo:GermanLabel "Softwaretechnik und Programmiersprachen" .
+
+
+###  https://github.com/tibonto/dfgfo/409-03
+<https://github.com/tibonto/dfgfo/409-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> ;
+                                          rdfs:label "Security and Dependability"@en ,
+                                                     "Sicherheit und Verlässlichkeit"@de ;
+                                          dfgfo:GermanLabel "Sicherheit und Verlässlichkeit" .
+
+
+###  https://github.com/tibonto/dfgfo/409-04
+<https://github.com/tibonto/dfgfo/409-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> ;
+                                          rdfs:label "Betriebs-, Kommunikations-, Datenbank- und verteilte Systeme"@de ,
+                                                     "Operating, Communication, Database and Distributed Systems"@en ;
+                                          dfgfo:GermanLabel "Betriebs-, Kommunikations-, Datenbank- und verteilte Systeme" .
+
+
+###  https://github.com/tibonto/dfgfo/409-05
+<https://github.com/tibonto/dfgfo/409-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> ;
+                                          rdfs:label "Interactive and Intelligent Systems, Image and Language Processing, Computer Graphics and Visualisation"@en ,
+                                                     "Interaktive und intelligente Systeme, Bild- und Sprachverarbeitung, Computergraphik und Visualisierung"@de ;
+                                          dfgfo:GermanLabel "Interaktive und intelligente Systeme, Bild- und Sprachverarbeitung, Computergraphik und Visualisierung" .
+
+
+###  https://github.com/tibonto/dfgfo/409-06
+<https://github.com/tibonto/dfgfo/409-06> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> ;
+                                          rdfs:label "Information Systems, Process and Knowledge Management"@en ,
+                                                     "Informationssysteme, Prozess- und Wissensmanagement"@de ;
+                                          dfgfo:GermanLabel "Informationssysteme, Prozess- und Wissensmanagement" .
+
+
+###  https://github.com/tibonto/dfgfo/409-07
+<https://github.com/tibonto/dfgfo/409-07> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> ;
+                                          rdfs:label "Computer Architecture and Embedded Systems"@en ,
+                                                     "Rechnerarchitekturen und eingebettete Systeme"@de ;
+                                          dfgfo:GermanLabel "Rechnerarchitekturen und eingebettete Systeme" .
+
+
+###  https://github.com/tibonto/dfgfo/409-08
+<https://github.com/tibonto/dfgfo/409-08> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/409> ;
+                                          rdfs:label "Massiv parallele und datenintensive Systeme"@de ,
+                                                     "Massively Parallel and Data-Intensive Systems"@en ;
+                                          dfgfo:GermanLabel "Massiv parallele und datenintensive Systeme" .
+
+
+###  https://github.com/tibonto/dfgfo/41
+<https://github.com/tibonto/dfgfo/41> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/4> ;
+                                      rdfs:label "Maschinenbau und Produktionstechnik"@de ,
+                                                 "Mechanical and Industrial Engineering"@en ;
+                                      dfgfo:GermanLabel "Maschinenbau und Produktionstechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/410
+<https://github.com/tibonto/dfgfo/410> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://github.com/tibonto/dfgfo/45> ;
+                                       rdfs:label "Bauwesen und Architektur"@de ,
+                                                  "Construction Engineering and Architecture"@en ;
+                                       dfgfo:GermanLabel "Bauwesen und Architektur" .
+
+
+###  https://github.com/tibonto/dfgfo/410-01
+<https://github.com/tibonto/dfgfo/410-01> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/410> ;
+                                          rdfs:label "Architecture, Building and Construction History, Construction Research, Sustainable Building Technology"@en ,
+                                                     "Architektur, Bau- und Konstruktionsgeschichte, Bauforschung, Ressourcenökonomie im Bauwesen"@de ;
+                                          dfgfo:GermanLabel "Architektur, Bau- und Konstruktionsgeschichte, Bauforschung, Ressourcenökonomie im Bauwesen" .
+
+
+###  https://github.com/tibonto/dfgfo/410-02
+<https://github.com/tibonto/dfgfo/410-02> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/410> ;
+                                          rdfs:label "Städtebau/Stadtentwicklung, Raumplanung, Verkehrs- und Infrastrukturplanung, Landschaftsplanung"@de ,
+                                                     "Urbanism, Spatial Planning, Transportation and Infrastructure Planning, Landscape Planning"@en ;
+                                          dfgfo:GermanLabel "Städtebau/Stadtentwicklung, Raumplanung, Verkehrs- und Infrastrukturplanung, Landschaftsplanung" .
+
+
+###  https://github.com/tibonto/dfgfo/410-03
+<https://github.com/tibonto/dfgfo/410-03> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/410> ;
+                                          rdfs:label "Baustoffwissenschaften, Bauchemie, Bauphysik"@de ,
+                                                     "Construction Material Sciences, Chemistry, Building Physics"@en ;
+                                          dfgfo:GermanLabel "Baustoffwissenschaften, Bauchemie, Bauphysik" .
+
+
+###  https://github.com/tibonto/dfgfo/410-04
+<https://github.com/tibonto/dfgfo/410-04> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/410> ;
+                                          rdfs:label "Konstruktiver Ingenieurbau, Bauinformatik und Baubetrieb"@de ,
+                                                     "Structural Engineering, Building Informatics and Construction Operation"@en ;
+                                          dfgfo:GermanLabel "Konstruktiver Ingenieurbau, Bauinformatik und Baubetrieb" .
+
+
+###  https://github.com/tibonto/dfgfo/410-05
+<https://github.com/tibonto/dfgfo/410-05> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/410> ;
+                                          rdfs:label "Angewandte Mechanik, Statik und Dynamik"@de ,
+                                                     "Applied Mechanics, Statics and Dynamics"@en ;
+                                          dfgfo:GermanLabel "Angewandte Mechanik, Statik und Dynamik" .
+
+
+###  https://github.com/tibonto/dfgfo/410-06
+<https://github.com/tibonto/dfgfo/410-06> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://github.com/tibonto/dfgfo/410> ;
+                                          rdfs:label "Geotechnics, Hydraulic Engineering"@en ,
+                                                     "Geotechnik, Wasserbau"@de ;
+                                          dfgfo:GermanLabel "Geotechnik, Wasserbau" .
+
+
+###  https://github.com/tibonto/dfgfo/42
+<https://github.com/tibonto/dfgfo/42> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/4> ;
+                                      rdfs:label "Thermal Engineering/ Process Engineering"@en ,
+                                                 "Wärmetechnik/ Verfahrenstechnik"@de ;
+                                      dfgfo:GermanLabel "Wärmetechnik/ Verfahrenstechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/43
+<https://github.com/tibonto/dfgfo/43> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/4> ;
+                                      rdfs:label "Materials Science and Engineering"@en ,
+                                                 "Materialwissenschaft und Werkstofftechnik"@de ;
+                                      dfgfo:GermanLabel "Materialwissenschaft und Werkstofftechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/44
+<https://github.com/tibonto/dfgfo/44> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/4> ;
+                                      rdfs:label "Computer Science, Systems and  Electrical Engineering"@en ,
+                                                 "Informatik, System- und Elektrotechnik"@de ;
+                                      dfgfo:GermanLabel "Informatik, System- und Elektrotechnik" .
+
+
+###  https://github.com/tibonto/dfgfo/45
+<https://github.com/tibonto/dfgfo/45> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://github.com/tibonto/dfgfo/4> ;
+                                      rdfs:label "Bauwesen und Architektur"@de ,
+                                                 "Construction Engineering and Architecture"@en ;
+                                      dfgfo:GermanLabel "Bauwesen und Architektur" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
