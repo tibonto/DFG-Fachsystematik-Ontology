@@ -24,7 +24,7 @@ We decided to build upon this work and build and RDF based ontology, for the *DF
 * parses the DFG classification system encoded [csv/Fachsystematik_2020-2024.csv](./csv/Fachsystematik_2020-2024.csv) (in EN/DE)
 * encodes each of the DFG's classification subjects (in .csv cells) into RDF graph triples
     * of type `owl:Class`
-    * with `rdfs:label` in EN and DE
+    * with `rdfs:label` in EN and skos:altLabel in DE
     * subsumed to parent subject with `rdfs:subClassOf` accordinng to DFG Classification hierarchy 
 * parses the metadata triples from [metadata.ttl](./metadata.ttl) into a graph
 * joins metadata and DFG classification graphs into [dfgfo.ttl](./dfgfo.ttl)
@@ -36,12 +36,12 @@ Create a python3 Virtual Environment
 
 Install requirements `pip install -r scripts/requirements.txt`
 
-Run script to create ontologu `python scripts/create_ontology.py`
+Run script to create ontology `python scripts/create_ontology.py`
 
 
 ## Other scripts
 
-* [scripts/parse_csv.py](./scripts/parse_csv.py) parses the CSV and ensures that the collumns `Subject Number` and `Fachnummer` have the same values
+* [scripts/parse_csv.py](./scripts/parse_csv.py) parses the CSV and ensures that the columns `Subject Number` and `Fachnummer` have the same values
 
 ## Ontology contributions:
 Contributions are welcome.
