@@ -4,6 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
 dc:creator rdf:type owl:AnnotationProperty .
@@ -13,6 +14,8 @@ dc:description rdf:type owl:AnnotationProperty .
 dc:title rdf:type owl:AnnotationProperty .
 
 terms:license rdf:type owl:AnnotationProperty .
+
+skos:altLabel rdf:type owl:AnnotationProperty .
 
 <https://github.com/tibonto/dfgfo> rdf:type owl:Ontology ;
                                    dc:creator "Deutsche Forschungsgemeinschaft (DFG)",

@@ -2,7 +2,7 @@ import csv
 from pathlib import Path
 from typing import Tuple
 from rdflib import Graph, URIRef, Literal, Namespace
-from rdflib.namespace import RDF, OWL, RDFS
+from rdflib.namespace import RDF, OWL, RDFS, SKOS
 
 '''
 Creates the dfgfo.ttl ontology by parsing 
@@ -51,7 +51,7 @@ def create_class(graph, ns, node_name, labels, parent):
         graph.add((node, RDFS.subClassOf, parent_node))
     # labels
     graph.add((node, RDFS.label, Literal(f'{labels[0]}', lang='en')))
-    graph.add((node, RDFS.label, Literal(f'{labels[1]}', lang='de')))
+    graph.add((node, SKOS.altLabel, Literal(f'{labels[1]}', lang='de')))
     # obo:IAO_0000111 # editor preferred term
 
     ns.node_name
