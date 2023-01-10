@@ -30,7 +30,7 @@ g_classes.namespace_manager.bind('dfgfo', ns_str, override=False)
 
 
 def split_id_label(id_n_label:str) -> Tuple[str, str]:
-    id, label = id_n_label.split('\n')
+    id, label = id_n_label.split('\r\n')
     id = id.replace(' ', '') # remove spaces
     return id, label
 
