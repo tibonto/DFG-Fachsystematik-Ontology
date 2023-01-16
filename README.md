@@ -36,7 +36,7 @@ Create a python3 Virtual Environment
 
 Install requirements `pip install -r scripts/requirements.txt`
 
-Run script to create ontology `python scripts/create_ontology.py`
+Run script to create ontology `python scripts/create_ontology.py`. Make sure to use end of line sequence `LF` for  [/csv/Fachsystematik_2020-2024.csv](/csv/Fachsystematik_2020-2024.csv).
 
 
 ## Other scripts
