@@ -71,17 +71,17 @@ dfgfo:102-04 a owl:Class ;
 
 dfgfo:103-01 a owl:Class ;
     rdfs:label "Art History"@en ;
-    rdfs:subClassOf dfgfo:102 ;
+    rdfs:subClassOf dfgfo:103 ;
     skos:altLabel "Kunstgeschichte"@de .
 
 dfgfo:103-02 a owl:Class ;
     rdfs:label "Musicology"@en ;
-    rdfs:subClassOf dfgfo:102 ;
+    rdfs:subClassOf dfgfo:103 ;
     skos:altLabel "Musikwissenschaften"@de .
 
 dfgfo:103-03 a owl:Class ;
     rdfs:label "Theatre and Media Studies"@en ;
-    rdfs:subClassOf dfgfo:102 ;
+    rdfs:subClassOf dfgfo:103 ;
     skos:altLabel "Theater- und Medienwissenschaften"@de .
 
 dfgfo:104-01 a owl:Class ;
@@ -1209,6 +1209,11 @@ dfgfo:43 a owl:Class ;
     rdfs:subClassOf dfgfo:4 ;
     skos:altLabel "Materialwissenschaft und Werkstofftechnik"@de .
 
+dfgfo:103 a owl:Class ;
+    rdfs:label "Art History, Music, Theatre and Media Studies"@en ;
+    rdfs:subClassOf dfgfo:11 ;
+    skos:altLabel "Kunst-, Musik-, Theater- und Medienwissenschaften"@de .
+
 dfgfo:108 a owl:Class ;
     rdfs:label "Philosophy"@en ;
     rdfs:subClassOf dfgfo:11 ;
@@ -1243,6 +1248,11 @@ dfgfo:44 a owl:Class ;
     rdfs:label "Computer Science, Systems and  Electrical Engineering"@en ;
     rdfs:subClassOf dfgfo:4 ;
     skos:altLabel "Informatik, System- und Elektrotechnik"@de .
+
+dfgfo:102 a owl:Class ;
+    rdfs:label "History"@en ;
+    rdfs:subClassOf dfgfo:11 ;
+    skos:altLabel "Geschichtswissenschaften"@de .
 
 dfgfo:104 a owl:Class ;
     rdfs:label "Linguistics"@en ;
@@ -1365,17 +1375,6 @@ dfgfo:410 a owl:Class ;
     rdfs:subClassOf dfgfo:45 ;
     skos:altLabel "Bauwesen und Architektur"@de .
 
-dfgfo:102 a owl:Class ;
-    rdfs:label "History"@en ;
-    rdfs:subClassOf dfgfo:11 ;
-    skos:altLabel "Geschichtswissenschaften"@de,
-        "Kunst-, Musik-, Theater- und Medienwissenschaften"@de .
-
-dfgfo:11 a owl:Class ;
-    rdfs:label "Humanities"@en ;
-    rdfs:subClassOf dfgfo:1 ;
-    skos:altLabel "Geisteswissenschaften"@de .
-
 dfgfo:201 a owl:Class ;
     rdfs:label "Basic Research in Biology and Medicine"@en ;
     rdfs:subClassOf dfgfo:21 ;
@@ -1390,6 +1389,11 @@ dfgfo:31 a owl:Class ;
     rdfs:label "Chemistry"@en ;
     rdfs:subClassOf dfgfo:3 ;
     skos:altLabel "Chemie"@de .
+
+dfgfo:11 a owl:Class ;
+    rdfs:label "Humanities"@en ;
+    rdfs:subClassOf dfgfo:1 ;
+    skos:altLabel "Geisteswissenschaften"@de .
 
 dfgfo:207 a owl:Class ;
     rdfs:label "Agriculture, Forestry and Veterinary Medicine"@en ;
