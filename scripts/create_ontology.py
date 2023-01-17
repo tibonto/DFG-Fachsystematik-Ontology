@@ -74,7 +74,7 @@ header_en_de_mapping = {
 #       * Subject
 #       * Subject Number
 
-with open(dfg_csv_en, newline='') as csvfile:
+with open(dfg_csv_en, newline='', encoding="utf-8") as csvfile:
     csvfile = csv.DictReader(csvfile, delimiter=',')
     for row in csvfile:
         for index, collumn in enumerate(tree_hierarchy):
@@ -118,5 +118,6 @@ g_joint = g_metadata + g_classes
 
 print('\n\nSERIALIZE\n\n')
 print(g_joint.serialize())
-with open(dfg_onto_fn, 'w') as dfg_onto:
-    dfg_onto.write(g_joint.serialize())
+#with open(dfg_onto_fn, 'w') as dfg_onto:
+#    dfg_onto.write(g_joint.serialize())
+g_joint.serialize(destination=dfg_onto_fn, encoding="utf-8")
