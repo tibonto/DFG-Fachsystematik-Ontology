@@ -637,8 +637,7 @@ dfgfo:2.23-09 a owl:Class ;
     skos:altLabel "Biologische Psychiatrie"@de .
 
 dfgfo:2.23-10 a owl:Class ;
-    rdfs:label """Clinical Psychiatry, Psychotherapy, 
-Child and Adolescent Psychiatry"""@en ;
+    rdfs:label "Clinical Psychiatry, Psychotherapy, Child and Adolescent Psychiatry"@en ;
     rdfs:subClassOf dfgfo:2.23 ;
     skos:altLabel "Klinische Psychiatrie, Psychotherapie und Kinder- und Jugendpsychiatrie"@de .
 
@@ -750,7 +749,7 @@ dfgfo:3.17-01 a owl:Class ;
 dfgfo:3.17-02 a owl:Class ;
     rdfs:label "Theoretical Chemistry: Molecules, Materials, Surfaces"@en ;
     rdfs:subClassOf dfgfo:3.17 ;
-    skos:altLabel " Theoretische Chemie: Moleküle, Materialien, Oberflächen"@de .
+    skos:altLabel "Theoretische Chemie: Moleküle, Materialien, Oberflächen"@de .
 
 dfgfo:3.21-01 a owl:Class ;
     rdfs:label "Experimental Condensed Matter Physics"@en ;
