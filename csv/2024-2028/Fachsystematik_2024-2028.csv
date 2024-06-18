@@ -63,21 +63,21 @@ Geschichtswissenschaften","11
  Geisteswissenschaften","1 
 Geistes- und Sozialwissenschaften"
 1.13-01,Art History,"1.13
- Art History, Music, Theatre and Media Studies","11
+Art History, Music, Theatre and Media Studies","11
 Humanities","1 
 Humanities and Social Sciences",1.13-01,Kunstgeschichte,"1.13
 Kunst-, Musik-, Theater- und Medienwissenschaften","11
  Geisteswissenschaften","1 
 Geistes- und Sozialwissenschaften"
 1.13-02,Musicology,"1.13
- Art History, Music, Theatre and Media Studies","11
+Art History, Music, Theatre and Media Studies","11
 Humanities","1 
 Humanities and Social Sciences",1.13-02,Musikwissenschaften,"1.13
 Kunst-, Musik-, Theater- und Medienwissenschaften","11
  Geisteswissenschaften","1 
 Geistes- und Sozialwissenschaften"
 1.13-03,Theatre and Media Studies,"1.13
- Art History, Music, Theatre and Media Studies","11
+Art History, Music, Theatre and Media Studies","11
 Humanities","1 
 Humanities and Social Sciences",1.13-03,Theater- und Medienwissenschaften,"1.13
 Kunst-, Musik-, Theater- und Medienwissenschaften","11
@@ -132,7 +132,7 @@ Humanities and Social Sciences",1.15-04,Allgemeine und vergleichende Literaturwi
 Literaturwissenschaft","11
  Geisteswissenschaften","1 
 Geistes- und Sozialwissenschaften"
-1.16-01,Social and Cultural Anthropology and Ethnology ,"1.16 
+1.16-01,Social and Cultural Anthropology and Ethnology,"1.16 
 Social and Cultural Anthropology, Non-European Cultures, Jewish Studies and Religious Studies","11
 Humanities","1 
 Humanities and Social Sciences",1.16-01,Ethnologie und Europäische Ethnologie,"1.16 
@@ -146,7 +146,7 @@ Humanities and Social Sciences",1.16-02,Asienbezogene Wissenschaften,"1.16
 Sozial- und Kulturanthropologie, Außereuropäische Kulturen, Judaistik und Religionswissenschaft","11
  Geisteswissenschaften","1 
 Geistes- und Sozialwissenschaften"
-1.16-03,"African, American and Oceania Studies ","1.16 
+1.16-03,"African, American and Oceania Studies","1.16 
 Social and Cultural Anthropology, Non-European Cultures, Jewish Studies and Religious Studies","11
 Humanities","1 
 Humanities and Social Sciences",1.16-03,"Afrika-, Amerika- und Ozeanienbezogene Wissenschaften","1.16 
@@ -378,49 +378,49 @@ Rechtswissenschaften","12
  Sozial- und Verhaltens- wissenschaften","1 
 Geistes- und Sozialwissenschaften"
 2.11-01,Biochemistry,"2.11 
- Basic Research in Biology and Medicine","21 
+Basic Research in Biology and Medicine","21 
 Biology","2 
 Life Sciences",2.11-01,Biochemie,"2.11 
 Grundlagen der Biologie und Medizin","21 
 Biologie","2 
 Lebenswissenschaften"
 2.11-02,Biophysics,"2.11 
- Basic Research in Biology and Medicine","21 
+Basic Research in Biology and Medicine","21 
 Biology","2 
 Life Sciences",2.11-02,Biophysik,"2.11 
 Grundlagen der Biologie und Medizin","21 
 Biologie","2 
 Lebenswissenschaften"
 2.11-03,Cell Biology,"2.11 
- Basic Research in Biology and Medicine","21 
+Basic Research in Biology and Medicine","21 
 Biology","2 
 Life Sciences",2.11-03,Zellbiologie,"2.11 
 Grundlagen der Biologie und Medizin","21 
 Biologie","2 
 Lebenswissenschaften"
 2.11-04,Structural Biology,"2.11 
- Basic Research in Biology and Medicine","21 
+Basic Research in Biology and Medicine","21 
 Biology","2 
 Life Sciences",2.11-04,Strukturbiologie,"2.11 
 Grundlagen der Biologie und Medizin","21 
 Biologie","2 
 Lebenswissenschaften"
 2.11-05,General Genetics and Functional Genome Biology,"2.11 
- Basic Research in Biology and Medicine","21 
+Basic Research in Biology and Medicine","21 
 Biology","2 
 Life Sciences",2.11-05,Allgemeine Genetik und funktionelle Genomforschung,"2.11 
 Grundlagen der Biologie und Medizin","21 
 Biologie","2 
 Lebenswissenschaften"
 2.11-06,Developmental Biology,"2.11 
- Basic Research in Biology and Medicine","21 
+Basic Research in Biology and Medicine","21 
 Biology","2 
 Life Sciences",2.11-06,Entwicklungsbiologie,"2.11 
 Grundlagen der Biologie und Medizin","21 
 Biologie","2 
 Lebenswissenschaften"
 2.11-07,Bioinformatics and Theoretical Biology,"2.11 
- Basic Research in Biology and Medicine","21 
+Basic Research in Biology and Medicine","21 
 Biology","2 
 Life Sciences",2.11-07,Bioinformatik und Theoretische Biologie,"2.11 
 Grundlagen der Biologie und Medizin","21 
@@ -503,7 +503,7 @@ Life Sciences",2.13-04,Biologie des Verhaltens und der Sinne,"2.13
 Zoologie","21 
 Biologie","2 
 Lebenswissenschaften"
-2.13-05,Animal Physiology and Biochemistry ,"2.13 
+2.13-05,Animal Physiology and Biochemistry,"2.13 
 Zoology","21 
 Biology","2 
 Life Sciences",2.13-05,Biochemie und Physiologie der Tiere,"2.13 
@@ -853,8 +853,7 @@ Life Sciences",2.23-09,Biologische Psychiatrie,"2.23
 Neurowissenschaften","22 
 Medizin","2 
 Lebenswissenschaften"
-2.23-10,"Clinical Psychiatry, Psychotherapy, 
-Child and Adolescent Psychiatry","2.23
+2.23-10,"Clinical Psychiatry, Psychotherapy, Child and Adolescent Psychiatry","2.23
 Neurosciences","22 
 Medicine","2 
 Life Sciences",2.23-10,"Klinische Psychiatrie, Psychotherapie und Kinder- und Jugendpsychiatrie","2.23
@@ -938,15 +937,15 @@ Natural Sciences",3.11-02,"Organische Molekülchemie - Synthese, Charakterisieru
 Molekülchemie","31 
 Chemie","3
 Naturwissenschaften"
-3.12-01,"Solid State and Surface Chemistry, Material Synthesis","3.12 
- Chemical Solid State and Surface Research","31 
+3.12-01,"Solid State and Surface Chemistry, Material Synthesis","3.12
+Chemical Solid State and Surface Research","31 
 Chemistry","3
 Natural Sciences",3.12-01,"Festkörper- und Oberflächenchemie, Materialsynthese","3.12 
 Chemische Festkörper- und Oberflächenforschung","31 
 Chemie","3
 Naturwissenschaften"
-3.12-02,"Physical Chemistry of Solids and Surfaces, Material Characterisation","3.12 
- Chemical Solid State and Surface Research","31 
+3.12-02,"Physical Chemistry of Solids and Surfaces, Material Characterisation","3.12
+Chemical Solid State and Surface Research","31 
 Chemistry","3
 Natural Sciences",3.12-02,"Physikalische Chemie von Festkörpern und Oberflächen, Materialcharakterisierung","3.12 
 Chemische Festkörper- und Oberflächenforschung","31 
@@ -1037,14 +1036,14 @@ Statistische Physik, Nichtlineare Dynamik, Komplexe Systeme,  Weiche und fluide 
 Physik","3
 Naturwissenschaften"
 3.23-01,"Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas","3.23
- Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas","32
+Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas","32
 Physics","3
 Natural Sciences",3.23-01,"Optik, Quantenoptik und Physik der Atome, Moleküle und Plasmen","3.23
 Optik, Quantenoptik und Physik der Atome, Moleküle und Plasmen","32
 Physik","3
 Naturwissenschaften"
 3.24-01,"Nuclear and Elementary Particle Physics, Quantum Mechanics, Relativity, Fields","3.24
- Particles, Nuclei and Fields","32
+Particles, Nuclei and Fields","32
 Physics","3
 Natural Sciences",3.24-01,"Kern- und Elementarteilchenphysik, Quantenmechanik, Relativitätstheorie, Felder","3.24
 Teilchen, Kerne und Felder","32
@@ -1065,14 +1064,14 @@ Mathematik","33
 Mathematik","3
 Naturwissenschaften"
 3.41-01,Atmospheric Science,"3.41
- Atmospheric Science, Oceanography and Climate Research","34
+Atmospheric Science, Oceanography and Climate Research","34
 Geosciences","3
 Natural Sciences",3.41-01,Physik und Chemie der Atmosphäre,"3.41
 Atmosphären-, Meeres- und Klimaforschung","34
 Geowissen-schaften","3
 Naturwissenschaften"
 3.41-02,Oceanography,"3.41
- Atmospheric Science, Oceanography and Climate Research","34
+Atmospheric Science, Oceanography and Climate Research","34
 Geosciences","3
 Natural Sciences",3.41-02,"Physik, Chemie und Biologie des Meeres","3.41
 Atmosphären-, Meeres- und Klimaforschung","34
@@ -1127,7 +1126,7 @@ Natural Sciences",3.45-02,Humangeographie,"3.45
 Geographie","34
 Geowissen-schaften","3
 Naturwissenschaften"
-3.46-01,"Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management ","3.46
+3.46-01,"Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management","3.46
 Water Research","34
 Geosciences","3
 Natural Sciences",3.46-01,"Hydrogeologie, Hydrologie, Limnologie, Siedlungswasserwirtschaft, Wasserchemie, Integrierte Wasserressourcen-Bewirtschaftung","3.46
@@ -1176,134 +1175,134 @@ Engineering Sciences",4.11-06,Produktionsautomatisierung und Montagetechnik,"4.1
 Produktionstechnik","41
  Maschinenbau und Produktionstechnik","4 
 Ingenieurwissenschaften"
-4.12-01,"Engineering Design, Machine Elements, Product Development","4.12 
- Mechanics and Constructive Mechanical Engineering","41 
+4.12-01,"Engineering Design, Machine Elements, Product Development","4.12
+Mechanics and Constructive Mechanical Engineering","41 
 Mechanical and Industrial Engineering","4 
 Engineering Sciences",4.12-01,"Konstruktion, Maschinenelemente, Produktentwicklung","4.12 
 Mechanik und Konstruktiver Maschinenbau","41
  Maschinenbau und Produktionstechnik","4 
 Ingenieurwissenschaften"
-4.12-02,Mechanics,"4.12 
- Mechanics and Constructive Mechanical Engineering","41 
+4.12-02,Mechanics,"4.12
+Mechanics and Constructive Mechanical Engineering","41 
 Mechanical and Industrial Engineering","4 
 Engineering Sciences",4.12-02,Mechanik,"4.12 
 Mechanik und Konstruktiver Maschinenbau","41
  Maschinenbau und Produktionstechnik","4 
 Ingenieurwissenschaften"
-4.12-03,"Lightweight Construction, Textile Technology","4.12 
- Mechanics and Constructive Mechanical Engineering","41 
+4.12-03,"Lightweight Construction, Textile Technology","4.12
+Mechanics and Constructive Mechanical Engineering","41 
 Mechanical and Industrial Engineering","4 
 Engineering Sciences",4.12-03,"Leichtbau, Textiltechnik","4.12 
 Mechanik und Konstruktiver Maschinenbau","41
  Maschinenbau und Produktionstechnik","4 
 Ingenieurwissenschaften"
-4.12-04,Acoustics,"4.12 
- Mechanics and Constructive Mechanical Engineering","41 
+4.12-04,Acoustics,"4.12
+Mechanics and Constructive Mechanical Engineering","41 
 Mechanical and Industrial Engineering","4 
 Engineering Sciences",4.12-04,Akustik,"4.12 
 Mechanik und Konstruktiver Maschinenbau","41
  Maschinenbau und Produktionstechnik","4 
 Ingenieurwissenschaften"
 4.21-01,Chemical and Thermal Process Engineering,"4.21
- Process Engineering, Technical Chemistry","42 
+Process Engineering, Technical Chemistry","42 
 Thermal Engineering/ Process Engineering","4 
 Engineering Sciences",4.21-01,Chemische und Thermische Verfahrenstechnik,"4.21
 Verfahrenstechnik, Technische Chemie","42
 Wärmetechnik/ Verfahrenstechnik","4 
 Ingenieurwissenschaften"
 4.21-02,Technical Chemistry,"4.21
- Process Engineering, Technical Chemistry","42 
+Process Engineering, Technical Chemistry","42 
 Thermal Engineering/ Process Engineering","4 
 Engineering Sciences",4.21-02,Technische Chemie,"4.21
 Verfahrenstechnik, Technische Chemie","42
 Wärmetechnik/ Verfahrenstechnik","4 
 Ingenieurwissenschaften"
 4.21-03,Mechanical Process Engineering,"4.21
- Process Engineering, Technical Chemistry","42 
+Process Engineering, Technical Chemistry","42 
 Thermal Engineering/ Process Engineering","4 
 Engineering Sciences",4.21-03,Mechanische Verfahrenstechnik,"4.21
 Verfahrenstechnik, Technische Chemie","42
 Wärmetechnik/ Verfahrenstechnik","4 
 Ingenieurwissenschaften"
 4.21-04,Biological Process Engineering,"4.21
- Process Engineering, Technical Chemistry","42 
+Process Engineering, Technical Chemistry","42 
 Thermal Engineering/ Process Engineering","4 
 Engineering Sciences",4.21-04,Bioverfahrenstechnik,"4.21
 Verfahrenstechnik, Technische Chemie","42
 Wärmetechnik/ Verfahrenstechnik","4 
 Ingenieurwissenschaften"
 4.21-05,Systems Process Engineering,"4.21
- Process Engineering, Technical Chemistry","42 
+Process Engineering, Technical Chemistry","42 
 Thermal Engineering/ Process Engineering","4 
 Engineering Sciences",4.21-05,Systemverfahrenstechnik,"4.21
 Verfahrenstechnik, Technische Chemie","42
 Wärmetechnik/ Verfahrenstechnik","4 
 Ingenieurwissenschaften"
 4.22-01,Energy Process Engineering,"4.22
- Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering","42 
+Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering","42 
 Thermal Engineering/ Process Engineering","4 
 Engineering Sciences",4.22-01,Energieverfahrenstechnik,"4.22
 Strömungsmechanik, Technische Thermodynamik und Thermische Energietechnik","42
 Wärmetechnik/ Verfahrenstechnik","4 
 Ingenieurwissenschaften"
 4.22-02,Technical Thermodynamics,"4.22
- Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering","42 
+Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering","42 
 Thermal Engineering/ Process Engineering","4 
 Engineering Sciences",4.22-02,Technische Thermodynamik,"4.22
 Strömungsmechanik, Technische Thermodynamik und Thermische Energietechnik","42
 Wärmetechnik/ Verfahrenstechnik","4 
 Ingenieurwissenschaften"
 4.22-03,Fluid Mechanics,"4.22
- Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering","42 
+Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering","42 
 Thermal Engineering/ Process Engineering","4 
 Engineering Sciences",4.22-03,Strömungsmechanik,"4.22
 Strömungsmechanik, Technische Thermodynamik und Thermische Energietechnik","42
 Wärmetechnik/ Verfahrenstechnik","4 
 Ingenieurwissenschaften"
 4.22-04,Hydraulic and Turbo Engines and Piston Engines,"4.22
- Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering","42 
+Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering","42 
 Thermal Engineering/ Process Engineering","4 
 Engineering Sciences",4.22-04,Strömungs- und Kolbenmaschinen,"4.22
 Strömungsmechanik, Technische Thermodynamik und Thermische Energietechnik","42
 Wärmetechnik/ Verfahrenstechnik","4 
 Ingenieurwissenschaften"
 4.31-01,"Metallurgical, Thermal and Thermomechanical Treatment of Materials","4.31
- Materials Engineering","43 
+Materials Engineering","43 
 Materials Science and Engineering","4 
 Engineering Sciences",4.31-01,"Metallurgische, thermische und thermomechanische Behandlung von Werkstoffen","4.31
 Werkstofftechnik","43 
 Materialwissenschaft und Werkstofftechnik","4 
 Ingenieurwissenschaften"
 4.31-02,Materials in Sintering Processes and Generative Manufacturing Processes,"4.31
- Materials Engineering","43 
+Materials Engineering","43 
 Materials Science and Engineering","4 
 Engineering Sciences",4.31-02,Materialien und Werkstoffe der Sinterprozesse und der generativen Fertigungsverfahren,"4.31
 Werkstofftechnik","43 
 Materialwissenschaft und Werkstofftechnik","4 
 Ingenieurwissenschaften"
 4.31-03,Coating and Surface Technology,"4.31
- Materials Engineering","43 
+Materials Engineering","43 
 Materials Science and Engineering","4 
 Engineering Sciences",4.31-03,Beschichtungs- und Oberflächentechnik,"4.31
 Werkstofftechnik","43 
 Materialwissenschaft und Werkstofftechnik","4 
 Ingenieurwissenschaften"
 4.31-04,Mechanical Properties of Metallic Materials and their Microstructural Origins,"4.31
- Materials Engineering","43 
+Materials Engineering","43 
 Materials Science and Engineering","4 
 Engineering Sciences",4.31-04,Mechanische Eigenschaften von metallischen Werkstoffen und ihre mikrostrukturellen Ursachen,"4.31
 Werkstofftechnik","43 
 Materialwissenschaft und Werkstofftechnik","4 
 Ingenieurwissenschaften"
 4.31-05,"Glass, Ceramics and Derived Composites","4.31
- Materials Engineering","43 
+Materials Engineering","43 
 Materials Science and Engineering","4 
 Engineering Sciences",4.31-05,Glas und Keramik und darauf basierende Verbundwerkstoffe,"4.31
 Werkstofftechnik","43 
 Materialwissenschaft und Werkstofftechnik","4 
 Ingenieurwissenschaften"
-4.31-06,Polymeric and Biogenic Materials and Derived Composites ,"4.31
- Materials Engineering","43 
+4.31-06,Polymeric and Biogenic Materials and Derived Composites,"4.31
+Materials Engineering","43 
 Materials Science and Engineering","4 
 Engineering Sciences",4.31-06,Polymere und biogene Werkstoffe und darauf basierende Verbundwerkstoffe,"4.31
 Werkstofftechnik","43 
@@ -1408,49 +1407,49 @@ Elektrotechnik und Informationstechnik","44
 Informatik, System- und Elektrotechnik","4 
 Ingenieurwissenschaften"
 4.43-01,Theoretical Computer Science,"4.43
- Computer Science","44 
+Computer Science","44 
 Computer Science, Systems and  Electrical Engineering","4 
 Engineering Sciences",4.43-01,Theoretische Informatik,"4.43
 Informatik","44 
 Informatik, System- und Elektrotechnik","4 
 Ingenieurwissenschaften"
 4.43-02,Software Engineering and Programming Languages,"4.43
- Computer Science","44 
+Computer Science","44 
 Computer Science, Systems and  Electrical Engineering","4 
 Engineering Sciences",4.43-02,Softwaretechnik und Programmiersprachen,"4.43
 Informatik","44 
 Informatik, System- und Elektrotechnik","4 
 Ingenieurwissenschaften"
 4.43-03,"Security and Dependability, Operating, Communication and Distributed Systems","4.43
- Computer Science","44 
+Computer Science","44 
 Computer Science, Systems and  Electrical Engineering","4 
 Engineering Sciences",4.43-03,"Sicherheit und Verlässlichkeit, Betriebs-, Kommunikations- und verteilte Systeme","4.43
 Informatik","44 
 Informatik, System- und Elektrotechnik","4 
 Ingenieurwissenschaften"
 4.43-04,Artificial Intelligence and Machine Learning Methods,"4.43
- Computer Science","44 
+Computer Science","44 
 Computer Science, Systems and  Electrical Engineering","4 
 Engineering Sciences",4.43-04,Künstliche Intelligenz und Maschinelle Lernverfahren,"4.43
 Informatik","44 
 Informatik, System- und Elektrotechnik","4 
 Ingenieurwissenschaften"
 4.43-05,"Image and Language Processing,  Computer Graphics and Visualisation, Human Computer Interaction, Ubiquitous and Wearable Computing","4.43
- Computer Science","44 
+Computer Science","44 
 Computer Science, Systems and  Electrical Engineering","4 
 Engineering Sciences",4.43-05,"Bild- und Sprachverarbeitung, Computergraphik und Visualisierung, Human Computer Interaction, Ubiquitous und Wearable Computing","4.43
 Informatik","44 
 Informatik, System- und Elektrotechnik","4 
 Ingenieurwissenschaften"
 4.43-06,"Data Management, Data-Intensive Systems, Computer Science Methods in Business Informatics","4.43
- Computer Science","44 
+Computer Science","44 
 Computer Science, Systems and  Electrical Engineering","4 
 Engineering Sciences",4.43-06,"Datenmanagement, datenintensive Systeme, Informatik-Methoden in der Wirtschaftsinformatik","4.43
 Informatik","44 
 Informatik, System- und Elektrotechnik","4 
 Ingenieurwissenschaften"
 4.43-07,"Computer Architecture, Embedded and Massively Parallel Systems","4.43
- Computer Science","44 
+Computer Science","44 
 Computer Science, Systems and  Electrical Engineering","4 
 Engineering Sciences",4.43-07,"Rechnerarchitektur, eingebettete und massiv parallele Systeme","4.43
 Informatik","44 
