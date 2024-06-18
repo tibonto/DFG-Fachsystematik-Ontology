@@ -279,7 +279,7 @@ dfgfo:1.25-01 a owl:Class ;
 dfgfo:1.25-02 a owl:Class ;
     rdfs:label "Private Law"@en ;
     rdfs:subClassOf dfgfo:1.25 ;
-    skos:altLabel "Privatrecht "@de .
+    skos:altLabel "Privatrecht"@de .
 
 dfgfo:1.25-03 a owl:Class ;
     rdfs:label "Public Law"@en ;
@@ -1363,7 +1363,7 @@ dfgfo:2.21 a owl:Class ;
     skos:altLabel "Mikrobiologie, Virologie und Immunologie"@de .
 
 dfgfo:34 a owl:Class ;
-    rdfs:label "Geosciences "@en ;
+    rdfs:label "Geosciences"@en ;
     rdfs:subClassOf dfgfo:3 ;
     skos:altLabel "Geowissen-schaften"@de .
 
