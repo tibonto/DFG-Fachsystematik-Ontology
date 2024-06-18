@@ -30,4 +30,33 @@ Unlike other "Subject Area" values that seperate `NN Subject` with a line break,
 **Fix:**
 Search & Replace in CSV `11 Humanities` for `"11\nHumanities"`
 
-**Commit:** 
+**Commit:** b857e8c8dfb980fb2407a8b3d92bd6cb64d67fc9
+
+## Error om 
+
+```python
+SECTION: 2 Review Board
+INDEX: 2 COL:Review Board CELL: 2.31
+Agriculture, Forestry and Veterinary Medicine
+id_n_label: 2.31
+Agriculture, Forestry and Veterinary Medicine
+id_n_label: 2.31
+Agrar-, Forstwissenschaften 
+und Tiermedizin
+Traceback (most recent call last):
+  File "/home/acastro/Documents/external_projects/DFG-Fachsystematik-Ontology/scripts/create_ontology.py", line 99, in <module>
+    cell_id_de, cell_label_de = split_id_label(id_n_label=cell_de)
+  File "/home/acastro/Documents/external_projects/DFG-Fachsystematik-Ontology/scripts/create_ontology.py", line 35, in split_id_label
+    id, label = id_n_label.split('\n')
+ValueError: too many values to unpack (expected 2)
+```
+
+**Issue:** 2.31 has 2 line breaks, when it should only have 1, between number and term
+```
+2.31
+Agrar-, Forstwissenschaften 
+und Tiermedizin
+```
+
+**Fix:**
+Search & Replace in CSV `Agrar-, Forstwissenschaften\nund Tiermedizin` for `"Agrar-, Forstwissenschaften und Tiermedizin"`
