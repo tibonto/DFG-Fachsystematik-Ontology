@@ -92,3 +92,9 @@ Same issue as previous. Extra line break between words.
 Remove line break between words.
 
 `"34\nGeowissen-\nschaften "`  replaced with `"34\nGeowissen-schaften "` 
+
+# terms ending in space
+
+replaced:
+* `Geosciences "` with `Geosciences"`
+* `Privatrecht ` with `Privatrecht`

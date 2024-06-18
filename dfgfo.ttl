@@ -1,9 +1,9 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dfgfo: <https://github.com/tibonto/dfgfo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
 
 dc:creator a owl:AnnotationProperty .
 
@@ -11,7 +11,7 @@ dc:description a owl:AnnotationProperty .
 
 dc:title a owl:AnnotationProperty .
 
-dcterms:license a owl:AnnotationProperty .
+terms:license a owl:AnnotationProperty .
 
 skos:altLabel a owl:AnnotationProperty .
 
@@ -22,7 +22,7 @@ skos:altLabel a owl:AnnotationProperty .
     dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English." ;
     dc:title "DFG Fachsystematik - Ontologie - 2024-2028"@de,
         "DFG Classification of Subject Areas Ontology - 2024-2028"@en ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@de,
         "DFG Fachsystematik - Ontology wurde zur Integration in den  TIB Terminology Service erstellt"@de .
 
@@ -122,7 +122,7 @@ dfgfo:1.15-04 a owl:Class ;
     skos:altLabel "Allgemeine und vergleichende Literaturwissenschaft; Kulturwissenschaft"@de .
 
 dfgfo:1.16-01 a owl:Class ;
-    rdfs:label "Social and Cultural Anthropology and Ethnology"@en ;
+    rdfs:label "Social and Cultural Anthropology and Ethnology "@en ;
     rdfs:subClassOf dfgfo:1.16 ;
     skos:altLabel "Ethnologie und Europäische Ethnologie"@de .
 
@@ -132,7 +132,7 @@ dfgfo:1.16-02 a owl:Class ;
     skos:altLabel "Asienbezogene Wissenschaften"@de .
 
 dfgfo:1.16-03 a owl:Class ;
-    rdfs:label "African, American and Oceania Studies"@en ;
+    rdfs:label "African, American and Oceania Studies "@en ;
     rdfs:subClassOf dfgfo:1.16 ;
     skos:altLabel "Afrika-, Amerika- und Ozeanienbezogene Wissenschaften"@de .
 
@@ -214,7 +214,7 @@ dfgfo:1.22-04 a owl:Class ;
 dfgfo:1.22-05 a owl:Class ;
     rdfs:label "Personality Psychology, Clinical and Medical Psychology, Methodology"@en ;
     rdfs:subClassOf dfgfo:1.22 ;
-    skos:altLabel "Persönlichkeitspsychologie, Klinische und Medizinische Psychologie, Methoden"@de .
+    skos:altLabel "Persönlichkeitspsychologie, Klinische und Medizinische Psychologie, Methoden "@de .
 
 dfgfo:1.23-01 a owl:Class ;
     rdfs:label "Sociological Theory"@en ;
@@ -279,7 +279,7 @@ dfgfo:1.25-01 a owl:Class ;
 dfgfo:1.25-02 a owl:Class ;
     rdfs:label "Private Law"@en ;
     rdfs:subClassOf dfgfo:1.25 ;
-    skos:altLabel "Privatrecht"@de .
+    skos:altLabel "Privatrecht "@de .
 
 dfgfo:1.25-03 a owl:Class ;
     rdfs:label "Public Law"@en ;
@@ -374,7 +374,7 @@ dfgfo:2.13-01 a owl:Class ;
 dfgfo:2.13-02 a owl:Class ;
     rdfs:label "Evolution, Anthropology"@en ;
     rdfs:subClassOf dfgfo:2.13 ;
-    skos:altLabel "Evolution, Anthropologie"@de .
+    skos:altLabel "Evolution, Anthropologie "@de .
 
 dfgfo:2.13-03 a owl:Class ;
     rdfs:label "Ecology and Biodiversity of Animals and Ecosystems, Organismic Interactions"@en ;
@@ -387,7 +387,7 @@ dfgfo:2.13-04 a owl:Class ;
     skos:altLabel "Biologie des Verhaltens und der Sinne"@de .
 
 dfgfo:2.13-05 a owl:Class ;
-    rdfs:label "Animal Physiology and Biochemistry"@en ;
+    rdfs:label "Animal Physiology and Biochemistry "@en ;
     rdfs:subClassOf dfgfo:2.13 ;
     skos:altLabel "Biochemie und Physiologie der Tiere"@de .
 
@@ -609,12 +609,12 @@ dfgfo:2.23-03 a owl:Class ;
 dfgfo:2.23-04 a owl:Class ;
     rdfs:label "Cognitive, Systems and Behavioural Neurobiology"@en ;
     rdfs:subClassOf dfgfo:2.23 ;
-    skos:altLabel "Kognitive, systemische und Verhaltensneurobiologie"@de .
+    skos:altLabel "Kognitive, systemische und Verhaltensneurobiologie "@de .
 
 dfgfo:2.23-05 a owl:Class ;
     rdfs:label "Experimental Models for the Understanding of Nervous System Diseases"@en ;
     rdfs:subClassOf dfgfo:2.23 ;
-    skos:altLabel "Experimentelle Modelle zum Verständnis von Erkrankungen des Nervensystems"@de .
+    skos:altLabel "Experimentelle Modelle zum Verständnis von Erkrankungen des Nervensystems "@de .
 
 dfgfo:2.23-06 a owl:Class ;
     rdfs:label "Molecular and Cellular Neurology and Neuropathology"@en ;
@@ -637,7 +637,8 @@ dfgfo:2.23-09 a owl:Class ;
     skos:altLabel "Biologische Psychiatrie"@de .
 
 dfgfo:2.23-10 a owl:Class ;
-    rdfs:label "Clinical Psychiatry, Psychotherapy, Child and Adolescent Psychiatry"@en ;
+    rdfs:label """Clinical Psychiatry, Psychotherapy, 
+Child and Adolescent Psychiatry"""@en ;
     rdfs:subClassOf dfgfo:2.23 ;
     skos:altLabel "Klinische Psychiatrie, Psychotherapie und Kinder- und Jugendpsychiatrie"@de .
 
@@ -719,7 +720,7 @@ dfgfo:3.14-01 a owl:Class ;
 dfgfo:3.15-01 a owl:Class ;
     rdfs:label "Biological and Biomimetic Chemistry"@en ;
     rdfs:subClassOf dfgfo:3.15 ;
-    skos:altLabel "Biologische und Biomimetische Chemie"@de .
+    skos:altLabel "Biologische und Biomimetische Chemie "@de .
 
 dfgfo:3.15-02 a owl:Class ;
     rdfs:label "Food Chemistry"@en ;
@@ -749,7 +750,7 @@ dfgfo:3.17-01 a owl:Class ;
 dfgfo:3.17-02 a owl:Class ;
     rdfs:label "Theoretical Chemistry: Molecules, Materials, Surfaces"@en ;
     rdfs:subClassOf dfgfo:3.17 ;
-    skos:altLabel "Theoretische Chemie: Moleküle, Materialien, Oberflächen"@de .
+    skos:altLabel " Theoretische Chemie: Moleküle, Materialien, Oberflächen"@de .
 
 dfgfo:3.21-01 a owl:Class ;
     rdfs:label "Experimental Condensed Matter Physics"@en ;
@@ -832,7 +833,7 @@ dfgfo:3.45-02 a owl:Class ;
     skos:altLabel "Humangeographie"@de .
 
 dfgfo:3.46-01 a owl:Class ;
-    rdfs:label "Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management"@en ;
+    rdfs:label "Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management "@en ;
     rdfs:subClassOf dfgfo:3.46 ;
     skos:altLabel "Hydrogeologie, Hydrologie, Limnologie, Siedlungswasserwirtschaft, Wasserchemie, Integrierte Wasserressourcen-Bewirtschaftung"@de .
 
@@ -957,7 +958,7 @@ dfgfo:4.31-05 a owl:Class ;
     skos:altLabel "Glas und Keramik und darauf basierende Verbundwerkstoffe"@de .
 
 dfgfo:4.31-06 a owl:Class ;
-    rdfs:label "Polymeric and Biogenic Materials and Derived Composites"@en ;
+    rdfs:label "Polymeric and Biogenic Materials and Derived Composites "@en ;
     rdfs:subClassOf dfgfo:4.31 ;
     skos:altLabel "Polymere und biogene Werkstoffe und darauf basierende Verbundwerkstoffe"@de .
 
@@ -1099,7 +1100,7 @@ dfgfo:4.51-06 a owl:Class ;
 dfgfo:23 a owl:Class ;
     rdfs:label "Agriculture, Forestry and Veterinary Medicine"@en ;
     rdfs:subClassOf dfgfo:2 ;
-    skos:altLabel "Agrar-, Forstwissenschaften und Tiermedizin"@de .
+    skos:altLabel "Agrar-, Forstwissen- schaften und Tiermedizin"@de .
 
 dfgfo:3.13 a owl:Class ;
     rdfs:label "Physical Chemistry"@en ;
@@ -1117,12 +1118,12 @@ dfgfo:3.22 a owl:Class ;
     skos:altLabel "Statistische Physik, Nichtlineare Dynamik, Komplexe Systeme,  Weiche und fluide Materie, Biologische Physik"@de .
 
 dfgfo:3.23 a owl:Class ;
-    rdfs:label "Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas"@en ;
+    rdfs:label " Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas"@en ;
     rdfs:subClassOf dfgfo:32 ;
     skos:altLabel "Optik, Quantenoptik und Physik der Atome, Moleküle und Plasmen"@de .
 
 dfgfo:3.24 a owl:Class ;
-    rdfs:label "Particles, Nuclei and Fields"@en ;
+    rdfs:label " Particles, Nuclei and Fields"@en ;
     rdfs:subClassOf dfgfo:32 ;
     skos:altLabel "Teilchen, Kerne und Felder"@de .
 
@@ -1172,7 +1173,7 @@ dfgfo:3.11 a owl:Class ;
     skos:altLabel "Molekülchemie"@de .
 
 dfgfo:3.12 a owl:Class ;
-    rdfs:label "Chemical Solid State and Surface Research"@en ;
+    rdfs:label " Chemical Solid State and Surface Research"@en ;
     rdfs:subClassOf dfgfo:31 ;
     skos:altLabel "Chemische Festkörper- und Oberflächenforschung"@de .
 
@@ -1192,7 +1193,7 @@ dfgfo:3.21 a owl:Class ;
     skos:altLabel "Physik der kondensierten Materie"@de .
 
 dfgfo:3.41 a owl:Class ;
-    rdfs:label "Atmospheric Science, Oceanography and Climate Research"@en ;
+    rdfs:label " Atmospheric Science, Oceanography and Climate Research"@en ;
     rdfs:subClassOf dfgfo:34 ;
     skos:altLabel "Atmosphären-, Meeres- und Klimaforschung"@de .
 
@@ -1214,7 +1215,7 @@ dfgfo:3.45 a owl:Class ;
 dfgfo:41 a owl:Class ;
     rdfs:label "Mechanical and Industrial Engineering"@en ;
     rdfs:subClassOf dfgfo:4 ;
-    skos:altLabel "Maschinenbau und Produktionstechnik"@de .
+    skos:altLabel " Maschinenbau und Produktionstechnik"@de .
 
 dfgfo:42 a owl:Class ;
     rdfs:label "Thermal Engineering/ Process Engineering"@en ;
@@ -1227,7 +1228,7 @@ dfgfo:43 a owl:Class ;
     skos:altLabel "Materialwissenschaft und Werkstofftechnik"@de .
 
 dfgfo:1.13 a owl:Class ;
-    rdfs:label "Art History, Music, Theatre and Media Studies"@en ;
+    rdfs:label " Art History, Music, Theatre and Media Studies"@en ;
     rdfs:subClassOf dfgfo:11 ;
     skos:altLabel "Kunst-, Musik-, Theater- und Medienwissenschaften"@de .
 
@@ -1292,12 +1293,12 @@ dfgfo:3 a owl:Class ;
     skos:altLabel "Naturwissenschaften"@de .
 
 dfgfo:4.12 a owl:Class ;
-    rdfs:label "Mechanics and Constructive Mechanical Engineering"@en ;
+    rdfs:label " Mechanics and Constructive Mechanical Engineering"@en ;
     rdfs:subClassOf dfgfo:41 ;
     skos:altLabel "Mechanik und Konstruktiver Maschinenbau"@de .
 
 dfgfo:4.22 a owl:Class ;
-    rdfs:label "Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering"@en ;
+    rdfs:label " Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering"@en ;
     rdfs:subClassOf dfgfo:42 ;
     skos:altLabel "Strömungsmechanik, Technische Thermodynamik und Thermische Energietechnik"@de .
 
@@ -1334,7 +1335,7 @@ dfgfo:1.25 a owl:Class ;
 dfgfo:12 a owl:Class ;
     rdfs:label "Social and Behavioural Sciences"@en ;
     rdfs:subClassOf dfgfo:1 ;
-    skos:altLabel "Sozial- und Verhaltenswissenschaften"@de .
+    skos:altLabel " Sozial- und Verhaltens- wissenschaften"@de .
 
 dfgfo:32 a owl:Class ;
     rdfs:label "Physics"@en ;
@@ -1347,7 +1348,7 @@ dfgfo:4 a owl:Class ;
     skos:altLabel "Ingenieurwissenschaften"@de .
 
 dfgfo:4.21 a owl:Class ;
-    rdfs:label "Process Engineering, Technical Chemistry"@en ;
+    rdfs:label " Process Engineering, Technical Chemistry"@en ;
     rdfs:subClassOf dfgfo:42 ;
     skos:altLabel "Verfahrenstechnik, Technische Chemie"@de .
 
@@ -1362,9 +1363,9 @@ dfgfo:2.21 a owl:Class ;
     skos:altLabel "Mikrobiologie, Virologie und Immunologie"@de .
 
 dfgfo:34 a owl:Class ;
-    rdfs:label "Geosciences"@en ;
+    rdfs:label "Geosciences "@en ;
     rdfs:subClassOf dfgfo:3 ;
-    skos:altLabel "Geowissenschaften"@de .
+    skos:altLabel "Geowissen-schaften"@de .
 
 dfgfo:4.11 a owl:Class ;
     rdfs:label "Production Technology"@en ;
@@ -1372,7 +1373,7 @@ dfgfo:4.11 a owl:Class ;
     skos:altLabel "Produktionstechnik"@de .
 
 dfgfo:4.31 a owl:Class ;
-    rdfs:label "Materials Engineering"@en ;
+    rdfs:label " Materials Engineering"@en ;
     rdfs:subClassOf dfgfo:43 ;
     skos:altLabel "Werkstofftechnik"@de .
 
@@ -1392,7 +1393,7 @@ dfgfo:1.24 a owl:Class ;
     skos:altLabel "Wirtschaftswissenschaften"@de .
 
 dfgfo:2.11 a owl:Class ;
-    rdfs:label "Basic Research in Biology and Medicine"@en ;
+    rdfs:label " Basic Research in Biology and Medicine"@en ;
     rdfs:subClassOf dfgfo:21 ;
     skos:altLabel "Grundlagen der Biologie und Medizin"@de .
 
@@ -1407,14 +1408,14 @@ dfgfo:31 a owl:Class ;
     skos:altLabel "Chemie"@de .
 
 dfgfo:4.43 a owl:Class ;
-    rdfs:label "Computer Science"@en ;
+    rdfs:label " Computer Science"@en ;
     rdfs:subClassOf dfgfo:44 ;
     skos:altLabel "Informatik"@de .
 
 dfgfo:11 a owl:Class ;
     rdfs:label "Humanities"@en ;
     rdfs:subClassOf dfgfo:1 ;
-    skos:altLabel "Geisteswissenschaften"@de .
+    skos:altLabel " Geisteswissenschaften"@de .
 
 dfgfo:2.31 a owl:Class ;
     rdfs:label "Agriculture, Forestry and Veterinary Medicine"@en ;
