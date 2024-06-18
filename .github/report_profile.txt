@@ -1,4 +1,4 @@
-WARN	annotation_whitespace
+ERROR	annotation_whitespace
 ERROR	deprecated_class_reference
 ERROR	duplicate_definition
 WARN	duplicate_exact_synonym
@@ -10,7 +10,6 @@ WARN	invalid_xref
 ERROR	label_formatting
 ERROR	label_whitespace
 INFO	lowercase_definition
-WARN	missing_definition
 ERROR	missing_label
 WARN	missing_obsolete_label
 ERROR	missing_ontology_description
