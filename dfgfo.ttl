@@ -214,7 +214,7 @@ dfgfo:1.22-04 a owl:Class ;
 dfgfo:1.22-05 a owl:Class ;
     rdfs:label "Personality Psychology, Clinical and Medical Psychology, Methodology"@en ;
     rdfs:subClassOf dfgfo:1.22 ;
-    skos:altLabel "Persönlichkeitspsychologie, Klinische und Medizinische Psychologie, Methoden "@de .
+    skos:altLabel "Persönlichkeitspsychologie, Klinische und Medizinische Psychologie, Methoden"@de .
 
 dfgfo:1.23-01 a owl:Class ;
     rdfs:label "Sociological Theory"@en ;
@@ -374,7 +374,7 @@ dfgfo:2.13-01 a owl:Class ;
 dfgfo:2.13-02 a owl:Class ;
     rdfs:label "Evolution, Anthropology"@en ;
     rdfs:subClassOf dfgfo:2.13 ;
-    skos:altLabel "Evolution, Anthropologie "@de .
+    skos:altLabel "Evolution, Anthropologie"@de .
 
 dfgfo:2.13-03 a owl:Class ;
     rdfs:label "Ecology and Biodiversity of Animals and Ecosystems, Organismic Interactions"@en ;
@@ -609,12 +609,12 @@ dfgfo:2.23-03 a owl:Class ;
 dfgfo:2.23-04 a owl:Class ;
     rdfs:label "Cognitive, Systems and Behavioural Neurobiology"@en ;
     rdfs:subClassOf dfgfo:2.23 ;
-    skos:altLabel "Kognitive, systemische und Verhaltensneurobiologie "@de .
+    skos:altLabel "Kognitive, systemische und Verhaltensneurobiologie"@de .
 
 dfgfo:2.23-05 a owl:Class ;
     rdfs:label "Experimental Models for the Understanding of Nervous System Diseases"@en ;
     rdfs:subClassOf dfgfo:2.23 ;
-    skos:altLabel "Experimentelle Modelle zum Verständnis von Erkrankungen des Nervensystems "@de .
+    skos:altLabel "Experimentelle Modelle zum Verständnis von Erkrankungen des Nervensystems"@de .
 
 dfgfo:2.23-06 a owl:Class ;
     rdfs:label "Molecular and Cellular Neurology and Neuropathology"@en ;
@@ -719,7 +719,7 @@ dfgfo:3.14-01 a owl:Class ;
 dfgfo:3.15-01 a owl:Class ;
     rdfs:label "Biological and Biomimetic Chemistry"@en ;
     rdfs:subClassOf dfgfo:3.15 ;
-    skos:altLabel "Biologische und Biomimetische Chemie "@de .
+    skos:altLabel "Biologische und Biomimetische Chemie"@de .
 
 dfgfo:3.15-02 a owl:Class ;
     rdfs:label "Food Chemistry"@en ;
@@ -749,7 +749,7 @@ dfgfo:3.17-01 a owl:Class ;
 dfgfo:3.17-02 a owl:Class ;
     rdfs:label "Theoretical Chemistry: Molecules, Materials, Surfaces"@en ;
     rdfs:subClassOf dfgfo:3.17 ;
-    skos:altLabel " Theoretische Chemie: Moleküle, Materialien, Oberflächen"@de .
+    skos:altLabel "Theoretische Chemie: Moleküle, Materialien, Oberflächen"@de .
 
 dfgfo:3.21-01 a owl:Class ;
     rdfs:label "Experimental Condensed Matter Physics"@en ;
@@ -1214,7 +1214,7 @@ dfgfo:3.45 a owl:Class ;
 dfgfo:41 a owl:Class ;
     rdfs:label "Mechanical and Industrial Engineering"@en ;
     rdfs:subClassOf dfgfo:4 ;
-    skos:altLabel " Maschinenbau und Produktionstechnik"@de .
+    skos:altLabel "Maschinenbau und Produktionstechnik"@de .
 
 dfgfo:42 a owl:Class ;
     rdfs:label "Thermal Engineering/ Process Engineering"@en ;
@@ -1334,7 +1334,7 @@ dfgfo:1.25 a owl:Class ;
 dfgfo:12 a owl:Class ;
     rdfs:label "Social and Behavioural Sciences"@en ;
     rdfs:subClassOf dfgfo:1 ;
-    skos:altLabel " Sozial- und Verhaltens- wissenschaften"@de .
+    skos:altLabel "Sozial- und Verhaltens- wissenschaften"@de .
 
 dfgfo:32 a owl:Class ;
     rdfs:label "Physics"@en ;
@@ -1414,7 +1414,7 @@ dfgfo:4.43 a owl:Class ;
 dfgfo:11 a owl:Class ;
     rdfs:label "Humanities"@en ;
     rdfs:subClassOf dfgfo:1 ;
-    skos:altLabel " Geisteswissenschaften"@de .
+    skos:altLabel "Geisteswissenschaften"@de .
 
 dfgfo:2.31 a owl:Class ;
     rdfs:label "Agriculture, Forestry and Veterinary Medicine"@en ;
