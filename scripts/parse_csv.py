@@ -3,7 +3,8 @@ from pathlib import Path
 from pprint import pprint 
 
 
-dfg_csv = Path(__file__).parent.parent / 'csv' / 'Fachsystematik_2020-2024.csv'
+#dfg_csv = Path(__file__).parent.parent / 'csv' / '2020-2024' / 'Fachsystematik_2020-2024.csv'
+dfg_csv = Path(__file__).parent.parent / 'csv' / '2024-2028' / 'Fachsystematik_2024-2028.csv'
 print(dfg_csv)
 
 

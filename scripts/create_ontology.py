@@ -15,7 +15,8 @@ Each Subject is a owl:Class with:
 '''
 dfg_onto_metadata_fn = Path(__file__).parent.parent / 'metadata.ttl'
 dfg_onto_fn = Path(__file__).parent.parent / 'dfgfo.ttl' 
-dfg_csv_en = Path(__file__).parent.parent / 'csv' / 'Fachsystematik_2020-2024.csv'
+#dfg_csv_en = Path(__file__).parent.parent / 'csv' / '2020-2024' / 'Fachsystematik_2020-2024.csv'
+dfg_csv_en = Path(__file__).parent.parent / 'csv' / '2024-2028' / 'Fachsystematik_2024-2028.csv'
 print(dfg_csv_en)
 
 g_metadata = Graph()
@@ -96,7 +97,7 @@ with open(dfg_csv_en, newline='', encoding="utf-8") as csvfile:
                 cell_label_de = 'DE'
                 cell_id_de, cell_label_de = split_id_label(id_n_label=cell_de)
             current = f'{cell_id} - {cell_label}'
-            print(f'CEL ID: <<<<{cell_id}>>>')
+            print(f'CELL ID: <<<<{cell_id}>>>')
              # parent
             if index == 0:
                 parent_id = None
