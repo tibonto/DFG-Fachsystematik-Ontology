@@ -25,6 +25,6 @@ skos:altLabel rdf:type owl:AnnotationProperty .
                                    dc:title "DFG Classification of Subject Areas Ontology - 2024-2028"@en ;
                                    dc:title "DFG Fachsystematik - Ontologie - 2024-2028"@de ;
                                    rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@de ;
-                                   rdfs:comment "DFG Fachsystematik - Ontology wurde zur Integration in den  TIB Terminology Service erstellt"@de ;
+                                   rdfs:comment "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> . 
 # TODO: provide appropriate license - same license should go to github repo
