@@ -1,9 +1,9 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dfgfo: <https://github.com/tibonto/dfgfo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix terms: <http://purl.org/dc/terms/> .
 
 dc:creator a owl:AnnotationProperty .
 
@@ -11,7 +11,7 @@ dc:description a owl:AnnotationProperty .
 
 dc:title a owl:AnnotationProperty .
 
-terms:license a owl:AnnotationProperty .
+dcterms:license a owl:AnnotationProperty .
 
 skos:altLabel a owl:AnnotationProperty .
 
@@ -22,9 +22,9 @@ skos:altLabel a owl:AnnotationProperty .
     dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English." ;
     dc:title "DFG Fachsystematik - Ontologie - 2024-2028"@de,
         "DFG Classification of Subject Areas Ontology - 2024-2028"@en ;
-    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@de,
-        "DFG Fachsystematik - Ontology wurde zur Integration in den  TIB Terminology Service erstellt"@de .
+        "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de .
 
 dfgfo:1.11-01 a owl:Class ;
     rdfs:label "Prehistory and World Archaeology"@en ;
@@ -762,7 +762,7 @@ dfgfo:3.21-02 a owl:Class ;
     skos:altLabel "Theoretische Physik der kondensierten Materie"@de .
 
 dfgfo:3.22-01 a owl:Class ;
-    rdfs:label "Statistical Physics, Nonlinear Dynamics, Complex Systems, Soft and Fluid Matter,  Biological Physics"@en ;
+    rdfs:label "Statistical Physics, Nonlinear Dynamics, Complex Systems, Soft and Fluid Matter, Biological Physics"@en ;
     rdfs:subClassOf dfgfo:3.22 ;
     skos:altLabel "Statistische Physik, Nichtlineare Dynamik, Komplexe Systeme, Weiche und fluide Materie, Biologische Physik"@de .
 
@@ -962,7 +962,7 @@ dfgfo:4.31-06 a owl:Class ;
     skos:altLabel "Polymere und biogene Werkstoffe und darauf basierende Verbundwerkstoffe"@de .
 
 dfgfo:4.32-01 a owl:Class ;
-    rdfs:label "Synthesis and Properties of Functional  Materials"@en ;
+    rdfs:label "Synthesis and Properties of Functional Materials"@en ;
     rdfs:subClassOf dfgfo:4.32 ;
     skos:altLabel "Herstellung und Eigenschaften von Funktionsmaterialien"@de .
 
@@ -1052,7 +1052,7 @@ dfgfo:4.43-04 a owl:Class ;
     skos:altLabel "Künstliche Intelligenz und Maschinelle Lernverfahren"@de .
 
 dfgfo:4.43-05 a owl:Class ;
-    rdfs:label "Image and Language Processing,  Computer Graphics and Visualisation, Human Computer Interaction, Ubiquitous and Wearable Computing"@en ;
+    rdfs:label "Image and Language Processing, Computer Graphics and Visualisation, Human Computer Interaction, Ubiquitous and Wearable Computing"@en ;
     rdfs:subClassOf dfgfo:4.43 ;
     skos:altLabel "Bild- und Sprachverarbeitung, Computergraphik und Visualisierung, Human Computer Interaction, Ubiquitous und Wearable Computing"@de .
 
@@ -1099,7 +1099,7 @@ dfgfo:4.51-06 a owl:Class ;
 dfgfo:23 a owl:Class ;
     rdfs:label "Agriculture, Forestry and Veterinary Medicine"@en ;
     rdfs:subClassOf dfgfo:2 ;
-    skos:altLabel "Agrar-, Forstwissen- schaften und Tiermedizin"@de .
+    skos:altLabel "Agrar-, Forstwissenschaften und Tiermedizin"@de .
 
 dfgfo:3.13 a owl:Class ;
     rdfs:label "Physical Chemistry"@en ;
@@ -1112,9 +1112,9 @@ dfgfo:3.14 a owl:Class ;
     skos:altLabel "Analytische Chemie"@de .
 
 dfgfo:3.22 a owl:Class ;
-    rdfs:label "Statistical Physics, Nonlinear Dynamics, Complex Systems, Soft and Fluid Matter,  Biological Physics"@en ;
+    rdfs:label "Statistical Physics, Nonlinear Dynamics, Complex Systems, Soft and Fluid Matter, Biological Physics"@en ;
     rdfs:subClassOf dfgfo:32 ;
-    skos:altLabel "Statistische Physik, Nichtlineare Dynamik, Komplexe Systeme,  Weiche und fluide Materie, Biologische Physik"@de .
+    skos:altLabel "Statistische Physik, Nichtlineare Dynamik, Komplexe Systeme, Weiche und fluide Materie, Biologische Physik"@de .
 
 dfgfo:3.23 a owl:Class ;
     rdfs:label "Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas"@en ;
@@ -1262,7 +1262,7 @@ dfgfo:3.16 a owl:Class ;
     skos:altLabel "Polymerforschung"@de .
 
 dfgfo:44 a owl:Class ;
-    rdfs:label "Computer Science, Systems and  Electrical Engineering"@en ;
+    rdfs:label "Computer Science, Systems and Electrical Engineering"@en ;
     rdfs:subClassOf dfgfo:4 ;
     skos:altLabel "Informatik, System- und Elektrotechnik"@de .
 
@@ -1334,7 +1334,7 @@ dfgfo:1.25 a owl:Class ;
 dfgfo:12 a owl:Class ;
     rdfs:label "Social and Behavioural Sciences"@en ;
     rdfs:subClassOf dfgfo:1 ;
-    skos:altLabel "Sozial- und Verhaltens- wissenschaften"@de .
+    skos:altLabel "Sozial- und Verhaltenswissenschaften"@de .
 
 dfgfo:32 a owl:Class ;
     rdfs:label "Physics"@en ;
