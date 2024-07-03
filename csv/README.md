@@ -8,6 +8,8 @@ The ontology is created with [create_ontology.py](/scripts/create_ontology.py), 
 
 The cells also contain line breaks and trailing white spaces. These may vary in between versions. This is a problem for [create_ontology.py](/scripts/create_ontology.py). The script may not be working with new versions of the Fachsystematik, unless the table is cleaned up, e.g. unexpected line breaks need to be removed, new trailing white spaces need to be removed, etc. until the script can parse through the whole file.
 
+For more detailed info on the CSV creation see [./2024-2028/CVS_Creation_Process.md](./2024-2028/CVS_Creation_Process.md)
+
 ## Checking the alignment of German and English version in the .csv file
 
 The ontology can only be created properly, if English and German version of the Fachsystematik align exactly in the .csv file. This can be tested with [parse_csv.py](/scripts/parse_csv.py).
