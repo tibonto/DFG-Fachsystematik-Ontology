@@ -16,6 +16,8 @@ We decided to build upon this work and build and RDF based ontology, for the *DF
 * **Ontology PURL**: <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/main/dfgfo.ttl>
 * **ontology prefix/id**: `dfgfo`
 
+
+
 ## Create/update ontology
 
 **[dfgfo.ttl](./dfgfo.ttl) ontology file is created, by [scripts/create_ontology.py](./scripts/create_ontology.py) python script**, which
@@ -59,3 +61,7 @@ At every push or pull_request a [ROBOT report](http://robot.obolibrary.org/repor
 * Edited CSV - combining both German and English labels
   * [2020-2024](/csv/2020-2024/Fachsystematik_2020-2024.csv) (this repo)
   * [2024-2028](/csv/2024-2028/Fachsystematik_2024-2028.csv) (this repo)
+
+## Releases:
+
+For previous versions (2020-2024) see [[https://github.com/tibonto/DFG-Fachsystematik-Ontology/releases]]
