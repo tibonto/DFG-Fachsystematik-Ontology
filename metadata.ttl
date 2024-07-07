@@ -22,10 +22,9 @@ skos:altLabel rdf:type owl:AnnotationProperty .
                                               "André Castro",
                                               "Susanne Arndt";
                                    dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English.";
-                                   dc:title "DFG Classification of Subject Areas Ontology"@en ;
-                                   dc:title "DFG Fachsystematik - Ontologie"@de ;
+                                   dc:title "DFG Classification of Subject Areas Ontology - 2024-2028"@en ;
+                                   dc:title "DFG Fachsystematik - Ontologie - 2024-2028"@de ;
                                    rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@de ;
                                    rdfs:comment "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de ;
-                                   terms:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                   owl:versionInfo "2024-2028" ;
-                                   owl:versionIRI  <https://github.com/tibonto/DFG-Fachsystematik-Ontology/releases/2024/dfgfo.ttl> .
+                                   terms:license <https://creativecommons.org/licenses/by/4.0/> . 
+# TODO: provide appropriate license - same license should go to github repo

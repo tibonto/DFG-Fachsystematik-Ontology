@@ -1,0 +1,30 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: DFG Fachsystematik Ontology
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: André
+    family-names: Castro
+    orcid: 'https://orcid.org/0000-0002-7839-3698'
+  - given-names: Susanne
+    family-names: Arndt
+    orcid: 'https://orcid.org/0000-0002-1019-9151'
+repository-code: 'https://github.com/tibonto/DFG-Fachsystematik-Ontology'
+abstract: >-
+  DFG Fachsystematik Ontology - DFG Classification of
+  Scientific Disciplines, Research Areas, Review Boards and
+  Subject Areas 
+keywords:
+  - ontology
+  - classification
+  - Scientific Disciplines
+  - taxonomy
+license: CC-BY-4.0
+commit: 372eef9b23ec8d35c1d030f80f034f25b8532634
+version: '2020'
+date-released: '2022-01-17'

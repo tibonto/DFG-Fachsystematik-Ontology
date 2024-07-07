@@ -20,13 +20,11 @@ skos:altLabel a owl:AnnotationProperty .
         "Deutsche Forschungsgemeinschaft (DFG)",
         "Susanne Arndt" ;
     dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English." ;
-    dc:title "DFG Fachsystematik - Ontologie"@de,
-        "DFG Classification of Subject Areas Ontology"@en ;
+    dc:title "DFG Fachsystematik - Ontologie - 2024-2028"@de,
+        "DFG Classification of Subject Areas Ontology - 2024-2028"@en ;
     terms:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@de,
-        "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de ;
-    owl:versionIRI <https://github.com/tibonto/DFG-Fachsystematik-Ontology/releases/2024/dfgfo.ttl> ;
-    owl:versionInfo "2024-2028" .
+        "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de .
 
 dfgfo:1.11-01 a owl:Class ;
     rdfs:label "Prehistory and World Archaeology"@en ;
@@ -1432,4 +1430,3 @@ dfgfo:2.22 a owl:Class ;
     rdfs:label "Medicine"@en ;
     rdfs:subClassOf dfgfo:22 ;
     skos:altLabel "Medizin"@de .
-
