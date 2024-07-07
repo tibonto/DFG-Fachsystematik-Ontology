@@ -14,6 +14,8 @@ authors:
   - given-names: Susanne
     family-names: Arndt
     orcid: 'https://orcid.org/0000-0002-1019-9151'
+  - name: Deutsche Forschungsgemeinschaft
+    ror: https://ror.org/018mejw64
 repository-code: 'https://github.com/tibonto/DFG-Fachsystematik-Ontology'
 abstract: >-
   DFG Fachsystematik Ontology - DFG Classification of
