@@ -1430,4 +1430,3 @@ dfgfo:2.22 a owl:Class ;
     rdfs:label "Medicine"@en ;
     rdfs:subClassOf dfgfo:22 ;
     skos:altLabel "Medizin"@de .
-
