@@ -1,0 +1,25 @@
+.label { display: none;}
+
+.class {
+        fill: rgba(253, 6, 237, 0.605)!important;
+        stroke-width: 0px!important;
+      }
+
+.text.subtext {
+    display: none!important;
+}
+
+.dotted{
+    stroke: rgba(242, 46, 213, 0.505) !important; 
+    stroke-width: 1px!important;
+    stroke-dasharray: 0px !important;
+}
+
+.white {
+    stroke: rgba(242, 46, 213, 0.702) !important; 
+    stroke-width: 2px!important;
+    stroke-dasharray: 0px !important;
+}
+
+/* style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-width: 2px; stroke-dasharray: 100px;"> */
+
