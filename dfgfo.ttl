@@ -26,7 +26,7 @@ skos:altLabel a owl:AnnotationProperty .
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@de,
         "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de ;
-    owl:versionIRI dfgfo:2024 ;
+    owl:versionIRI dfgfo: ;
     owl:versionInfo "2024-2028"^^xsd:string .
 
 dfgfo:1.11-01 a owl:Class ;

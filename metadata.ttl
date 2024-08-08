@@ -29,4 +29,4 @@ skos:altLabel rdf:type owl:AnnotationProperty .
                                    rdfs:comment "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    owl:versionInfo "2024-2028"^^xsd:string ;
-                                   owl:versionIRI <https://w3id.org/dfgfo/2024> . 
+                                   owl:versionIRI dfgfo: . 
