@@ -23,7 +23,7 @@ g_metadata = Graph()
 g_metadata.parse(str(dfg_onto_metadata_fn.absolute()))
 
 g_classes = Graph()
-ns_str = 'https://github.com/tibonto/dfgfo/'
+ns_str = 'https://w3id.org/dfgfo/2024/'
 namespace = Namespace(ns_str)
 
 g_classes.namespace_manager.bind('owl', 'http://www.w3.org/2002/07/owl#', override=False)
