@@ -1,9 +1,10 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dfgfo: <https://github.com/tibonto/dfgfo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dfgfo: <https://w3id.org/dfgfo/2024/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 dc:creator a owl:AnnotationProperty .
 
@@ -11,20 +12,22 @@ dc:description a owl:AnnotationProperty .
 
 dc:title a owl:AnnotationProperty .
 
-terms:license a owl:AnnotationProperty .
+dcterms:license a owl:AnnotationProperty .
 
 skos:altLabel a owl:AnnotationProperty .
 
-<https://github.com/tibonto/dfgfo> a owl:Ontology ;
+<https://w3id.org/dfgfo/2024> a owl:Ontology ;
     dc:creator "André Castro",
         "Deutsche Forschungsgemeinschaft (DFG)",
         "Susanne Arndt" ;
     dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English." ;
     dc:title "DFG Fachsystematik - Ontologie - 2024-2028"@de,
         "DFG Classification of Subject Areas Ontology - 2024-2028"@en ;
-    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@de,
-        "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de .
+        "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de ;
+    owl:versionIRI dfgfo:2024 ;
+    owl:versionInfo "2024-2028"^^xsd:string .
 
 dfgfo:1.11-01 a owl:Class ;
     rdfs:label "Prehistory and World Archaeology"@en ;
@@ -1430,3 +1433,4 @@ dfgfo:2.22 a owl:Class ;
     rdfs:label "Medicine"@en ;
     rdfs:subClassOf dfgfo:22 ;
     skos:altLabel "Medizin"@de .
+
