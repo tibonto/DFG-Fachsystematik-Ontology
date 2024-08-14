@@ -68,6 +68,12 @@ At every push or pull_request a [ROBOT report](http://robot.obolibrary.org/repor
   * [2020-2024](/csv/2020-2024/Fachsystematik_2020-2024.csv) (this repo)
   * [2024-2028](/csv/2024-2028/Fachsystematik_2024-2028.csv) (this repo)
 
-## Releases:
+## Releases
 
-For previous versions (2020-2024) see [[https://github.com/tibonto/DFG-Fachsystematik-Ontology/releases]]
+For previous versions (2020-2024) see https://github.com/tibonto/DFG-Fachsystematik-Ontology/releases
+
+## Use Cases
+
+*Are you or your institution using the DFG-Fachsystematik-Ontology? We would like to hear from you (via an [issue](https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/)), and include your use-case in this section.*
+
+* [DaRUS - the data repository of the University of Stuttgart](https://darus.uni-stuttgart.de/): DFGO it is used to classify datasets according to topic see example [10.18419/darus-3988](https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/darus-3988)
