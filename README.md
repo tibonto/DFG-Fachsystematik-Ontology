@@ -74,4 +74,4 @@ For previous versions (2020-2024) see https://github.com/tibonto/DFG-Fachsystema
 
 *Are you or your institution using the DFG-Fachsystematik-Ontology? We would like to hear from you (via an [issue](https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/)), and include your use-case in this section.*
 
-* [DaRUS - the data repository of the University of Stuttgart](https://darus.uni-stuttgart.de/): DFGO it is used to classify datasets according to topic see example [10.18419/darus-3988](https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/darus-3988)
+* [DaRUS - the data repository of the University of Stuttgart](https://darus.uni-stuttgart.de/): DFGO is used to classify datasets according to topic, see example [10.18419/darus-3988](https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/darus-3988)
