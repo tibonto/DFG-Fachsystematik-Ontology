@@ -14,8 +14,7 @@
 3. add to header (row 1) "Subject Area" and "Scientific Discipline" in columns D, E 
 4. remove header rows (except row 1): 57, 137, 169
 5. remove empty rows (search in column A)
-6. fill-in the missing values (in Review Board, Subject Area, Scientific Discipline columns) - this is tedious but important, as we cannot reply on merged cells in the CSV. And it is at the core of the tree structure 
-7. simplified the number notation removing the dots, ie. '1.22-01' -> '122-01'. Used regex `^(\d)\.(\d)` and replacement `$1$2`
+6. fill-in the missing values (in Review Board, Subject Area, Scientific Discipline columns) - this is tedious but important, as we cannot reply on merged cells in the CSV. And it is at the core of the tree structure (@SArndt-TIB let me knows if this needs clarification)
 
 ## Join both CSVs
 
