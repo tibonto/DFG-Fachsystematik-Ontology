@@ -53,6 +53,8 @@ def create_class(graph, ns, node_name, labels, parent):
     # labels
     graph.add((node, RDFS.label, Literal(f'{labels[0]}', lang='en')))
     graph.add((node, SKOS.altLabel, Literal(f'{labels[1]}', lang='de')))
+    # mappings
+    graph.add((node, OWL.sameAs, URIRef(f'http://uri.gbv.de/terminology/dfg2024/{node_name}')))
     # obo:IAO_0000111 # editor preferred term
 
     ns.node_name
