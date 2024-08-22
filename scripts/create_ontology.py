@@ -43,7 +43,7 @@ def create_class(graph, ns, node_name, labels, parent):
 
     # type
     graph.add((node, RDF.type, OWL.Class))
-    # class 
+    # class
     if parent is None:
         graph.add((node, RDFS.subClassOf, OWL.Thing))
     else:
@@ -53,9 +53,9 @@ def create_class(graph, ns, node_name, labels, parent):
     # labels
     graph.add((node, RDFS.label, Literal(f'{labels[0]}', lang='en')))
     graph.add((node, SKOS.altLabel, Literal(f'{labels[1]}', lang='de')))
-    # obo:IAO_0000111 # editor preferred term
+    # mappings
+    graph.add((node, SKOS.closeMatch, URIRef(f'http://uri.gbv.de/terminology/dfg2024/{node_name}')))
 
-    ns.node_name
     # print(f'GRAPH NODE: {node} ------')
 
 

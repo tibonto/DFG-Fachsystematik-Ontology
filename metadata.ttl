@@ -17,6 +17,7 @@ dc:title rdf:type owl:AnnotationProperty .
 terms:license rdf:type owl:AnnotationProperty .
 
 skos:altLabel rdf:type owl:AnnotationProperty .
+skos:closeMatch rdf:type owl:ObjectProperty .
 
 <https://w3id.org/dfgfo/2024> rdf:type owl:Ontology ;
                                    dc:creator "Deutsche Forschungsgemeinschaft (DFG)",
@@ -29,4 +30,7 @@ skos:altLabel rdf:type owl:AnnotationProperty .
                                    rdfs:comment "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    owl:versionInfo "2024-2028"^^xsd:string ;
-                                   owl:versionIRI dfgfo: . 
+                                   owl:versionIRI dfgfo: ;
+				   rdfs:comment "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) is aligned with GBV DFG2024 via skos:closeMatch relations. The two semantic artifacts were developed separately, but both teams strive towards alignment. While DFGO defines terms as owl:Class instances, GBV defines them as skos:Concept. More details on GBV DFG2024 at http://uri.gbv.de/terminology/dfg/"@en .
+
+

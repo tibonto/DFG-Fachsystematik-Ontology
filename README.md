@@ -5,8 +5,6 @@
 
 [DFG](https://www.dfg.de/en) (The Deutsche Forschungsgemeinschaft - German Research Foundation) *Classification of Scientific Disciplines, Research Areas, Review Boards and Subject Areas* is published as a PDF or HTML (see links below). 
 
-![WebOwl visualization of ontology classes](docs/webowl_viz.png)
-
 We decided to build upon this work and build and RDF based ontology, for the *DFG Classification of Subject Areas*, so that browsing, searching and mapping (of subject number and its label) could be easy achieved by ontology/RDF processing software, such as ontology-lookup systems and tripe-stores.
 
 
@@ -67,6 +65,12 @@ At every push or pull_request a [ROBOT report](http://robot.obolibrary.org/repor
   * [2020-2024](/csv/2020-2024/Fachsystematik_2020-2024.csv) (this repo)
   * [2024-2028](/csv/2024-2028/Fachsystematik_2024-2028.csv) (this repo)
 
-## Releases:
+## Releases
 
-For previous versions (2020-2024) see [[https://github.com/tibonto/DFG-Fachsystematik-Ontology/releases]]
+For previous versions (2020-2024) see https://github.com/tibonto/DFG-Fachsystematik-Ontology/releases
+
+## Use Cases
+
+*Are you or your institution using the DFG-Fachsystematik-Ontology? We would like to hear from you (via an [issue](https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/)), and include your use-case in this section.*
+
+* [DaRUS - the data repository of the University of Stuttgart](https://darus.uni-stuttgart.de/): DFGO is used to classify datasets according to topic, see example [10.18419/darus-3988](https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/darus-3988)
