@@ -15,6 +15,8 @@ dcterms:license a owl:AnnotationProperty .
 
 skos:altLabel a owl:AnnotationProperty .
 
+skos:closeMatch a owl:ObjectProperty .
+
 <https://github.com/tibonto/dfgfo> a owl:Ontology ;
     dc:creator "André Castro",
         "Deutsche Forschungsgemeinschaft (DFG)",
@@ -25,8 +27,7 @@ skos:altLabel a owl:AnnotationProperty .
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@de,
         "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de,
-        "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) is aligned with GBV DFG2024 via skos:closeMatch relations. The two semantic artifacts were developed separately, but both teams strive towards alignment. While DFGO defines terms as owl:Class instances, GBV defines them as skos:Concept. More details on GBV DFG2024 at http://uri.gbv.de/terminology/dfg/"@en ;
-    owl:imports skos: .
+        "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) is aligned with GBV DFG2024 via skos:closeMatch relations. The two semantic artifacts were developed separately, but both teams strive towards alignment. While DFGO defines terms as owl:Class instances, GBV defines them as skos:Concept. More details on GBV DFG2024 at http://uri.gbv.de/terminology/dfg/"@en .
 
 dfgfo:111-01 a owl:Class ;
     rdfs:label "Prehistory and World Archaeology"@en ;
