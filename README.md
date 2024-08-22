@@ -39,7 +39,7 @@ Create a python3 Virtual Environment
 
 Install requirements `pip install -r scripts/requirements.txt`
 
-Run script to create ontology `python scripts/create_ontology.py`. Make sure to use end of line sequence `LF` for  [/csv/Fachsystematik_2020-2024.csv](/csv/Fachsystematik_2020-2024.csv).
+Run script to create ontology `python scripts/create_ontology.py`. Make sure to use end of line sequence `LF` in the csv file used to create the ontology (for example when working on Windows).
 
 ## Other scripts
 
@@ -56,11 +56,11 @@ At every push or pull_request a [ROBOT report](http://robot.obolibrary.org/repor
 * [HTML page](https://www.dfg.de/en/research-funding/proposal-funding-process/interdisciplinarity/subject-area-structure)
 * PDFs
   * 2020-2024
-    * [PDF(en)](https://www.dfg.de/download/pdf/dfg_im_profil/gremien/fachkollegien/amtsperiode_2020_2024/fachsystematik_2020-2024_en_grafik.pdf)
-    * [PDF(de)](https://www.dfg.de/download/pdf/dfg_im_profil/gremien/fachkollegien/amtsperiode_2020_2024/fachsystematik_2020-2024_de_grafik.pdf)
+    * [PDF (en)](https://www.dfg.de/download/pdf/dfg_im_profil/gremien/fachkollegien/amtsperiode_2020_2024/fachsystematik_2020-2024_en_grafik.pdf) (link is broken)
+    * [PDF (de)](/pdf/fachsystematik-2020-2024-de-data.pdf) (local copy)
   * 2024-2028
-    * [PDF(en)](https://www.dfg.de/resource/blob/331950/85717c3edb9ea8bd453d5110849865d3/fachsystematik-2024-2028-en-data.pdf)
-    * [PDF(de)](https://www.dfg.de/resource/blob/331944/33422f091e941592cdc355038a865e03/fachsystematik-2024-2028-de-data.pdf)
+    * [PDF (en)](/pdf/fachsystematik-2024-2028-en-data.pdf) (local copy)
+    * [PDF (de)](/pdf/fachsystematik-2024-2028-de-data.pdf) (local copy)
 * Edited CSV - combining both German and English labels
   * [2020-2024](/csv/2020-2024/Fachsystematik_2020-2024.csv) (this repo)
   * [2024-2028](/csv/2024-2028/Fachsystematik_2024-2028.csv) (this repo)
@@ -73,4 +73,4 @@ For previous versions (2020-2024) see https://github.com/tibonto/DFG-Fachsystema
 
 *Are you or your institution using the DFG-Fachsystematik-Ontology? We would like to hear from you (via an [issue](https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/)), and include your use-case in this section.*
 
-* [DaRUS - the data repository of the University of Stuttgart](https://darus.uni-stuttgart.de/): DFGO is used to classify datasets according to topic, see example [10.18419/darus-3988](https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/darus-3988)
+* [DaRUS - the data repository of the University of Stuttgart](https://darus.uni-stuttgart.de/): DFGFO is used to classify datasets according to topic, see example [10.18419/darus-3988](https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/darus-3988)
