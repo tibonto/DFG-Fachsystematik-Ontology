@@ -5,6 +5,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
 dc:creator rdf:type owl:AnnotationProperty .
@@ -16,10 +17,9 @@ dc:title rdf:type owl:AnnotationProperty .
 terms:license rdf:type owl:AnnotationProperty .
 
 skos:altLabel rdf:type owl:AnnotationProperty .
-
 skos:closeMatch rdf:type owl:ObjectProperty .
 
-<https://github.com/tibonto/dfgfo> rdf:type owl:Ontology ;
+<https://w3id.org/dfgfo/2024> rdf:type owl:Ontology ;
                                    dc:creator "Deutsche Forschungsgemeinschaft (DFG)",
                                               "André Castro",
                                               "Susanne Arndt";
@@ -28,6 +28,9 @@ skos:closeMatch rdf:type owl:ObjectProperty .
                                    dc:title "DFG Fachsystematik - Ontologie - 2024-2028"@de ;
                                    rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@de ;
                                    rdfs:comment "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de ;
-                                   terms:license <https://creativecommons.org/licenses/by/4.0/> ; 
+                                   terms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                   owl:versionInfo "2024-2028"^^xsd:string ;
+                                   owl:versionIRI dfgfo: ;
 				   rdfs:comment "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) is aligned with GBV DFG2024 via skos:closeMatch relations. The two semantic artifacts were developed separately, but both teams strive towards alignment. While DFGO defines terms as owl:Class instances, GBV defines them as skos:Concept. More details on GBV DFG2024 at http://uri.gbv.de/terminology/dfg/"@en .
+
 

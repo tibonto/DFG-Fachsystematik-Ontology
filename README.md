@@ -15,8 +15,7 @@ We decided to build upon this work and build and RDF based ontology, for the *DF
 ## Ontology
 
 * **Ontology TTL**: [dfgfo.ttl](./dfgfo.ttl)
-* **Ontology IRI**: <https://github.com/tibonto/dfgfo/>
-* **Ontology PURL**: <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/main/dfgfo.ttl>
+* **Ontology PURL**: <https://w3id.org/dfgfo/2024>
 * **ontology prefix/id**: `dfgfo`
 
 ![screen capture of classes hierarchy in protege](./docs/dfgfo-hierarchies.png)

@@ -1,9 +1,11 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dfgfo: <https://github.com/tibonto/dfgfo/> .
+@prefix dfgfo: <https://w3id.org/dfgfo/2024/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 
 dc:creator a owl:AnnotationProperty .
 
@@ -17,7 +19,7 @@ skos:altLabel a owl:AnnotationProperty .
 
 skos:closeMatch a owl:ObjectProperty .
 
-<https://github.com/tibonto/dfgfo> a owl:Ontology ;
+<https://w3id.org/dfgfo/2024> a owl:Ontology ;
     dc:creator "André Castro",
         "Deutsche Forschungsgemeinschaft (DFG)",
         "Susanne Arndt" ;
@@ -27,7 +29,9 @@ skos:closeMatch a owl:ObjectProperty .
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@de,
         "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de,
-        "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) is aligned with GBV DFG2024 via skos:closeMatch relations. The two semantic artifacts were developed separately, but both teams strive towards alignment. While DFGO defines terms as owl:Class instances, GBV defines them as skos:Concept. More details on GBV DFG2024 at http://uri.gbv.de/terminology/dfg/"@en .
+"DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) is aligned with GBV DFG2024 via skos:closeMatch relations. The two semantic artifacts were developed separately, but both teams strive towards alignment. While DFGO defines terms as owl:Class instances, GBV defines them as skos:Concept. More details on GBV DFG2024 at http://uri.gbv.de/terminology/dfg/"@en ;
+owl:versionIRI dfgfo: ;
+    owl:versionInfo "2024-2028"^^xsd:string .
 
 dfgfo:111-01 a owl:Class ;
     rdfs:label "Prehistory and World Archaeology"@en ;
@@ -1714,4 +1718,5 @@ dfgfo:222 a owl:Class ;
     rdfs:subClassOf dfgfo:22 ;
     skos:altLabel "Medizin"@de ;
     skos:closeMatch <http://uri.gbv.de/terminology/dfg2024/222> .
+
 
