@@ -6,7 +6,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-
 dc:creator a owl:AnnotationProperty .
 
 dc:description a owl:AnnotationProperty .
@@ -18,20 +17,6 @@ dcterms:license a owl:AnnotationProperty .
 skos:altLabel a owl:AnnotationProperty .
 
 skos:closeMatch a owl:ObjectProperty .
-
-<https://w3id.org/dfgfo/2024> a owl:Ontology ;
-    dc:creator "André Castro",
-        "Deutsche Forschungsgemeinschaft (DFG)",
-        "Susanne Arndt" ;
-    dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English." ;
-    dc:title "DFG Fachsystematik - Ontologie - 2024-2028"@de,
-        "DFG Classification of Subject Areas Ontology - 2024-2028"@en ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@de,
-        "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de,
-"DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) is aligned with GBV DFG2024 via skos:closeMatch relations. The two semantic artifacts were developed separately, but both teams strive towards alignment. While DFGO defines terms as owl:Class instances, GBV defines them as skos:Concept. More details on GBV DFG2024 at http://uri.gbv.de/terminology/dfg/"@en ;
-owl:versionIRI dfgfo: ;
-    owl:versionInfo "2024-2028"^^xsd:string .
 
 dfgfo:111-01 a owl:Class ;
     rdfs:label "Prehistory and World Archaeology"@en ;
@@ -1317,6 +1302,20 @@ dfgfo:451-06 a owl:Class ;
     skos:altLabel "Geotechnik, Wasserbau"@de ;
     skos:closeMatch <http://uri.gbv.de/terminology/dfg2024/451-06> .
 
+<https://w3id.org/dfgfo/2024> a owl:Ontology ;
+    dc:creator "André Castro",
+        "Deutsche Forschungsgemeinschaft (DFG)",
+        "Susanne Arndt" ;
+    dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English." ;
+    dc:title "DFG Fachsystematik - Ontologie - 2024-2028"@de,
+        "DFG Classification of Subject Areas Ontology - 2024-2028"@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@de,
+        "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de,
+        "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) is aligned with GBV DFG2024 via skos:closeMatch relations. The two semantic artifacts were developed separately, but both teams strive towards alignment. While DFGO defines terms as owl:Class instances, GBV defines them as skos:Concept. More details on GBV DFG2024 at http://uri.gbv.de/terminology/dfg/"@en ;
+    owl:versionIRI <https://w3id.org/dfgfo/2024> ;
+    owl:versionInfo "2024-2028"^^xsd:string .
+
 dfgfo:23 a owl:Class ;
     rdfs:label "Agriculture, Forestry and Veterinary Medicine"@en ;
     rdfs:subClassOf dfgfo:2 ;
@@ -1718,5 +1717,4 @@ dfgfo:222 a owl:Class ;
     rdfs:subClassOf dfgfo:22 ;
     skos:altLabel "Medizin"@de ;
     skos:closeMatch <http://uri.gbv.de/terminology/dfg2024/222> .
-
 
