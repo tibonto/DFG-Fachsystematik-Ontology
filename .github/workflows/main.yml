@@ -32,5 +32,5 @@ jobs:
       - name: report artifact
         uses: actions/upload-artifact@v2
         with:
-          name: robot_report_ttl
+          name: robot_reports
           path: report-*.txt
