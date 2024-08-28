@@ -20,14 +20,17 @@ jobs:
       - name: test for ERRORs with ROBOT report
         run: |
           robot report --profile .github/report_profile.txt --input dfgfo.ttl
+          robot report --profile .github/report_profile.txt --input dfgfo.owl
       - name: validate ontology against OWL DL profile
         run: |
           robot validate-profile --profile DL --input dfgfo.ttl
+          robot validate-profile --profile DL --input dfgfo.owl
       - name: produce report
         run: |
-          robot report --profile .github/report_profile.txt --input dfgfo.ttl --output report.txt
+          robot report --profile .github/report_profile.txt --input dfgfo.ttl --output report-ttl.txt
+          robot report --profile .github/report_profile.txt --input dfgfo.owl --output report-owl.txt
       - name: report artifact
         uses: actions/upload-artifact@v2
         with:
-          name: robot_report
-          path: report.txt
+          name: robot_report_ttl
+          path: report-*.txt
