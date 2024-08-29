@@ -15,6 +15,7 @@ Each Subject is a owl:Class with:
 '''
 dfg_onto_metadata_fn = Path(__file__).parent.parent / 'metadata.ttl'
 dfg_onto_fn = Path(__file__).parent.parent / 'dfgfo.ttl' 
+dfg_onto_fn_owl = Path(__file__).parent.parent / 'dfgfo.owl' 
 #dfg_csv_en = Path(__file__).parent.parent / 'csv' / '2020-2024' / 'Fachsystematik_2020-2024.csv'
 dfg_csv_en = Path(__file__).parent.parent / 'csv' / '2024-2028' / 'Fachsystematik_2024-2028.csv'
 print(dfg_csv_en)
@@ -122,3 +123,4 @@ print(g_joint.serialize())
 #with open(dfg_onto_fn, 'w') as dfg_onto:
 #    dfg_onto.write(g_joint.serialize())
 g_joint.serialize(destination=dfg_onto_fn, encoding="utf-8")
+g_joint.serialize(destination=dfg_onto_fn_owl, encoding="utf-8", format="xml")

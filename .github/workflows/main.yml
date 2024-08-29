@@ -7,7 +7,7 @@ jobs:
   robot_report:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: install ROBOT
         run: |
           wget --quiet https://github.com/ontodev/robot/releases/download/v1.8.1/robot.jar
@@ -20,14 +20,17 @@ jobs:
       - name: test for ERRORs with ROBOT report
         run: |
           robot report --profile .github/report_profile.txt --input dfgfo.ttl
+          robot report --profile .github/report_profile.txt --input dfgfo.owl
       - name: validate ontology against OWL DL profile
         run: |
           robot validate-profile --profile DL --input dfgfo.ttl
+          robot validate-profile --profile DL --input dfgfo.owl
       - name: produce report
         run: |
-          robot report --profile .github/report_profile.txt --input dfgfo.ttl --output report.txt
+          robot report --profile .github/report_profile.txt --input dfgfo.ttl --output report-ttl.txt
+          robot report --profile .github/report_profile.txt --input dfgfo.owl --output report-owl.txt
       - name: report artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
-          name: robot_report
-          path: report.txt
+          name: robot_reports
+          path: report-*.txt
