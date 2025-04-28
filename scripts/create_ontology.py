@@ -15,6 +15,7 @@ Each Subject is a owl:Class with:
 '''
 dfg_onto_metadata_fn = Path(__file__).parent.parent / 'metadata.ttl'
 dfgfo_handles_fn = Path(__file__).parent.parent / 'handles-2020.ttl' # NEW
+dfgfo_deprecatedIDs_fn = Path(__file__).parent.parent / 'deprecated-ids.ttl' # NEW
 dfg_onto_fn = Path(__file__).parent.parent / 'dfgfo.ttl' 
 dfg_csv_en = Path(__file__).parent.parent / 'csv' / 'Fachsystematik_2020-2024.csv'
 print(dfg_csv_en)
@@ -23,9 +24,11 @@ g_metadata = Graph()
 g_metadata.parse(str(dfg_onto_metadata_fn.absolute()))
 g_handles = Graph() # NEW
 g_handles.parse(str(dfgfo_handles_fn.absolute()))
+g_deprecatedIDs = Graph() # NEW
+g_deprecatedIDs.parse(str(dfgfo_deprecatedIDs_fn.absolute()))
 
 g_classes = Graph()
-ns_str = 'https://github.com/tibonto/dfgfo/'
+ns_str = 'https://w3id.org/dfgfo/2020/'
 namespace = Namespace(ns_str)
 
 g_classes.namespace_manager.bind('owl', 'http://www.w3.org/2002/07/owl#', override=False)
@@ -53,8 +56,8 @@ def create_class(graph, ns, node_name, labels, parent):
         parent_node = URIRef(parent_uri_str)
         graph.add((node, RDFS.subClassOf, parent_node))
     # labels
-    graph.add((node, RDFS.label, Literal(f'{labels[0]}', lang='en')))
-    graph.add((node, SKOS.altLabel, Literal(f'{labels[1]}', lang='de')))
+    graph.add((node, SKOS.prefLabel, Literal(f'{labels[0]}', lang='en')))
+    graph.add((node, SKOS.prefLabel, Literal(f'{labels[1]}', lang='de')))
     # obo:IAO_0000111 # editor preferred term
 
     ns.node_name
@@ -117,7 +120,7 @@ with open(dfg_csv_en, newline='', encoding="utf-8") as csvfile:
 
 # join g_metadata + g_classes graphs into g_joint
 g_joint = Graph() # after the g_classes
-g_joint = g_metadata + g_classes + g_handles
+g_joint = g_metadata + g_classes + g_handles + g_deprecatedIDs
 
 print('\n\nSERIALIZE\n\n')
 print(g_joint.serialize())

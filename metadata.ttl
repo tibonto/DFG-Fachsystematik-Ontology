@@ -34,7 +34,9 @@ skos:altLabel rdf:type owl:AnnotationProperty .
                                    owl:priorVersion <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/refs/tags/2023-01-17/dfgfo.ttl> ;
                                    skos:changeNote """
                                    Changes:
-* updated metadata (added: terms:modified, owl:priorVersion, skos:changeNote, updated: dc:title now includes the years)
-* added handles to dfgfo:314-01 and dfgfo:409-03
-                                   """@en. 
+* updated metadata (added: terms:modified, owl:priorVersion, skos:changeNote, updated: dc:title now includes the years) (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/36)
+* added handles to dfgfo:314-01 and dfgfo:409-03 (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/38)
+* deprecated non-resolvable identifiers and added pointer to w3ids to be used instead (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/36)
+* changed label properties: all labels are provided with skos:prefLabel now to treat languages equally (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/37)
+"""@en. 
 # TODO: provide appropriate license - same license should go to github repo
