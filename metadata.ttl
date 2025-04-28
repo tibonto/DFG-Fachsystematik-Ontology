@@ -6,7 +6,7 @@
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 dc:creator rdf:type owl:AnnotationProperty .
 
@@ -29,6 +29,12 @@ skos:altLabel rdf:type owl:AnnotationProperty .
                                    rdfs:comment "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    owl:versionInfo "2020-2024"^^xsd:string ;
-                                   owl:versionIRI <https://w3id.org/dfgfo/2020>
-                                   . 
+                                   owl:versionIRI <https://w3id.org/dfgfo/2020> ;
+                                   terms:modified "2025-05-31"^^xsd:date ;
+                                   owl:priorVersion <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/refs/tags/2023-01-17/dfgfo.ttl> ;
+                                   skos:changeNote """
+                                   Changes:
+* updated metadata (added: terms:modified, owl:priorVersion, skos:changeNote, updated: dc:title now includes the years)
+* added handles to dfgfo:314-01 and dfgfo:409-03
+                                   """@en. 
 # TODO: provide appropriate license - same license should go to github repo

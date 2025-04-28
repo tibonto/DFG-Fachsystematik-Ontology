@@ -10,6 +10,6 @@ dfgfo:314-01 a owl:Class ;
 schema:identifier <https://hdl.handle.net/20.500.14488/DFGFO_314-01> ;
 .
 
-dfgfo:409-01 a owl:Class ;
-    schema:identifier <https://hdl.handle.net/20.500.14488/DFGFO_443-03>;
+dfgfo:409-03 a owl:Class ;
+    schema:identifier <https://hdl.handle.net/20.500.14488/DFGFO_409-03> ;
 .

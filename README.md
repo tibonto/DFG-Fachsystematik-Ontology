@@ -27,7 +27,8 @@ We decided to build upon this work and build and RDF based ontology, for the *DF
     * with `rdfs:label` in EN and skos:altLabel in DE
     * subsumed to parent subject with `rdfs:subClassOf` accordinng to DFG Classification hierarchy 
 * parses the metadata triples from [metadata.ttl](./metadata.ttl) into a graph
-* joins metadata and DFG classification graphs into [dfgfo.ttl](./dfgfo.ttl)
+* parses handle triples from [handles-2020.ttl](./handles-2020.ttl) into a graph
+* joins metadata, handles and DFG classification graphs into [dfgfo.ttl](./dfgfo.ttl)
 
 
 **Run**

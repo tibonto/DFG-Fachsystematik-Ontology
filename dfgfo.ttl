@@ -25,10 +25,17 @@ skos:altLabel a owl:AnnotationProperty .
     dc:title "DFG Fachsystematik - Ontologie - 2020-2024"@de,
         "DFG Classification of Subject Areas Ontology - 2020-2024"@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-05-31"^^xsd:date ;
     rdfs:comment "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de,
         "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@en ;
+    owl:priorVersion <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/refs/tags/2023-01-17/dfgfo.ttl> ;
     owl:versionIRI <https://w3id.org/dfgfo/2020> ;
-    owl:versionInfo "2020-2024"^^xsd:string .
+    owl:versionInfo "2020-2024"^^xsd:string ;
+    skos:changeNote """\r
+                                   Changes:\r
+* updated metadata (added: terms:modified, owl:priorVersion, skos:changeNote, updated: dc:title now includes the years)\r
+* added handles to dfgfo:314-01 and dfgfo:409-03\r
+                                   """@en .
 
 dfgfo:101-01 a owl:Class ;
     rdfs:label "Prehistory and World Archaeology"@en ;
@@ -1019,8 +1026,7 @@ dfgfo:408-03 a owl:Class ;
 dfgfo:409-01 a owl:Class ;
     rdfs:label "Theoretical Computer Science"@en ;
     rdfs:subClassOf dfgfo:409 ;
-    skos:altLabel "Theoretische Informatik"@de ;
-    schema:identifier <https://hdl.handle.net/20.500.14488/DFGFO_443-03> .
+    skos:altLabel "Theoretische Informatik"@de .
 
 dfgfo:409-02 a owl:Class ;
     rdfs:label "Software Engineering and Programming Languages"@en ;
@@ -1030,7 +1036,8 @@ dfgfo:409-02 a owl:Class ;
 dfgfo:409-03 a owl:Class ;
     rdfs:label "Security and Dependability"@en ;
     rdfs:subClassOf dfgfo:409 ;
-    skos:altLabel "Sicherheit und Verlässlichkeit"@de .
+    skos:altLabel "Sicherheit und Verlässlichkeit"@de ;
+    schema:identifier <https://hdl.handle.net/20.500.14488/DFGFO_409-03> .
 
 dfgfo:409-04 a owl:Class ;
     rdfs:label "Operating, Communication, Database and Distributed Systems"@en ;
