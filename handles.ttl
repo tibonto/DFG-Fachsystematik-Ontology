@@ -1,0 +1,15 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dfgfo: <https://w3id.org/dfgfo/2024/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+
+dfgfo:342-01 a owl:Class ;
+schema:identifier <https://hdl.handle.net/20.500.14488/DFGFO_342-01> ;
+.
+
+dfgfo:443-03 a owl:Class ;
+    schema:identifier <https://hdl.handle.net/20.500.14488/DFGFO_443-03> ;   
+.
