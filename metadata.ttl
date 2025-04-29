@@ -17,6 +17,7 @@ dc:title rdf:type owl:AnnotationProperty .
 terms:license rdf:type owl:AnnotationProperty .
 
 skos:altLabel rdf:type owl:AnnotationProperty .
+skos:prefLabel rdf:type owl:AnnotationProperty .
 skos:closeMatch rdf:type owl:ObjectProperty .
 
 <https://w3id.org/dfgfo/2024> rdf:type owl:Ontology ;
