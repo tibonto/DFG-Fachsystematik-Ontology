@@ -19,6 +19,9 @@ terms:license rdf:type owl:AnnotationProperty .
 skos:altLabel rdf:type owl:AnnotationProperty .
 skos:prefLabel rdf:type owl:AnnotationProperty .
 skos:closeMatch rdf:type owl:ObjectProperty .
+<https://schema.org/identifier> rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/modified> rdf:type owl:DatatypeProperty .
+<http://www.w3.org/2004/02/skos/core#changeNote> rdf:type owl:AnnotationProperty .
 
 <https://w3id.org/dfgfo/2024> rdf:type owl:Ontology ;
                                    dc:creator "Deutsche Forschungsgemeinschaft (DFG)",
