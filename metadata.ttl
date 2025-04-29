@@ -36,7 +36,7 @@ skos:closeMatch rdf:type owl:ObjectProperty .
                                    owl:versionInfo "2024-2028"^^xsd:string ;
                                    owl:versionIRI <https://w3id.org/dfgfo/2024> ;
                                    owl:priorVersion <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/refs/tags/2024-2024-08-31/dfgfo.owl> ;
-                                   terms:modified "2025-05-30"^^xsd:date ;
+                                   terms:modified "2025-05-30T00:00:00"^^xsd:dateTime ;
 				   rdfs:comment "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) is aligned with GBV DFG2024 via skos:closeMatch relations. The two semantic artifacts were developed separately, but both teams strive towards alignment. While DFGO defines terms as owl:Class instances, GBV defines them as skos:Concept. More details on GBV DFG2024 at http://uri.gbv.de/terminology/dfg/"@en ;
                    skos:changeNote """Changes:\n* 2025-05-30 added metadata (owl:priorVersion, skos:changeNote)\n* 2025-05-30 provide labels in all languages with skos:prefLabels to treat languages equally\n* added handles for dfgfo:342-01 and dfgfo:443-03"""@en.
 
