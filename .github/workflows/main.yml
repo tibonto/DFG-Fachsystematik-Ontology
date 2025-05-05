@@ -7,7 +7,7 @@ jobs:
   robot_report:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: install ROBOT
         run: |
           wget --quiet https://github.com/ontodev/robot/releases/download/v1.8.1/robot.jar
@@ -27,7 +27,7 @@ jobs:
         run: |
           robot report --profile .github/report_profile.txt --input dfgfo.ttl --output report.txt
       - name: report artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: robot_report
           path: report.txt
