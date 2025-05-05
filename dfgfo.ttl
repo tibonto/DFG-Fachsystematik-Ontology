@@ -36,7 +36,7 @@ skos:prefLabel a owl:AnnotationProperty .
     dc:title "DFG Fachsystematik - Ontologie - 2020-2024"@de,
         "DFG Classification of Subject Areas Ontology - 2020-2024"@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2025-05-31"^^xsd:date ;
+    dcterms:modified "2025-05-31"^^xsd:dateTime ;
     rdfs:comment "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de,
         "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@en ;
     owl:priorVersion <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/refs/tags/2023-01-17/dfgfo.ttl> ;
@@ -1161,6 +1161,8 @@ skos:prefLabel a owl:AnnotationProperty .
 <https://github.com/tibonto/dfgfo/45> a owl:Class ;
     obo:IAO_0100001 dfgfo:45 ;
     owl:deprecated true .
+
+schema:identifier a owl:AnnotationProperty .
 
 dfgfo:101-01 a owl:Class ;
     rdfs:subClassOf dfgfo:101 ;
