@@ -18,6 +18,12 @@ terms:license rdf:type owl:AnnotationProperty .
 
 skos:altLabel rdf:type owl:AnnotationProperty .
 
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+<http://purl.org/dc/terms/modified> rdf:type owl:DatatypeProperty .
+
+<http://www.w3.org/2004/02/skos/core#changeNote> rdf:type owl:AnnotationProperty .
+
 <https://github.com/tibonto/dfgfo> rdf:type owl:Ontology ;
                                    dc:creator "Deutsche Forschungsgemeinschaft (DFG)",
                                               "André Castro",

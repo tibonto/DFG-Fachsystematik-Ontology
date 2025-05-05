@@ -20,7 +20,13 @@ dc:title a owl:AnnotationProperty .
 
 dcterms:license a owl:AnnotationProperty .
 
+dcterms:modified a owl:DatatypeProperty .
+
 skos:altLabel a owl:AnnotationProperty .
+
+skos:changeNote a owl:AnnotationProperty .
+
+skos:prefLabel a owl:AnnotationProperty .
 
 <https://github.com/tibonto/dfgfo> a owl:Ontology ;
     dc:creator "André Castro",
@@ -36,12 +42,12 @@ skos:altLabel a owl:AnnotationProperty .
     owl:priorVersion <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/refs/tags/2023-01-17/dfgfo.ttl> ;
     owl:versionIRI <https://w3id.org/dfgfo/2020> ;
     owl:versionInfo "2020-2024"^^xsd:string ;
-    skos:changeNote """
-                                   Changes:
-* updated metadata (added: terms:modified, owl:priorVersion, skos:changeNote, updated: dc:title now includes the years) (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/36)
-* added handles to dfgfo:314-01 and dfgfo:409-03 (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/38)
-* deprecated non-resolvable identifiers and added pointer to w3ids to be used instead (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/36)
-* changed label properties: all labels are provided with skos:prefLabel now to treat languages equally (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/37)
+    skos:changeNote """\r
+                                   Changes:\r
+* updated metadata (added: terms:modified, owl:priorVersion, skos:changeNote, updated: dc:title now includes the years) (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/36)\r
+* added handles to dfgfo:314-01 and dfgfo:409-03 (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/38)\r
+* deprecated non-resolvable identifiers and added pointer to w3ids to be used instead (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/36)\r
+* changed label properties: all labels are provided with skos:prefLabel now to treat languages equally (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/37)\r
 """@en .
 
 <https://github.com/tibonto/dfgfo/1> a owl:Class ;
