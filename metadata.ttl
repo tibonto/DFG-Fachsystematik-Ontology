@@ -38,7 +38,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    owl:versionInfo "2020-2024"^^xsd:string ;
                                    owl:versionIRI <https://w3id.org/dfgfo/2020> ;
-                                   terms:modified "2025-05-31"^^xsd:dateTime ;
+                                   terms:modified "2025-05-31T00:00:00"^^xsd:dateTime ;
                                    owl:priorVersion <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/refs/tags/2023-01-17/dfgfo.ttl> ;
                                    skos:changeNote """
                                    Changes:
