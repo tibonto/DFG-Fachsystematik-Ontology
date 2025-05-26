@@ -14,6 +14,7 @@ Each Subject is a owl:Class with:
 * class subpeclass accordinng to DFG Classification hierarchy 
 '''
 dfg_onto_metadata_fn = Path(__file__).parent.parent / 'metadata.ttl'
+dfg_onto_handles_fn = Path(__file__).parent.parent / 'handles.ttl'
 dfg_onto_fn = Path(__file__).parent.parent / 'dfgfo.ttl' 
 dfg_onto_fn_owl = Path(__file__).parent.parent / 'dfgfo.owl' 
 #dfg_csv_en = Path(__file__).parent.parent / 'csv' / '2020-2024' / 'Fachsystematik_2020-2024.csv'
@@ -22,6 +23,9 @@ print(dfg_csv_en)
 
 g_metadata = Graph()
 g_metadata.parse(str(dfg_onto_metadata_fn.absolute()))
+
+g_handles = Graph()
+g_handles.parse(str(dfg_onto_handles_fn.absolute()))
 
 g_classes = Graph()
 ns_str = 'https://w3id.org/dfgfo/2024/'
@@ -52,8 +56,8 @@ def create_class(graph, ns, node_name, labels, parent):
         parent_node = URIRef(parent_uri_str)
         graph.add((node, RDFS.subClassOf, parent_node))
     # labels
-    graph.add((node, RDFS.label, Literal(f'{labels[0]}', lang='en')))
-    graph.add((node, SKOS.altLabel, Literal(f'{labels[1]}', lang='de')))
+    graph.add((node, SKOS.prefLabel, Literal(f'{labels[0]}', lang='en')))
+    graph.add((node, SKOS.prefLabel, Literal(f'{labels[1]}', lang='de')))
     # mappings
     graph.add((node, SKOS.closeMatch, URIRef(f'http://uri.gbv.de/terminology/dfg2024/{node_name}')))
 
@@ -116,7 +120,7 @@ with open(dfg_csv_en, newline='', encoding="utf-8") as csvfile:
 
 # join g_metadata + g_classes graphs into g_joint
 g_joint = Graph() # after the g_classes
-g_joint = g_metadata + g_classes
+g_joint = g_metadata + g_classes + g_handles
 
 print('\n\nSERIALIZE\n\n')
 print(g_joint.serialize())

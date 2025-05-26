@@ -17,7 +17,11 @@ dc:title rdf:type owl:AnnotationProperty .
 terms:license rdf:type owl:AnnotationProperty .
 
 skos:altLabel rdf:type owl:AnnotationProperty .
+skos:prefLabel rdf:type owl:AnnotationProperty .
 skos:closeMatch rdf:type owl:ObjectProperty .
+<https://schema.org/identifier> rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/modified> rdf:type owl:DatatypeProperty .
+<http://www.w3.org/2004/02/skos/core#changeNote> rdf:type owl:AnnotationProperty .
 
 <https://w3id.org/dfgfo/2024> rdf:type owl:Ontology ;
                                    dc:creator "Deutsche Forschungsgemeinschaft (DFG)",
@@ -31,6 +35,9 @@ skos:closeMatch rdf:type owl:ObjectProperty .
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    owl:versionInfo "2024-2028"^^xsd:string ;
                                    owl:versionIRI <https://w3id.org/dfgfo/2024> ;
-				   rdfs:comment "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) is aligned with GBV DFG2024 via skos:closeMatch relations. The two semantic artifacts were developed separately, but both teams strive towards alignment. While DFGO defines terms as owl:Class instances, GBV defines them as skos:Concept. More details on GBV DFG2024 at http://uri.gbv.de/terminology/dfg/"@en .
+                                   owl:priorVersion <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/refs/tags/2024-2024-08-31/dfgfo.owl> ;
+                                   terms:modified "2025-05-30T00:00:00"^^xsd:dateTime ;
+				   rdfs:comment "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) is aligned with GBV DFG2024 via skos:closeMatch relations. The two semantic artifacts were developed separately, but both teams strive towards alignment. While DFGO defines terms as owl:Class instances, GBV defines them as skos:Concept. More details on GBV DFG2024 at http://uri.gbv.de/terminology/dfg/"@en ;
+                   skos:changeNote """Changes:\n* 2025-05-30 added metadata (owl:priorVersion, skos:changeNote)\n* 2025-05-30 provide labels in all languages with skos:prefLabels to treat languages equally\n* added handles for dfgfo:342-01 and dfgfo:443-03"""@en.
 
 
