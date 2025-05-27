@@ -13,8 +13,8 @@ We decided to build upon this work and build and RDF based ontology, for the *DF
 
 ## Ontology 
 * **Ontology TTL**: [dfgfo.ttl](./dfgfo.ttl)
-* **Ontology IRI**: https://github.com/tibonto/dfgfo/
-* **Ontology PURL**: <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/main/dfgfo.ttl>
+* **Ontology IRI**: https://w3id.org/dfgfo/2020/
+* **Ontology PURL**: <https://w3id.org/dfgfo/2020>
 * **ontology prefix/id**: `dfgfo`
 
 

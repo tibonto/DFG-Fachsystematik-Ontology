@@ -1,11 +1,11 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dfgfo: <https://w3id.org/dfgfo/2020/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix terms: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 obo:IAO_0100001 a owl:AnnotationProperty ;
@@ -18,37 +18,15 @@ dc:description a owl:AnnotationProperty .
 
 dc:title a owl:AnnotationProperty .
 
-terms:license a owl:AnnotationProperty .
+dcterms:license a owl:AnnotationProperty .
 
-terms:modified a owl:DatatypeProperty .
+dcterms:modified a owl:DatatypeProperty .
 
 skos:altLabel a owl:AnnotationProperty .
 
 skos:changeNote a owl:AnnotationProperty .
 
 skos:prefLabel a owl:AnnotationProperty .
-
-<https://github.com/tibonto/dfgfo> a owl:Ontology ;
-    dc:creator "André Castro",
-        "Deutsche Forschungsgemeinschaft (DFG)",
-        "Susanne Arndt" ;
-    dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English." ;
-    dc:title "DFG Fachsystematik - Ontologie - 2020-2024"@de,
-        "DFG Classification of Subject Areas Ontology - 2020-2024"@en ;
-    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    terms:modified "2025-05-31T00:00:00"^^xsd:dateTime ;
-    rdfs:comment "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de,
-        "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@en ;
-    owl:priorVersion <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/refs/tags/2023-01-17/dfgfo.ttl> ;
-    owl:versionIRI <https://w3id.org/dfgfo/2020> ;
-    owl:versionInfo "2020-2024"^^xsd:string ;
-    skos:changeNote """\r
-                                   Changes:\r
-* updated metadata (added: terms:modified, owl:priorVersion, skos:changeNote, updated: dc:title now includes the years) (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/36)\r
-* added handles to dfgfo:314-01 and dfgfo:409-03 (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/38)\r
-* deprecated non-resolvable identifiers and added pointer to w3ids to be used instead (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/36)\r
-* changed label properties: all labels are provided with skos:prefLabel now to treat languages equally (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/37)\r
-"""@en .
 
 <https://github.com/tibonto/dfgfo/1> a owl:Class ;
     obo:IAO_0100001 dfgfo:1 ;
@@ -1163,6 +1141,28 @@ skos:prefLabel a owl:AnnotationProperty .
     owl:deprecated true .
 
 schema:identifier a owl:AnnotationProperty .
+
+dfgfo: a owl:Ontology ;
+    dc:creator "André Castro",
+        "Deutsche Forschungsgemeinschaft (DFG)",
+        "Susanne Arndt" ;
+    dc:description "DFG Fachsystematik Ontology / DFG Classification of Subject Areas Ontology (DFGFO) encodes the DFG Classification of Subject Areas into an ontology, where each subject number are is enconded into a Class with subclass statements following the DFG Classification of Subject Areas hierarchy. Labels are provide German and English." ;
+    dc:title "DFG Fachsystematik - Ontologie - 2020-2024"@de,
+        "DFG Classification of Subject Areas Ontology - 2020-2024"@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2025-05-31T00:00:00"^^xsd:dateTime ;
+    rdfs:comment "DFG Fachsystematik - Ontology wurde zur Integration in den TIB Terminology Service erstellt"@de,
+        "DFG Classification of Subject Areas Ontology is being created as part of the TIB Terminology Service"@en ;
+    owl:priorVersion <https://raw.githubusercontent.com/tibonto/DFG-Fachsystematik-Ontology/refs/tags/2023-01-17/dfgfo.ttl> ;
+    owl:versionIRI <https://w3id.org/dfgfo/2020> ;
+    owl:versionInfo "2020-2024"^^xsd:string ;
+    skos:changeNote """\r
+                                   Changes:\r
+* updated metadata (added: terms:modified, owl:priorVersion, skos:changeNote, updated: dc:title now includes the years) (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/36)\r
+* added handles to dfgfo:314-01 and dfgfo:409-03 (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/38)\r
+* deprecated non-resolvable identifiers and added pointer to w3ids to be used instead (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/36)\r
+* changed label properties: all labels are provided with skos:prefLabel now to treat languages equally (cf. https://github.com/tibonto/DFG-Fachsystematik-Ontology/issues/37)\r
+"""@en .
 
 dfgfo:101-01 a owl:Class ;
     rdfs:subClassOf dfgfo:101 ;

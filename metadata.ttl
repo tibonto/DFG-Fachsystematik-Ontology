@@ -26,7 +26,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 <http://www.w3.org/2004/02/skos/core#changeNote> rdf:type owl:AnnotationProperty .
 
-<https://github.com/tibonto/dfgfo> rdf:type owl:Ontology ;
+<https://w3id.org/dfgfo/2020/> rdf:type owl:Ontology ;
                                    dc:creator "Deutsche Forschungsgemeinschaft (DFG)",
                                               "André Castro",
                                               "Susanne Arndt";
