@@ -55,12 +55,17 @@ At every push or pull_request a [ROBOT report](http://robot.obolibrary.org/repor
 
 * [HTML page](https://www.dfg.de/en/research-funding/proposal-funding-process/interdisciplinarity/subject-area-structure)
 * PDFs
+  * 2016-2019
+    * [PDF (en)](/pdf/fachsystematik-2016-2019-en-data.pdf) (local copy)
+    * [PDF (de)](/pdf/fachsystematik-2016-2019-de-data.pdf) (local copy)
   * 2020-2024
-    * [PDF (en)](https://www.dfg.de/download/pdf/dfg_im_profil/gremien/fachkollegien/amtsperiode_2020_2024/fachsystematik_2020-2024_en_grafik.pdf) (link is broken)
+    * [PDF (en)](/pdf/fachsystematik-2020-2024-en-data.pdf) (local copy)
     * [PDF (de)](/pdf/fachsystematik-2020-2024-de-data.pdf) (local copy)
+    * [Highlighted Changes (de)](/pdf/fachsystematik-2019-de-aenderungen.pdf) (local copy)
   * 2024-2028
     * [PDF (en)](/pdf/fachsystematik-2024-2028-en-data.pdf) (local copy)
     * [PDF (de)](/pdf/fachsystematik-2024-2028-de-data.pdf) (local copy)
+    * [Highlighted Changes (de)](/pdf/fachsystematik-2023-de-aenderungen.pdf) (local copy)
 * Edited CSV - combining both German and English labels
   * [2020-2024](/csv/2020-2024/Fachsystematik_2020-2024.csv) (this repo)
   * [2024-2028](/csv/2024-2028/Fachsystematik_2024-2028.csv) (this repo)
